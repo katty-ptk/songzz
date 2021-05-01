@@ -270,7 +270,7 @@
             song: "Wake me up",
             song_path: "../songs/scoala/wake me up.mp3"
         }
-    ];
+    ];  // NEEDS SMALL FILES
 
         for ( let artist_image = 0; artist_image < studying.length; artist_image++ ) {
             studying[artist_image].artist = "";
