@@ -48,6 +48,16 @@ header span {
     border-radius: 100%;
 }
 
+header #timer {
+    position: absolute;
+    text-align: center;
+    color: #d3d3d3;
+    font-size: 2em;
+    margin-top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /* MAIN */
 audio {
     display: none;
