@@ -279,7 +279,6 @@
 
     let katty = songs;
 
-
     // show songs
     const songs_div = document.createElement('div');
     container.parentNode.appendChild(songs_div);
@@ -669,3 +668,33 @@
         updatePlayer();
         togglePlayPause();
     }
+
+    const study_timer = document.getElementById('timer');
+    let counter = 0;
+    let time_left = 10;
+
+    function convertSeconds(sec) {
+        let minutes = Math.floor(sec / 60);
+        let seconds = sec % 60;
+
+        if ( minutes < 10 ) {
+            if ( seconds < 10 ) {
+                return '0' + minutes + ' : 0' + seconds;
+            } 
+        }
+        return minutes + ":" + seconds;
+    }
+
+    function time() {
+        counter ++;
+        study_timer.innerHTML = convertSeconds(time_left - counter);
+
+        if ( time_left == counter ) {
+            clearInterval(study_interval);
+            const ding = new Audio();
+            ding.src = "../songs/ding.mp3";
+            ding.play();
+        }
+    }
+
+    let study_interval = setInterval(time, 1000);
