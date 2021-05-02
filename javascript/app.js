@@ -708,13 +708,21 @@
     let study_timer = document.getElementById('timer');
     let counter = 0;
     let time_left = 45 * 60;
+    study_timer.innerHTML = convertSeconds( time_left );
 
     let study_interval;
     let break_interval;
+    let timerPaused = false;
 
     const ding = new Audio();
 
+    const start_timer = document.getElementById('start-timer');
+    start_timer.addEventListener('click', startPauseTimer);
 
+    function studyInterval() {
+        study_interval = setInterval( studyTime, 1000);
+    }
+    
     function convertSeconds(sec) {
         let minutes = Math.floor(sec / 60);
         let seconds = sec % 60;
@@ -732,8 +740,9 @@
     }
 
     function studyTime() {
-            study_timer.innerHTML = convertSeconds( time_left - counter );
-            counter ++;    
+        time_left = 45 * 60;
+        study_timer.innerHTML = convertSeconds( time_left - counter );
+        counter ++;    
 
         if ( time_left == counter ) {   // 00:00
             ding.src = "../songs/break_time.mp3";   // rain sounds, time for 15 min break
@@ -759,13 +768,9 @@
         }
     }
 
-    const start_timer = document.getElementById('start-timer');
-    const stop_timer = document.getElementById('stop-timer');
-    let timerPaused = false;
-
     function startPauseTimer(e) {
         if ( !timerPaused ) {
-            study_interval = setInterval( studyTime, 1000);
+            studyInterval();
         }
 
         if ( start_timer.classList.contains('pause-timer') ) {
@@ -780,4 +785,16 @@
             start_timer.classList.remove('start-timer');
             start_timer.classList.add('pause-timer');
         }
+    }   // start or pause the timer clicking the first button
+
+    function resetTimer(e) {
+        if ( study_interval ) {
+            clearInterval( study_interval );
+            startPauseTimer();
+            study_timer.innerHTML = convertSeconds( time_left );
+            
+            counter = 0;
+            study_interval = studyTime();
+        }
+
     }
