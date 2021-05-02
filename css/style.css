@@ -55,10 +55,14 @@ header .study-timer {
     align-items: center;
     justify-content: center;
     color: #d3d3d3;
-    font-size: 2em;
-    margin-top: 30px;
+    font-size: 1.5em;
+    margin-top: 20px;
     left: 50%;
     transform: translateX(-50%);
+    border: 1px solid #404041;
+    border-radius: 20px 0;
+    padding: 3px 20px;
+    font-family: 'New Tegomin', serif;
 }
 
 header .study-timer .timer-buttons {
@@ -68,9 +72,7 @@ header .study-timer .timer-buttons {
     flex-wrap: nowrap;
     align-items: center;
     top: 0;
-    border: 1px solid #964343;
-    border-radius: 50px;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 header .study-timer .timer-buttons button {
@@ -111,7 +113,8 @@ audio {
 
 .container .song-image {
     width: 250px;
-    border-radius: 100%;
+    /* border-radius: 100%; */
+    border-radius: 50px 0;
 }
 
 .container .info {
@@ -389,6 +392,10 @@ audio {
 
 /* media queries */
 @media only screen and (max-width: 1300px), (max-height: 850px) {
+    .study-timer {
+        visibility: hidden;
+    }
+    
     header span {
         display: none;
     }

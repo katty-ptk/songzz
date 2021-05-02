@@ -38,6 +38,13 @@
         },
 
         {
+            song: "Carry the torch",
+            artist: "Riverdale",
+            song_path: "../songs/katty/carry the torch.mp3",
+            image_path: "../images/katty/carry_the_torch.jpg"
+        },
+
+        {
             song: "Beauty in the mundane",
             artist: "Bird of figment",
             song_path: "../songs/katty/beauty in the mundane.mp3",
@@ -737,7 +744,7 @@
         } else {
             return minutes + ' : ' + seconds;
         }
-    }
+    }   // returns minutes and seconds remaining
 
     function studyTime() {
         time_left = 45 * 60;
@@ -750,7 +757,7 @@
             counter = 0;
             break_interval = setInterval( takeBreak, 1000 );
         }
-    }
+    }   // 45 min of studying before break
 
     function takeBreak() {
         clearInterval(study_interval);  // study timer stops
@@ -766,7 +773,7 @@
             counter = 0;
             study_interval = setInterval( studyTime, 1000); // start studying interval
         }
-    }
+    }   // take 15 min break
 
     function startPauseTimer(e) {
         if ( !timerPaused ) {
@@ -797,4 +804,4 @@
             study_interval = studyTime();
         }
 
-    }
+    }   // stop timer and reset study session
