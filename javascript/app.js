@@ -24,6 +24,20 @@
     // playlists
     let songs = [
         {
+            song: "Sweet baby",
+            artist: "Bothnia",
+            song_path: "../songs/katty/sweet baby.mp3",
+            image_path: "../images/katty/bothnia.jpg"
+        },
+
+        {
+            song: "It'll be alright",
+            artist: "Cody Francis",
+            song_path: "../songs/katty/it'll be alright.mp3",
+            image_path: "../images/katty/cody_francis.jpg"
+        },
+
+        {
             song: "Mad World",
             artist: "cover by Imagine Dragons",
             song_path: "../songs/katty/mad world.mp3",
@@ -669,9 +683,16 @@
         togglePlayPause();
     }
 
-    const study_timer = document.getElementById('timer');
+    // study timer
+    let study_timer = document.getElementById('timer');
     let counter = 0;
-    let time_left = 10;
+    let time_left = 45 * 60;
+
+    let study_interval = setInterval(time, 1000);
+    let break_interval;
+
+    const ding = new Audio();
+
 
     function convertSeconds(sec) {
         let minutes = Math.floor(sec / 60);
@@ -681,20 +702,38 @@
             if ( seconds < 10 ) {
                 return '0' + minutes + ' : 0' + seconds;
             } 
+            return '0' + minutes + ' : ' + seconds;
+        } else if ( seconds < 10 ) {
+            return minutes + ' : 0' + seconds;
+        } else {
+            return minutes + ' : ' + seconds;
         }
-        return minutes + ":" + seconds;
     }
 
     function time() {
+        study_timer.innerHTML = convertSeconds( time_left - counter );
         counter ++;
-        study_timer.innerHTML = convertSeconds(time_left - counter);
 
-        if ( time_left == counter ) {
-            clearInterval(study_interval);
-            const ding = new Audio();
-            ding.src = "../songs/ding.mp3";
-            ding.play();
+        if ( time_left == counter ) {   // 00:00
+            ding.src = "../songs/break_time.mp3";
+            // ding.play();    // ding sound plays
+            counter = 0;
+            break_interval = setInterval( takeBreak, 1000 );
         }
     }
 
-    let study_interval = setInterval(time, 1000);
+    function takeBreak() {
+        clearInterval(study_interval);  // study timer stops
+        time_left = 15 * 60;
+        study_timer.innerHTML = convertSeconds( time_left - counter );
+        counter ++;
+
+        if ( time_left == counter ) {
+            ding.src = "../songs/study_time.mp3";
+            // ding.play();
+            clearInterval( break_interval );
+            time_left = 45 * 60;
+            counter = 0;
+            study_interval = setInterval( time, 1000);
+        }
+    }
