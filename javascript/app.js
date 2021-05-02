@@ -38,6 +38,27 @@
         },
 
         {
+            song: "Beauty in the mundane",
+            artist: "Bird of figment",
+            song_path: "../songs/katty/beauty in the mundane.mp3",
+            image_path: "../images/katty/bird_of_figment.jpg"
+        },
+
+        {
+            song: "Will you come around?",
+            artist: "Houses on the Hill",
+            song_path: "../songs/katty/will you come around.mp3",
+            image_path: "../images/katty/will_you_come_around.jpg"
+        },
+
+        {
+            song: "Windows",
+            artist: "Lewis Watson",
+            song_path: "../songs/katty/windows.mp3",
+            image_path: "../images/katty/lewis_watson.jpg"
+        },
+
+        {
             song: "Mad World",
             artist: "cover by Imagine Dragons",
             song_path: "../songs/katty/mad world.mp3",
@@ -688,7 +709,7 @@
     let counter = 0;
     let time_left = 45 * 60;
 
-    let study_interval = setInterval(time, 1000);
+    let study_interval;
     let break_interval;
 
     const ding = new Audio();
@@ -710,12 +731,12 @@
         }
     }
 
-    function time() {
-        study_timer.innerHTML = convertSeconds( time_left - counter );
-        counter ++;
+    function studyTime() {
+            study_timer.innerHTML = convertSeconds( time_left - counter );
+            counter ++;    
 
         if ( time_left == counter ) {   // 00:00
-            ding.src = "../songs/break_time.mp3";
+            ding.src = "../songs/break_time.mp3";   // rain sounds, time for 15 min break
             // ding.play();    // ding sound plays
             counter = 0;
             break_interval = setInterval( takeBreak, 1000 );
@@ -729,11 +750,34 @@
         counter ++;
 
         if ( time_left == counter ) {
-            ding.src = "../songs/study_time.mp3";
+            ding.src = "../songs/study_time.mp3";   // ding sound, time to study
             // ding.play();
-            clearInterval( break_interval );
+            clearInterval( break_interval );    // finish break
             time_left = 45 * 60;
             counter = 0;
-            study_interval = setInterval( time, 1000);
+            study_interval = setInterval( studyTime, 1000); // start studying interval
+        }
+    }
+
+    const start_timer = document.getElementById('start-timer');
+    const stop_timer = document.getElementById('stop-timer');
+    let timerPaused = false;
+
+    function startPauseTimer(e) {
+        if ( !timerPaused ) {
+            study_interval = setInterval( studyTime, 1000);
+        }
+
+        if ( start_timer.classList.contains('pause-timer') ) {
+            timerPaused = true;
+            start_timer.innerHTML = "&#10074;&#10074;";
+            start_timer.classList.remove('pause-timer');
+            start_timer.classList.add('start-timer');
+        } else {
+            timerPaused = false;
+            clearInterval(study_interval);
+            start_timer.innerHTML = "&#9658;";
+            start_timer.classList.remove('start-timer');
+            start_timer.classList.add('pause-timer');
         }
     }

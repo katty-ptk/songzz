@@ -17,7 +17,7 @@ header {
     width: 100%;
 }
 
-header button {
+header #show-songs-btn, header #show-playlists-btn {
     color: #964343;
     font-family: cursive;
     font-size: 50px;
@@ -33,7 +33,7 @@ header #show-playlists-btn {
     float: left;
 }
 
-header button:hover {
+header #show-songs-btn:hover, header #show-playlists-btn:hover {
     cursor: pointer;
     color: #c56a6a;
 }
@@ -48,14 +48,53 @@ header span {
     border-radius: 100%;
 }
 
-header #timer {
+header .study-timer {
     position: absolute;
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     color: #d3d3d3;
     font-size: 2em;
-    margin-top: 40px;
+    margin-top: 30px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+header .study-timer .timer-buttons {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    top: 0;
+    border: 1px solid #964343;
+    border-radius: 50px;
+    margin-left: 15px;
+}
+
+header .study-timer .timer-buttons button {
+    width: 50px;
+    height: 50px;  
+    font-size: 1em;
+    background: transparent;
+    border: none;
+    color: #d3d3d3;
+    transition: 0.7s ease-in-out all;
+}
+
+header .study-timer .timer-buttons button:hover {
+    color: #964343;
+}
+
+header .study-timer .timer-buttons #start-timer {
+    float: left;
+}
+
+header .study-timer .timer-buttons #stop-timer {
+    margin-bottom: 8px;
+    font-size: 1.3em;
+    line-height: 1;
 }
 
 /* MAIN */
