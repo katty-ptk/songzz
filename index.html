@@ -21,7 +21,15 @@
     
     <header>
         <button id="show-songs-btn" title="show songs"><p>&#8801;</p></button>
-        <p id="timer">timer</p> <!-- study timer -->
+        
+        <div class="study-timer">
+            <p id="timer">45 : 00</p> <!-- study timer -->
+            <div class="timer-buttons">
+                <button id="start-timer" class="start-timer" onclick="startPauseTimer()">&#9658;</button>
+                <button id="stop-timer">&#9632;</button>    
+            </div>
+        </div>
+        
         <button id="show-playlists-btn" title="show playlists">&#8411;</button>
         <span></span> <!-- the pink line-->
     </header>
