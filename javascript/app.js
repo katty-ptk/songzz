@@ -15,6 +15,7 @@
     const show_songs_btn = document.getElementById('show-songs-btn');
     const show_volume = document.getElementById('show-volume');
     const volume_controller = document.getElementById('volume-controller');
+    audio.volume = 0.2;
 
     let current_song_index;
     let previous_song_index;
@@ -721,12 +722,17 @@
     let timerPaused = false;
 
     const ding = new Audio();
+    ding.volume = 0.2;
 
     const start_timer = document.getElementById('start-timer');
     start_timer.addEventListener('click', startPauseTimer);
 
     function studyInterval() {
         study_interval = setInterval( studyTime, 1000);
+    }
+
+    function breakInterval() {
+        break_interval = setInterval( takeBreak, 1000 );
     }
     
     function convertSeconds(sec) {
@@ -751,27 +757,43 @@
         counter ++;    
 
         if ( time_left == counter ) {   // 00:00
+
+            if ( !audio.paused ) {
+                togglePlayPause();
+                audio.pause();
+            }
+
             ding.src = "../songs/break_time.mp3";   // rain sounds, time for 15 min break
-            // ding.play();    // ding sound plays
+            ding.play();    // ding sound plays
             counter = 0;
-            break_interval = setInterval( takeBreak, 1000 );
+            breakInterval();
         }
     }   // 45 min of studying before break
 
     function takeBreak() {
-        clearInterval(study_interval);  // study timer stops
+        if ( study_interval )
+            clearInterval(study_interval);  // study timer stops
         time_left = 15 * 60;
         study_timer.innerHTML = convertSeconds( time_left - counter );
         counter ++;
 
         if ( time_left == counter ) {
             ding.src = "../songs/study_time.mp3";   // ding sound, time to study
-            // ding.play();
+
+            if ( !audio.paused ) {
+                togglePlayPause();
+                audio.pause();
+            }
+            
+            ding.play();
+
             clearInterval( break_interval );    // finish break
             time_left = 45 * 60;
             counter = 0;
-            study_interval = setInterval( studyTime, 1000); // start studying interval
+            studyInterval(); // start studying interval
         }
+
+        
     }   // take 15 min break
 
     function startPauseTimer(e) {
@@ -784,12 +806,17 @@
             start_timer.innerHTML = "&#10074;&#10074;";
             start_timer.classList.remove('pause-timer');
             start_timer.classList.add('start-timer');
+            ding.play();
         } else {
             timerPaused = false;
-            clearInterval(study_interval);
+            if ( study_interval )
+                clearInterval( study_interval );
+            if ( break_interval )
+                clearInterval( break_interval );
             start_timer.innerHTML = "&#9658;";
             start_timer.classList.remove('start-timer');
             start_timer.classList.add('pause-timer');
+            ding.pause();
         }
     }   // start or pause the timer clicking the first button
 
