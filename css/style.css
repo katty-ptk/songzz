@@ -8,8 +8,8 @@ body {
     overflow: hidden;
 }
 
-#favicon {
-    border-radius: 50%;
+#logo {
+   
 }
 
 /* HEADER */
@@ -354,6 +354,10 @@ audio {
     font-size: 1.5em;
     cursor: pointer;
     transition: .7s ease-in-out all;
+}
+
+.playlists ul li:first-child {
+    color: rgb(214, 127, 127);
 }
 
 .playlists #hide-playlists {
