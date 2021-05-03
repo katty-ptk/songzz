@@ -423,7 +423,6 @@
         song_artist.innerText = song.artist;
         audio.src = song.song_path;
         document.title = "🎶 " + song.song;
-        document.querySelector('#favicon').setAttribute('href', song.image_path);
 
         songs_array[current_song_index].style.color = "rgb(214, 127, 127)";
         $(songs_array).not(songs_array[current_song_index]).css("color", "#d3d3d3");
@@ -654,7 +653,7 @@
         document.getElementById('playlists-ul').appendChild(playlist);    // adds li to ul of playlist
 
         playlist.addEventListener('click', function() {
-            $(this).css('color', 'rgb(214, 127, 127');  // current playlist will have pinkish color
+            $(this).css('color', 'rgb(214, 127, 127)');  // current playlist will have pinkish color
             $('#playlists-ul li').not(this).css('color', '#d3d3d3');    // the other playlists will have whiteish color
 
             switch ( playlists.indexOf(element) ) {
