@@ -423,7 +423,7 @@
         song_title.innerText = song.song;
         song_artist.innerText = song.artist;
         audio.src = song.song_path;
-        document.title = "🎶 " + song.song;
+        document.title = 'playing: ' +  song.song;
 
         songs_array[current_song_index].style.color = "rgb(214, 127, 127)";
         $(songs_array).not(songs_array[current_song_index]).css("color", "#d3d3d3");
@@ -603,41 +603,36 @@
     }
 
     // repeat song
+    let will_repeat = false;
     const repeat_btn = document.getElementById('repeat');
     function repeat() {
-        audio.addEventListener('ended', function () {
-            current_song_index -= 1;
-            updatePlayer();
-            togglePlayPause();
-        });
-    }
-    function repeatSong() {
-        if ( repeat_btn.classList.contains('repeat-off') ) {
-            repeat_btn.classList.remove('repeat-off');
-            repeat_btn.classList.add('repeat-on');
-            repeat_btn.title = "repeat on";
-            repeat();
-
-            previous_btn.addEventListener('click', function() {
-                repeat_btn.classList.remove('repeat-on');
-                repeat_btn.classList.add('repeat-off');
-                repeat_btn.title = "repeat off";
-                updatePlayer();
-                togglePlayPause();
-            });
-
-            next_btn.addEventListener('click', function() {
-                repeat_btn.classList.remove('repeat-on');
-                repeat_btn.classList.add('repeat-off');
-                repeat_btn.title = "repeat off";
+        if ( !will_repeat ) {
+            audio.addEventListener('ended', function() {
+                current_song_index += 1;
                 updatePlayer();
                 togglePlayPause();
             });
         } else {
+            audio.addEventListener('ended', function () {
+                current_song_index -= 1;
+                updatePlayer();
+                togglePlayPause();
+            });    
+        }
+    }
+    function repeatSong() {
+        if ( will_repeat == false ) {
+            repeat_btn.classList.remove('repeat-off');
+            repeat_btn.classList.add('repeat-on');
+            repeat_btn.title = "repeat on";
+            will_repeat = true;
+            repeat();
+        } else {
+            will_repeat = false;
             repeat_btn.classList.remove('repeat-on');
             repeat_btn.classList.add('repeat-off');
             repeat_btn.title = "repeat is off";
-            return;
+            repeat();
         }
     }
 

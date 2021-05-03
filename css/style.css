@@ -8,10 +8,6 @@ body {
     overflow: hidden;
 }
 
-#logo {
-   
-}
-
 /* HEADER */
 header {
     width: 100%;
@@ -82,7 +78,7 @@ header .study-timer .timer-buttons button {
     background: transparent;
     border: none;
     color: #d3d3d3;
-    transition: 0.7s ease-in-out all;
+    transition: 0.5s ease-in-out all;
 }
 
 header .study-timer .timer-buttons button:hover {
@@ -115,6 +111,7 @@ audio {
     width: 250px;
     /* border-radius: 100%; */
     border-radius: 50px 0;
+    /* margin-bottom: 10px; */
 }
 
 .container .info {
