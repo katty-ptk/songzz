@@ -61,16 +61,6 @@ header .study-timer {
     font-family: 'New Tegomin', serif;
 }
 
-header .study-timer .timer {
-    margin-bottom: 5px;
-}
-
-header .study-timer .p-timer-on {
-    margin-bottom: 0px;
-}
-
-
-
 header .study-timer .timer-buttons {
     float: right;
     display: flex;
