@@ -709,17 +709,16 @@
     // study timer
     let study_timer = document.getElementById('timer');
     let counter = 0;
-    let time_left = 45 * 60;
+    let time_left = 5;
     study_timer.innerHTML = convertSeconds( time_left );
 
-    let study_interval;
+    let study_interval = -1;
     let break_interval;
-    let timerPaused = false;
 
     const ding = new Audio();
     ding.volume = 0.2;
 
-    const start_timer = document.getElementById('start-timer');
+    const start_timer = document.getElementById('start-pause-timer');
     start_timer.addEventListener('click', startPauseTimer);
 
     function studyInterval() {
@@ -747,7 +746,7 @@
     }   // returns minutes and seconds remaining
 
     function studyTime() {
-        time_left = 45 * 60;
+        time_left = 5;
         study_timer.innerHTML = convertSeconds( time_left - counter );
         counter ++;    
 
@@ -758,7 +757,6 @@
                 audio.pause();
             }
 
-            ding.src = "../songs/break_time.mp3";   // rain sounds, time for 15 min break
             ding.play();    // ding sound plays
             counter = 0;
             breakInterval();
@@ -768,7 +766,8 @@
     function takeBreak() {
         if ( study_interval )
             clearInterval(study_interval);  // study timer stops
-        time_left = 15 * 60;
+
+        time_left = 10;
         study_timer.innerHTML = convertSeconds( time_left - counter );
         counter ++;
 
@@ -791,30 +790,24 @@
         
     }   // take 15 min break
 
+        // START / PAUSE TIMER
     function startPauseTimer(e) {
-        if ( !timerPaused ) {
-            studyInterval();
-        }
+        $('#start-pause-timer').toggleClass('timer-on');
+        // studyInterval();    // on first click
 
-        if ( start_timer.classList.contains('pause-timer') ) {
-            timerPaused = true;
-            start_timer.innerHTML = "&#10074;&#10074;";
-            start_timer.classList.remove('pause-timer');
-            start_timer.classList.add('start-timer');
-            ding.play();
-        } else {
-            timerPaused = false;
-            if ( study_interval )
-                clearInterval( study_interval );
-            if ( break_interval )
-                clearInterval( break_interval );
-            start_timer.innerHTML = "&#9658;";
-            start_timer.classList.remove('start-timer');
-            start_timer.classList.add('pause-timer');
-            ding.pause();
-        }
+        if ( study_interval == -1 )
+            studyInterval();
+        else
+            pauseStudyTimer();
     }   // start or pause the timer clicking the first button
 
+
+    function pauseStudyTimer() {
+            clearInterval( study_interval );
+            study_interval = -1;
+    }
+    
+        // RESET TIMER
     function resetTimer(e) {
         if ( study_interval ) {
             clearInterval( study_interval );
