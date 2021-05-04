@@ -713,27 +713,29 @@
         togglePlayPause();
     }
 
-    // study timer
+    // timer
     let study_timer = document.getElementById('timer');
     let counter = 0;
     let time_left = 5;
     study_timer.innerHTML = convertSeconds( time_left );
 
     let timer_interval = -1;
+    let studyPaused = false;
+    let breakPaused = false;
 
     const ding = new Audio();
     ding.src = "../songs/study_time.mp3";   // ding sound, time to study
 
-    // const start_timer = ;
     document.getElementById('start-pause-timer').addEventListener('click', startPauseTimer);
 
     function studyInterval() {
+        clearTimeout( timer_interval );
         timer_interval = setInterval( studyTime, 1000);
     }
 
     function breakInterval() {
         clearInterval( timer_interval );
-        timer_interval = setInterval( takeBreak, 1000 );
+        timer_interval = setTimeout( takeBreak, convertSeconds(5)); // takes a break after each study session
     }
     
     function convertSeconds(sec) {
@@ -755,7 +757,7 @@
     function studyTime() {
         time_left = 5;
         study_timer.innerHTML = convertSeconds( time_left - counter );
-        counter ++;    
+        counter ++;
 
         if ( time_left == counter ) {   // 00:00
 
@@ -766,49 +768,63 @@
 
             ding.play();    // ding sound plays
             counter = 0;
-            breakInterval();
+            breakInterval();   // takes the break at the end of the session
         }
     }   // 45 min of studying before break
 
     function takeBreak() {
-        time_left = 10;
-        study_timer.innerHTML = convertSeconds( time_left - counter );
-        counter ++;
-
-        if ( time_left == counter ) {
-
-            if ( !audio.paused ) {
-                togglePlayPause();
-                audio.pause();
+        timer_interval = setInterval(() => {
+            time_left = 10;
+            study_timer.innerHTML = convertSeconds( time_left - counter );
+            counter ++;
+    
+            if ( time_left == counter ) {   // 00:00
+    
+                if ( !audio.paused ) {
+                    togglePlayPause();
+                    audio.pause();
+                }
+                
+                ding.play();
+    
+                clearInterval( timer_interval );    // finish break
+                counter = 0;
+                studyInterval(); // start studying interval
             }
-            
-            ding.play();
-
-            clearInterval( timer_interval );    // finish break
-            time_left = 45 * 60;
-            counter = 0;
-            studyInterval(); // start studying interval
-        }
-
-        
+        }, 1000);
     }   // take 15 min break
 
 
         // START / PAUSE TIMER
     function startPauseTimer() {
-        $('#start-pause-timer').toggleClass('timer-on');
+        $('#start-pause-timer').toggleClass('timer-on');    // toggles the button between play & pause
 
-        if ( timer_interval == -1 )
-            studyInterval();
+        if ( timer_interval != -1 && !studyPaused ) // if button is pressed in studyInterval and study session is not paused
+            pauseStudy();
+
+        else if ( timer_interval != -1 && !breakPaused )    // if button is pressed in breakInterval and break session is not paused
+            pauseBreak();
         else
-            pauseTimer();
+            updateInterval();   // continues to whatever interval it is on currently
     }   // start or pause the timer clicking the first button
 
+    function updateInterval() {
+        if ( studyInterval ) // if the current interval is studyInterval
+            studyInterval();
+        else    // if the current interval is breakInterval
+            breakInterval();
+    }
 
-    function pauseTimer() {
+    function pauseStudy() {
             clearInterval( timer_interval );
             timer_interval = -1;
-    }
+    }   // pauses the study interval
+
+    function pauseBreak() {
+        clearInterval ( timer_interval );
+        clearTimeout( timer_interval );
+        timer_interval = -1;
+    }   // SUPPOSED to pause the break interval, instead it jumps through it and then it starts all over again
     
         // RESET TIMER
     // function resetTimer(e) {
