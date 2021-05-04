@@ -46,6 +46,13 @@
         },
 
         {
+            song: "Time of your life",
+            artist: "Green day",
+            song_path: "../songs/katty/time of your life.mp3",
+            image_path: "../images/katty/green_day.jpg"
+        },
+
+        {
             song: "Beauty in the mundane",
             artist: "Bird of figment",
             song_path: "../songs/katty/beauty in the mundane.mp3",
@@ -712,21 +719,21 @@
     let time_left = 5;
     study_timer.innerHTML = convertSeconds( time_left );
 
-    let study_interval = -1;
-    let break_interval;
+    let timer_interval = -1;
 
     const ding = new Audio();
-    ding.volume = 0.2;
+    ding.src = "../songs/study_time.mp3";   // ding sound, time to study
 
-    const start_timer = document.getElementById('start-pause-timer');
-    start_timer.addEventListener('click', startPauseTimer);
+    // const start_timer = ;
+    document.getElementById('start-pause-timer').addEventListener('click', startPauseTimer);
 
     function studyInterval() {
-        study_interval = setInterval( studyTime, 1000);
+        timer_interval = setInterval( studyTime, 1000);
     }
 
     function breakInterval() {
-        break_interval = setInterval( takeBreak, 1000 );
+        clearInterval( timer_interval );
+        timer_interval = setInterval( takeBreak, 1000 );
     }
     
     function convertSeconds(sec) {
@@ -764,15 +771,11 @@
     }   // 45 min of studying before break
 
     function takeBreak() {
-        if ( study_interval )
-            clearInterval(study_interval);  // study timer stops
-
         time_left = 10;
         study_timer.innerHTML = convertSeconds( time_left - counter );
         counter ++;
 
         if ( time_left == counter ) {
-            ding.src = "../songs/study_time.mp3";   // ding sound, time to study
 
             if ( !audio.paused ) {
                 togglePlayPause();
@@ -781,7 +784,7 @@
             
             ding.play();
 
-            clearInterval( break_interval );    // finish break
+            clearInterval( timer_interval );    // finish break
             time_left = 45 * 60;
             counter = 0;
             studyInterval(); // start studying interval
@@ -790,32 +793,32 @@
         
     }   // take 15 min break
 
-        // START / PAUSE TIMER
-    function startPauseTimer(e) {
-        $('#start-pause-timer').toggleClass('timer-on');
-        // studyInterval();    // on first click
 
-        if ( study_interval == -1 )
+        // START / PAUSE TIMER
+    function startPauseTimer() {
+        $('#start-pause-timer').toggleClass('timer-on');
+
+        if ( timer_interval == -1 )
             studyInterval();
         else
-            pauseStudyTimer();
+            pauseTimer();
     }   // start or pause the timer clicking the first button
 
 
-    function pauseStudyTimer() {
-            clearInterval( study_interval );
-            study_interval = -1;
+    function pauseTimer() {
+            clearInterval( timer_interval );
+            timer_interval = -1;
     }
     
         // RESET TIMER
-    function resetTimer(e) {
-        if ( study_interval ) {
-            clearInterval( study_interval );
-            startPauseTimer();
-            study_timer.innerHTML = convertSeconds( time_left );
+    // function resetTimer(e) {
+    //     if ( study_interval ) {
+    //         clearInterval( study_interval );
+    //         startPauseTimer();
+    //         study_timer.innerHTML = convertSeconds( time_left );
             
-            counter = 0;
-            study_interval = studyTime();
-        }
+    //         counter = 0;
+    //         study_interval = studyTime();
+    //     }
 
-    }   // stop timer and reset study session
+    // }   // stop timer and reset study session
