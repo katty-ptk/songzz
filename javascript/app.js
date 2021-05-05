@@ -317,8 +317,48 @@
 
     let studying = [
         {
-            song: "Wake me up",
-            song_path: "../songs/scoala/wake me up.mp3"
+            song: "Always you",
+            song_path: "../songs/studying/always you.mp3"
+        },
+
+        {
+            song: "Angel baby",
+            song_path: "../songs/studying/angel baby.mp3"
+        },
+
+        {
+            song: "Demons x Jar of Hearts",
+            song_path: "../songs/studying/demons x jar of hearts.mp3"
+        },
+
+        {
+            song: "Doing fine",
+            song_path: "../songs/studying/doing fine.mp3"
+        },
+
+        {
+            song: "Holding Hands",
+            song_path: "../songs/studying/holding hands.mp3"
+        },
+
+        {
+            song: "Human",
+            song_path: "../songs/studying/human.mp3"
+        },
+
+        {
+            song: "I don't know anything about love",
+            song_path: "../songs/studying/i don't know anything about love.mp3"
+        },
+
+        {
+            song: "When you're near",
+            song_path: "../songs/studying/when you're near.mp3"
+        },
+
+        {
+            song: "Won't leave you behind",
+            song_path: "../songs/studying/won't leave you behind"
         }
     ];  // NEEDS SMALL FILES
 
