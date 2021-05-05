@@ -803,7 +803,7 @@
             pauseStudy();
 
         else if ( timer_interval != -1 && !breakPaused )    // if button is pressed in breakInterval and break session is not paused
-            pauseBreak();
+            pauseBreak();   // DOESN'T CALL IT
         else
             updateInterval();   // continues to whatever interval it is on currently
     }   // start or pause the timer clicking the first button
@@ -824,17 +824,5 @@
         clearInterval ( timer_interval );
         clearTimeout( timer_interval );
         timer_interval = -1;
-    }   // SUPPOSED to pause the break interval, instead it jumps through it and then it starts all over again
-    
-        // RESET TIMER
-    // function resetTimer(e) {
-    //     if ( study_interval ) {
-    //         clearInterval( study_interval );
-    //         startPauseTimer();
-    //         study_timer.innerHTML = convertSeconds( time_left );
-            
-    //         counter = 0;
-    //         study_interval = studyTime();
-    //     }
-
-    // }   // stop timer and reset study session
+        console.log('pause break');
+    }   // NOT WORKING
