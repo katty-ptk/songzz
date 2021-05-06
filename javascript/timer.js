@@ -1,0 +1,114 @@
+
+    // timer
+    let study_timer = document.getElementById('timer');
+    let counter = 0;
+    let time_left = 5;
+    study_timer.innerHTML = convertSeconds( time_left );
+
+    let timer_interval = -1;
+    let studyPaused = false;
+    let breakPaused = false;
+
+    const ding = new Audio();
+    ding.src = "../songs/study_time.mp3";   // ding sound, time to study
+
+    document.getElementById('start-pause-timer').addEventListener('click', startPauseTimer);
+
+    function studyInterval() {
+        clearTimeout( timer_interval );
+        timer_interval = setInterval( studyTime, 1000);
+    }
+
+    function breakInterval() {
+        clearInterval( timer_interval );
+        timer_interval = setTimeout( takeBreak, convertSeconds(5)); // takes a break after each study session
+    }
+    
+    function convertSeconds(sec) {
+        let minutes = Math.floor(sec / 60);
+        let seconds = sec % 60;
+
+        if ( minutes < 10 ) {
+            if ( seconds < 10 ) {
+                return '0' + minutes + ' : 0' + seconds;
+            } 
+            return '0' + minutes + ' : ' + seconds;
+        } else if ( seconds < 10 ) {
+            return minutes + ' : 0' + seconds;
+        } else {
+            return minutes + ' : ' + seconds;
+        }
+    }   // returns minutes and seconds remaining
+
+    function studyTime() {
+        time_left = 5;
+        study_timer.innerHTML = convertSeconds( time_left - counter );
+        counter ++;
+
+        if ( time_left == counter ) {   // 00:00
+
+            if ( !audio.paused ) {
+                togglePlayPause();
+                audio.pause();
+            }
+
+            ding.play();    // ding sound plays
+            counter = 0;
+            breakInterval();   // takes the break at the end of the session
+        }
+    }   // 45 min of studying before break
+
+    function takeBreak() {
+        timer_interval = setInterval(() => {
+            time_left = 10;
+            study_timer.innerHTML = convertSeconds( time_left - counter );
+            counter ++;
+    
+            if ( time_left == counter ) {   // 00:00
+    
+                if ( !audio.paused ) {
+                    togglePlayPause();
+                    audio.pause();
+                }
+                
+                ding.play();
+    
+                clearInterval( timer_interval );    // finish break
+                counter = 0;
+                studyInterval(); // start studying interval
+            }
+        }, 1000);
+    }   // take 15 min break
+
+
+        // START / PAUSE TIMER
+    function startPauseTimer() {
+        $('#start-pause-timer').toggleClass('timer-on');    // toggles the button between play & pause
+
+        if ( timer_interval != -1 && !studyPaused ) // if button is pressed in studyInterval and study session is not paused
+            pauseStudy();
+
+        else if ( timer_interval != -1 && !breakPaused )    // if button is pressed in breakInterval and break session is not paused
+            pauseBreak();   // DOESN'T CALL IT
+        else
+            updateInterval();   // continues to whatever interval it is on currently
+    }   // start or pause the timer clicking the first button
+
+    function updateInterval() {
+        if ( studyInterval ) // if the current interval is studyInterval
+            studyInterval();
+        else    // if the current interval is breakInterval
+            breakInterval();
+    }
+
+    function pauseStudy() {
+            clearInterval( timer_interval );
+            timer_interval = -1;
+    }   // pauses the study interval
+
+    function pauseBreak() {
+        clearInterval ( timer_interval );
+        clearTimeout( timer_interval );
+        timer_interval = -1;
+        console.log('pause break');
+    }   // NOT WORKING

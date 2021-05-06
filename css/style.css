@@ -11,6 +11,8 @@ body {
 /* HEADER */
 header {
     width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 header #show-songs-btn, header #show-playlists-btn {
@@ -22,9 +24,12 @@ header #show-songs-btn, header #show-playlists-btn {
     background: none;
     border: none;
     transition: 0.5s ease-in-out all;
+    cursor: pointer;
 }
 
 header #show-playlists-btn {
+    width: 50px;
+    height: 50px;
     font-size: 70px;
     float: left;
 }
