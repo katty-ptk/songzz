@@ -1,7 +1,7 @@
     // timer
 
-    const BREAK_TIME = 10;
-    const STUDY_TIME = 5;
+    const BREAK_TIME = 15 * 60;
+    const STUDY_TIME = 30 * 60;
 
     let study_timer = document.getElementById('timer');
     let counter = 0;
@@ -100,4 +100,4 @@
         clearInterval ( timer_interval );
         timer_interval = -1;
         console.log('pause break');
-    }   // NOT WORKING
+    }   // pauses the break interval

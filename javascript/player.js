@@ -555,7 +555,7 @@
 
         if ( songs_div.style.height <= '400px' ) {
             volume_controller.style.transform = "rotate(360deg)";
-            volume_controller.style.top = "70px";
+            volume_controller.style.top = "50px";
             volume_controller.style.left = "290px";
         }
     });
