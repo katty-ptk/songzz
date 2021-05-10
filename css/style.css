@@ -114,7 +114,7 @@ audio {
 
 .container {
     position: absolute;
-    top: 58%;
+    top: 60%;
     left: 55%;
     transform: translate(-58%, -50%);
 }
@@ -189,7 +189,6 @@ audio {
 
 .container .actions .more-actions-div {
     display: none;
-    /* position: relative; */
 }
 
 .container .actions .show-more-actions {
@@ -392,7 +391,7 @@ audio {
 
     .songs-div, .playlists {
         width: 165px;
-        height: 87vh;
+        height: 85vh;
     }
 
     .container {
@@ -423,3 +422,37 @@ audio {
     }
 }
 
+@media screen and ( max-height: 600px ) {
+    body {
+        overflow: auto;
+    }
+
+    header span {
+        display: none;
+    }
+    
+    header .study-timer {
+        left: 430px;
+    }
+
+    .container .info .song-image {
+        width: 130px;
+    }
+    
+    .container .info h2 {
+        font-size: 1.3em;
+    }
+
+    .container .info p {
+        font-size: 1em;
+    }
+
+    .songs-div, .playlists {
+        height: 250px;
+        top: 10px;
+    }
+
+    .songs-div .songs-ul:last-child {
+        margin-bottom: 30px;
+    }
+}
