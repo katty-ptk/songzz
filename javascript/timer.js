@@ -1,5 +1,4 @@
     // timer
-
     const BREAK_TIME = 15 * 60;
     const STUDY_TIME = 30 * 60;
 
