@@ -100,3 +100,13 @@
         timer_interval = -1;
         console.log('pause break');
     }   // pauses the break interval
+
+    
+    // reset timer
+    function resetTimer(e) {
+        time_left = STUDY_TIME;
+        counter = 0;
+        // clearInterval( timer_interval );
+        pauseStudy(); 
+        updateInterval();
+    }
