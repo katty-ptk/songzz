@@ -114,9 +114,10 @@ audio {
 
 .container {
     position: absolute;
-    top: 60%;
-    left: 55%;
-    transform: translate(-58%, -50%);
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 .container .song-image {
@@ -268,8 +269,8 @@ audio {
     height: 250px;
     overflow: auto;
     width: 80px;
-    border-left: 3px solid #f4f4f4;
-    border-radius: 30px;
+    border-left: 1px solid #6b6a6a;
+    border-radius: 20px;
     position: absolute;
     top: 110px;
     right: 0;
@@ -340,7 +341,8 @@ audio {
     float: left;
     left: 0;
     border-left: none;
-    border-right: 3px solid #f4f4f4;
+    border-right: 1px solid #6b6a6a;
+    /* border-top-right-radius: 30px; */
 }
 
 .playlists ul li {
@@ -383,7 +385,23 @@ audio {
 }
 
 /* MEDIA QUERIES */
-@media screen and ( min-width: 600px ) {
+@media screen and ( max-width: 280px ) {
+    header .study-timer {
+        font-size: 16px;
+        width: 60%;
+    }
+
+    header .study-timer .timer-buttons button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .container .song-image {
+        width: 100px;
+    }
+}
+
+@media screen and ( min-width: 600px ) and ( max-width: 768px ) {
     header .study-timer {
         width: 200px;
         height: 50px;
@@ -396,7 +414,8 @@ audio {
 
     .container {
         left: 50%;
-        transform: translate(-50%, -50%);
+        top: 25%;
+        transform: translateX(-50%);
     }
 
     .container .actions .show-more-actions {
@@ -404,7 +423,7 @@ audio {
     } 
 }
 
-@media screen and ( min-width: 768px ) {
+@media screen and ( min-width: 768px ) and ( max-width: 1023px) {
     header #show-songs-btn {
         font-size: 40px;
     }
@@ -415,9 +434,34 @@ audio {
 
     .songs-div, .playlists {
         width: 220px;
+        height: 87vh;
     }
 
     .container .song-image {
+        width: 200px;
+    }
+}
+
+@media screen and ( min-width: 1023px ) and ( max-width: 1025px ) {
+    header .study-timer {
+        width: 200px;
+    }
+
+    .container {
+        top: 20%;
+        left: 50%;
+        transform: translateY(-20%), translateX(-50%);
+    }
+
+    .songs-div, .playlists {
+        height: 750px;
+        width: 200px;
+    }
+}
+
+@media screen and ( min-width: 1028px ) {
+    .show-songs, .playlists {
+        height: 88vh;
         width: 200px;
     }
 }

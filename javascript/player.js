@@ -25,6 +25,13 @@
     // playlists
     let songs = [
         {
+            song:"A-O-K",
+            artist: "Tai Verdes",
+            song_path: "../songs/katty/aok.mp3",
+            image_path: "../images/katty/tai_verdes.jpg"
+        },
+
+        {
             song: "Sweet baby",
             artist: "Bothnia",
             song_path: "../songs/katty/sweet baby.mp3",
@@ -32,10 +39,24 @@
         },
 
         {
+            song: "Today is beautiful",
+            artist: "David Dunn",
+            song_path: "../songs/katty/today is beautiful.mp3",
+            image_path: "../images/katty/david_dunn.jpg"
+        },
+
+        {
             song: "It'll be alright",
             artist: "Cody Francis",
             song_path: "../songs/katty/it'll be alright.mp3",
             image_path: "../images/katty/cody_francis.jpg"
+        },
+
+        {
+            song: "Ready to be myself",
+            artist: "David Dunn",
+            song_path: "../songs/katty/ready to be myself.mp3",
+            image_path: "../images/katty/david_dunn.jpg"
         },
 
         {
@@ -174,9 +195,9 @@
 
     let scoala = [
         {
-            song: "Bara Bere",
-            artist: "Michel Teló",
-            song_path: "../songs/scoala/bara bere.mp3",
+            song: "Colegiul 'Mihai Viteazul'",
+            artist: "Imnul CMV",
+            song_path: "../songs/scoala/cmv.mp3",
         },  // 1
 
         {
