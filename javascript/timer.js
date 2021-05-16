@@ -76,7 +76,7 @@
         if ( timer_interval != -1 && time_left == STUDY_TIME) { // if button is pressed in studyInterval and study session is not paused
             pauseStudy();
         } else if ( timer_interval != -1 && time_left == BREAK_TIME) {   // if button is pressed in breakInterval and break session is not paused
-            pauseBreak();   // DOESN'T CALL IT
+            pauseBreak();
         } else {
             updateInterval();   // continues to whatever interval it is on currently
         }
