@@ -266,9 +266,9 @@ audio {
 
 /* songs div */
 .songs-div, .playlists {
-    height: 250px;
+    height: 400px;
+    width: 100px;
     overflow: auto;
-    width: 80px;
     border-left: 1px solid #6b6a6a;
     border-radius: 20px;
     position: absolute;
@@ -398,6 +398,13 @@ audio {
 
     .container .song-image {
         width: 100px;
+    }
+}
+
+@media screen and (min-width: 280px ) and ( max-width: 400px ) {
+    .songs-div, .playlists {
+        height: 300px;
+        width: 80px;
     }
 }
 
