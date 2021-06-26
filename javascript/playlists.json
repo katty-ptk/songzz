@@ -1,0 +1,355 @@
+{
+    "katty":
+        [
+            {
+                "song": "A-O-K",
+                "artist": "Tai Verdes",
+                "song_path": "../songs/katty/aok.mp3",
+                "image_path": "../images/katty/tai_verdes.jpg"
+            },
+
+            {
+                "song": "Sweet baby",
+                "artist": "Bothnia",
+                "song_path": "../songs/katty/sweet baby.mp3",
+                "image_path": "../images/katty/bothnia.jpg"
+            },
+
+            {
+                "song": "Today is beautiful",
+                "artist": "David Dunn",
+                "song_path": "../songs/katty/today is beautiful.mp3",
+                "image_path": "../images/katty/david_dunn.jpg"
+            },
+
+            {
+                "song": "It'll be alright",
+                "artist": "Cody Francis",
+                "song_path": "../songs/katty/it'll be alright.mp3",
+                "image_path": "../images/katty/cody_francis.jpg"
+            },
+
+            {
+                "song": "Ready to be myself",
+                "artist": "David Dunn",
+                "song_path": "../songs/katty/ready to be myself.mp3",
+                "image_path": "../images/katty/david_dunn.jpg"
+            },
+
+            {
+                "song": "Carry the torch",
+                "artist": "Riverdale",
+                "song_path": "../songs/katty/carry the torch.mp3",
+                "image_path": "../images/katty/carry_the_torch.jpg"
+            },
+
+            {
+                "song": "Time of your life",
+                "artist": "Green day",
+                "song_path": "../songs/katty/time of your life.mp3",
+                "image_path": "../images/katty/green_day.jpg"
+            },
+
+            {
+                "song": "Beauty in the mundane",
+                "artist": "Bird of figment",
+                "song_path": "../songs/katty/beauty in the mundane.mp3",
+                "image_path": "../images/katty/bird_of_figment.jpg"
+            },
+
+            {
+                "song": "Will you come around?",
+                "artist": "Houses on the Hill",
+                "song_path": "../songs/katty/will you come around.mp3",
+                "image_path": "../images/katty/will_you_come_around.jpg"
+            },
+
+            {
+                "song": "Windows",
+                "artist": "Lewis Watson",
+                "song_path": "../songs/katty/windows.mp3",
+                "image_path": "../images/katty/lewis_watson.jpg"
+            },
+
+            {
+                "song": "Mad World",
+                "artist": "cover by Imagine Dragons",
+                "song_path": "../songs/katty/mad world.mp3",
+                "image_path": "../images/katty/imagine_dragons.jpg"
+            },
+
+            {
+                "song": "Jar of Hearts",
+                "artist": "cover by Dave Winkler",
+                "song_path": "../songs/katty/jar of hearts.mp3",
+                "image_path": "../images/katty/dave_winkler.jpg"
+            },
+
+            {
+                "song": "Teardrops on my guitar",
+                "artist": "Taylor Swift",
+                "song_path": "../songs/katty/teardrops on my guitar.mp3",
+                "image_path": "../images/katty/taylor_swift.jpg"
+            },
+
+            {
+                "song": "Never be me",
+                "artist": "Miley Cyrus",
+                "song_path": "../songs/katty/never be me.mp3",
+                "image_path": "../images/katty/miley_cyrus.jpg"
+            },
+
+            {
+                "song": "Born without a heart",
+                "artist": "Faozia",
+                "song_path": "../songs/katty/born without a heart.mp3",
+                "image_path": "../images/katty/faozia.jpg"
+            },
+
+            {
+                "song": "Try",
+                "artist": "P!nk",
+                "song_path": "../songs/katty/try.mp3",
+                "image_path": "../images/katty/pink.jpg"
+            },
+
+            {
+                "song": "Dance in the dark",
+                "artist": "Au/Ra",
+                "song_path": "../songs/katty/dance in the dark.mp3",
+                "image_path": "../images/katty/aura.jpg"
+            },
+
+            {
+                "song": "Reasons to stay",
+                "artist": "Kate Vogel",
+                "song_path": "../songs/katty/reasons to stay.mp3",
+                "image_path": "../images/katty/kate_vogel.jpg"
+            },
+
+            {
+                "song": "Torn",
+                "artist": "cover by Dave Winkler",
+                "song_path": "../songs/katty/torn.mp3",
+                "image_path": "../images/katty/dave_winkler.jpg"
+            },
+
+            {
+                "song": "When we're high",
+                "artist": "LP",
+                "song_path": "../songs/katty/when we're high.mp3",
+                "image_path": "../images/katty/lp.jpg"
+            },
+
+            {
+                "song": "Ice In My Rosé",
+                "artist": "Aisha Dee",
+                "song_path": "../songs/katty/Ice In My Rosé.mp3",
+                "image_path": "../images/katty/aisha_dee.jpg"
+            },
+
+            {
+                "song": "Falling like the stars",
+                "artist": "James Arthur",
+                "song_path": "../songs/katty/falling like the stars.mp3",
+                "image_path": "../images/katty/james_arthur.jpg"
+            },
+
+            {
+                "song": "Angels like you",
+                "artist": "Miley Cyrus",
+                "song_path": "../songs/katty/angels like you.mp3",
+                "image_path": "../images/katty/miley_cyrus.jpg"
+            },
+
+            {
+                "song": "The fixer",
+                "artist": "Brent Morgan",
+                "song_path": "../songs/katty/the fixer.mp3",
+                "image_path": "../images/katty/brent_morgan.jpg"
+            }
+        ],
+
+    "school":
+        [
+            {
+                "song": "Colegiul 'Mihai Viteazul'",
+                "artist": "Imnul CMV",
+                "song_path": "../songs/scoala/cmv.mp3"
+            }, 
+
+            {
+                "song": "Call me maybe",
+                "artist": "Carly Rae Jepsen",
+                "song_path": "../songs/scoala/call me maybe.mp3"
+            }, 
+
+            {
+                "song": "Can't hold us",
+                "artist": "Macklemore & Ryan Lewis",
+                "song_path": "../songs/scoala/cant hold us.mp3"
+            },
+
+            {
+                "song": "Dance monkey",
+                "artist": "Tones & I",
+                "song_path": "../songs/scoala/dance monkey.mp3"
+            },
+
+            {
+                "song": "Danza kuduro",
+                "artist": "Don Omar",
+                "song_path": "../songs/danza juduro.mp3"
+            }, 
+
+            {
+                "song": "Despacito",
+                "artist": "Luis Fonsi",
+                "song_path": "../songs/scoala/despacito.mp3"
+            }, 
+
+            {
+                "song": "Echame la pulpa",
+                "artist": "Demi Lovato & Luis Fonsi",
+                "song_path": "../songs/scoala/echme la pulpa.mp3"
+            },  
+
+            {
+                "song": "Hips don't lie",
+                "artist": "Shakira",
+                "song_path": "../songs/scoala/hips don't lie"
+            }, 
+
+            {
+                "song": "Iarna pe val",
+                "artist": "Cabron, What's up & Jon Baiat Bun",
+                "song_path": "../songs/scoala/iarna pe val.mp3"
+            }, 
+
+            {
+                "song": "It's my life",
+                "artist": "Bon Jovi",
+                "song_path": "../songs/scoala/its my life.mp3"
+            }, 
+
+            {
+                "song": "Makeba",
+                "artist": "Jain",
+                "song_path": "../songs/scoala/makeba.mp3"
+            },
+
+            {
+                "song": "One more night",
+                "artist": "Maroon 5",
+                "song_path": "../songs/scoala/one more night.mp3"
+            },  
+
+            {
+                "song": "Oops.. I did it again",
+                "artist": "Britney Spears",
+                "song_path": "../songs/scoala/oops i did it again.mp3"
+            }, 
+
+            {
+                "song": "Perfect fara tine",
+                "artist": "Vama Veche",
+                "song_path": "../songs/scoala/perfect fara tine.mp3"
+            },  
+
+            {
+                "song": "Rockabye",
+                "artist": "Clean Bandit",
+                "song_path": "../songs/scoala/rockabye.mp3"
+            }, 
+
+            {
+                "song": "Rolling in the deep",
+                "artist": "Adela",
+                "song_path": "../songs/scoala/rolling in the deep.mp3"
+            },  
+
+            {
+                "song": "Sa nu-mi iei niciodata dragostea",
+                "artist": "Holograf",
+                "song_path": "../songs/scoala/sa nu'mi iei dragostea.mp3"
+            },  
+
+            {
+                "song": "Shallow",
+                "artist": "Lady Gaga & Bradley Cooper",
+                "song_path": "../songs/scoala/shallow.mp3"
+            },  
+
+            {
+                "song": "Smells like teen spirit",
+                "artist": "Nirvana",
+                "song_path": "../songs/scoala/smells like teen spirit.mp3"
+            }, 
+
+            {
+                "song": "Thumbs",
+                "artist": "Sabrina Carpenter",
+                "song_path": "../songs/scoala/thumbs.mp3"
+            },
+
+            {
+                "song": "Waka waka",
+                "artist": "Shakira",
+                "song_path": "../songs/scoala/waka waka.mp3"
+            },
+
+            {
+                "song": "Wake me up",
+                "artist": "Avicii",
+                "song_path": "../songs/scoala/wake me up.mp3"
+            }
+        ],
+
+    "studying":
+        [
+            {
+                "song": "Always you",
+                "song_path": "../songs/studying/always you.mp3"
+            },
+
+            {
+                "song": "Angel baby",
+                "song_path": "../songs/studying/angel baby.mp3"
+            },
+
+            {
+                "song": "Demons x Jar of Hearts",
+                "song_path": "../songs/studying/demons x jar of hearts.mp3"
+            },
+
+            {
+                "song": "Doing fine",
+                "song_path": "../songs/studying/doing fine.mp3"
+            },
+
+            {
+                "song": "Holding Hands",
+                "song_path": "../songs/studying/holding hands.mp3"
+            },
+
+            {
+                "song": "Human",
+                "song_path": "../songs/studying/human.mp3"
+            },
+
+            {
+                "song": "I don't know anything about love",
+                "song_path": "../songs/studying/i don't know anything about love.mp3"
+            },
+
+            {
+                "song": "When you're near",
+                "song_path": "../songs/studying/when you're near.mp3"
+            },
+
+            {
+                "song": "Won't leave you behind",
+                "song_path": "../songs/studying/won't leave you behind"
+            }
+        ]
+}
