@@ -114,7 +114,7 @@ audio {
 
 .container {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -321,7 +321,7 @@ audio {
 }
 
 .songs-div .songs-ul:last-child {
-    margin-top: 15px;
+    margin-bottom: 30px;
 }
 .songs-div #hide-songs, .playlists #hide-playlists {
     position: absolute;
@@ -470,6 +470,11 @@ audio {
     .show-songs, .playlists {
         height: 88vh;
         width: 200px;
+    }
+
+    .container {
+        top: 20%;
+        /* transform: translateY(-50%) translateX(-50%); */
     }
 }
 
