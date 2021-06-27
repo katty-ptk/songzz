@@ -138,7 +138,7 @@
 
             // show songs
             const songs_div = document.createElement('div');
-            container.parentNode.appendChild(songs_div);
+            document.querySelector("main").appendChild(songs_div);
             songs_div.setAttribute('class', 'songs-div');
             let songs_array = [];
             songs_div.style.display = "none";
@@ -167,6 +167,17 @@
 
             show_songs_btn.addEventListener('click', function(){
                     songs_div.style.display = "block";
+
+                    if ( document.querySelector(".lyrics-container").style.display != "none" ) {
+                        if ( playlists_div.style.display != "none" ) {
+                            playlists_div.style.display = "none";
+                            show_playlists_btn.style.display = "block";
+                        }
+                        songs_div.style.left = "0px";
+                    } else {
+                        songs_div.style.float = "right";
+                    }
+        
                     songs_div.classList.remove('hide-songs');
                     songs_div.classList.add('show-songs');
                     show_songs_btn.style.display = "none";
@@ -174,7 +185,7 @@
                     hide_songs_btn.title = "hide songs";
                     hide_songs_btn.textContent = "X";
                     songs_div.appendChild(hide_songs_btn);
-                    hide_songs_btn.setAttribute('id', 'hide-songs');
+                    hide_songs_btn.setAttribute('id', 'hide-songs');  
 
                     hide_songs_btn.addEventListener('click', function() {
                         // songs_div.style.display = "none";
@@ -187,6 +198,12 @@
             // show playlists
             show_playlists_btn.addEventListener('click', function() {
                 playlists_div.style.display = "block";
+
+                if ( songs_div.style.display != "none" && songs_div.style.left == "0px" ) {
+                    songs_div.style.display = "none";
+                    show_songs_btn.style.display = "block";
+                }
+
                 playlists_div.classList.remove('hide-playlists');
                 playlists_div.classList.add('show-playlists');
                 show_playlists_btn.style.display = "none";
@@ -226,12 +243,15 @@
 
                 songs_array[current_song_index].style.color = "rgb(214, 127, 127)";
                 $(songs_array).not(songs_array[current_song_index]).css("color", "#d3d3d3");
+
+                document.querySelector("#next-song").addEventListener('click', nextSong);
+                document.querySelector("#previous-song").addEventListener('click', previousSong);
+                document.querySelector("#randomSong").addEventListener('click', randomSong);
+                document.querySelector("#shuffle").addEventListener('click', shuffle);
             }   
 
             // go to next song
-            $("#next-song").click( () => {
-                song_image.classList.toggle('rotate');
-
+            function nextSong() {
                 current_song_index++;
                 next_song_index = current_song_index + 1;
         
@@ -250,10 +270,10 @@
         
                 updatePlayer();
                 togglePlayPause();        
-            });
+            }
 
             // go to previous song
-            $("#previous-song").click( () => {
+            function previousSong() {
                 song_image.classList.toggle('rotate');
                 current_song_index--;
                 previous_song_index = current_song_index + 1;
@@ -269,10 +289,9 @@
 
                 updatePlayer();
                 togglePlayPause();
-            });
+            }
 
             // random song
-            $("#randomSong").click(randomSong);
             function randomSong(e) {
                 song = songs_array[Math.floor(Math.random() * songs_array.length)];     // randomly chooses a song
                 current_song_index = songs_array.indexOf(song);     // the random song becomes the playing one
@@ -281,8 +300,8 @@
             }
 
             // shuffle
-            const shuffle_btn = document.getElementById('shuffle');
-            $("#shuffle").click( () => {
+            function shuffle() {
+                shuffle_btn = document.querySelector("#shuffle");
                 if (shuffle_btn.classList.contains('shuffle-off')) {
                     shuffle_btn.classList.remove('shuffle-off');
                     shuffle_btn.classList.add('shuffle-on');
@@ -295,7 +314,7 @@
                     updatePlayer();
                     return;
                 }
-            });
+            }
 
 
             // playlists
