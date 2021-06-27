@@ -28,6 +28,8 @@
                 <button id="stop-timer" onclick="resetTimer()" title="reset timer">&#9632;</button>    
             </div>
         </div>
+
+        <button id="lyrics-btn">Lyrics</button>
         
         <button id="show-playlists-btn" title="show playlists">&#8411;</button>
         <span></span> <!-- the pink line-->
@@ -38,37 +40,73 @@
             <ul id="playlists-ul"></ul>
         </div>
 
-        <div class="container">
-            <div class="info">
-                <audio controls id="audio" onended="nextSong()"></audio>
-                <img src="" alt="song's image" class="song-image">
-                <h2 class="song-title"></h2>
-                <p class="song-artist"></p>    
+        <div class="main">
+            <div class="container">
+                <div class="info">
+                    <audio controls id="audio" onended="nextSong()"></audio>
+                    <img src="" alt="song's image" class="song-image">
+                    <h2 class="song-title"></h2>
+                    <p class="song-artist"></p>    
+                </div>
+    
+                <input id="slider" type="range" min="0" max="100" value="0" role="slider" onchange="change_currentTime()">
+    
+                <div class="actions">
+                    <button class="action-btn" id="previous-song" title="previous song">&#8249;&#8249;</button>
+                    <button class="action-btn" id="play-song" title="play" onclick="togglePlayPause()">&#9658;</button>
+                    <button class="action-btn" id="next-song" title="next song">&#8250;&#8250;</button>
+                    <button class="action-btn" id="more-actions-btn" title="more actions">&#10549;</button>
+                    <div class="more-actions-div" id="more-actions">
+                        <button class="action-btn shuffle-off" id="shuffle" title="shuffle off">⮂</button>
+                        <button class="action-btn repeat-off" id="repeat" title="repeat off">🗘</button>
+                        <button class="action-btn" id="backwards" title="backwards">&#10226;</button>
+                        <button class="action-btn" id="forwards" title="forwards">&#10227;</button>
+                        <button id="show-volume" title="volume" onclick="mute()">🔊</button>
+                        <input type="range" id="volume-controller">  
+                        <button class="action-btn" id="randomSong" title="random song">&#127922;</button>
+                    </div>  
+                </div>
             </div>
-
-            <input id="slider" type="range" min="0" max="100" value="0" role="slider" onchange="change_currentTime()">
-
-            <div class="actions">
-                <button class="action-btn" id="previous-song" title="previous song">&#8249;&#8249;</button>
-                <button class="action-btn" id="play-song" title="play" onclick="togglePlayPause()">&#9658;</button>
-                <button class="action-btn" id="next-song" title="next song">&#8250;&#8250;</button>
-                <button class="action-btn" id="more-actions-btn" title="more actions">&#10549;</button>
-                <div class="more-actions-div" id="more-actions">
-                    <button class="action-btn shuffle-off" id="shuffle" title="shuffle off">⮂</button>
-                    <button class="action-btn repeat-off" id="repeat" title="repeat off">🗘</button>
-                    <button class="action-btn" id="backwards" title="backwards">&#10226;</button>
-                    <button class="action-btn" id="forwards" title="forwards">&#10227;</button>
-                    <button id="show-volume" title="volume" onclick="mute()">🔊</button>
-                    <input type="range" id="volume-controller">  
-                    <button class="action-btn" id="randomSong" title="random song">&#127922;</button>
-                </div>  
+    
+            <div class="lyrics-container">
+                <button id="hide-lyrics">X</button>
+                <h2>Lyrics</h2>
+    
+                <div class="lyrics">
+                    <p>This will be a verse</p>
+                    <p>Of the song</p>
+                    <p> That will be playing</p>
+                    <p>On the app</p>
+                    <p>And this will be the last</p>
+                    <br>
+                    <p>This will be another stanza</p>
+                    <p>And the second verse of it</p>
+                    <p>Also, I am bored</p>
+                    <p>And sick of this</p>
+                    <p>The end</p>    
+                    <p>This will be another stanza</p>
+                    <p>And the second verse of it</p>
+                    <p>Also, I am bored</p>
+                    <p>And sick of this</p>
+                    <p>The end</p>    
+                    <p>This will be another stanza</p>
+                    <p>And the second verse of it</p>
+                    <p>Also, I am bored</p>
+                    <p>And sick of this</p>
+                    <p>The end</p>    
+                    <p>This will be another stanza</p>
+                    <p>And the second verse of it</p>
+                    <p>Also, I am bored</p>
+                    <p>And sick of this</p>
+                    <p>The end</p>    
+                </div>
             </div>
         </div>
     </main>
 
-    <script src="javascript/playlists.json"></script>
+    <script src="./javascript/playlists.json"></script>
     <script src="./javascript/player.js"></script>
     <script src="./javascript/timer.js"></script>
-
+    <script src="./javascript/lyrics.js"></script>
 </body>
 </html>
