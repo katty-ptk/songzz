@@ -38,6 +38,80 @@
         }
     }
 
+    // control volume
+    show_volume.addEventListener('mouseover', function(){
+        volume_controller.style.display = "block";
+    
+        volume_controller.addEventListener('change', function(e){
+                audio.volume = e.currentTarget.value / 100;
+    
+                if ( audio.volume == 0 ) {
+                    show_volume.textContent = "❌";
+                } else {
+                    show_volume.textContent = "🔊";
+                }
+            });
+        });
+    
+    // more actions
+    const more_actions_btn = document.getElementById('more-actions-btn');
+    const more_actions_div = document.getElementById('more-actions');
+    more_actions_btn.addEventListener('click', function() {
+
+    if ( more_actions_div.classList.contains('more-actions-div') ) {
+        more_actions_div.classList.remove('more-actions-div');
+        more_actions_div.classList.remove('hide-more-actions');
+        more_actions_div.classList.add('show-more-actions');
+        more_actions_btn.style.transform = "rotate(180deg)";
+        more_actions_btn.style.top = "0px";
+        more_actions_btn.title = "hide more actions";
+    } else {
+        more_actions_div.classList.remove('show-more-actions');
+        more_actions_div.classList.add('more-actions-div');
+        more_actions_div.classList.add('hide-more-actions');
+        more_actions_btn.style.transform = "rotate(360deg)";
+        more_actions_btn.style.top = "13px";
+        more_actions_btn.title = "more actions";
+     }
+    });
+
+    // repeat song
+    let will_repeat = false;
+    const repeat_btn = document.getElementById('repeat');
+    function repeat() {
+        if ( !will_repeat ) {
+            audio.addEventListener('ended', function() {
+                current_song_index += 1;
+                updatePlayer();
+                togglePlayPause();
+            });
+        } else {
+            audio.addEventListener('ended', function () {
+                current_song_index -= 1;
+                updatePlayer();
+                togglePlayPause();
+            });    
+        }
+    }
+                
+    $("#repeat").click( () => {
+        if ( will_repeat == false ) {
+            will_repeat = true;
+            repeat_btn.classList.remove('repeat-off');
+            repeat_btn.classList.add('repeat-on');
+            repeat_btn.title = "repeat on";
+            repeat();
+        } else {
+            will_repeat = false;
+            repeat_btn.classList.remove('repeat-on');
+            repeat_btn.classList.add('repeat-off');
+            repeat_btn.title = "repeat is off";
+            repeat();
+        }
+    });
+    
+        
+
     fetch ( '../javascript/playlists.json' )
         .then ( response => response.json() )
         .then( all_playlists => {
@@ -133,8 +207,6 @@
             initPlay();
 
             // functions
-
-
             function initPlay() {
                 current_song_index = 0;     // first song
                 next_song_index = current_song_index + 1;
@@ -147,18 +219,19 @@
 
                 song_image.src = song.image_path;
                 song_title.innerText = song.song;
+
                 song_artist.innerText = song.artist;
                 audio.src = song.song_path;
                 document.title = `playing: ${song.song}`;
 
                 songs_array[current_song_index].style.color = "rgb(214, 127, 127)";
                 $(songs_array).not(songs_array[current_song_index]).css("color", "#d3d3d3");
-
-                timer = setInterval(range_slider, 1000);
-            }
+            }   
 
             // go to next song
             $("#next-song").click( () => {
+                song_image.classList.toggle('rotate');
+
                 current_song_index++;
                 next_song_index = current_song_index + 1;
         
@@ -181,6 +254,7 @@
 
             // go to previous song
             $("#previous-song").click( () => {
+                song_image.classList.toggle('rotate');
                 current_song_index--;
                 previous_song_index = current_song_index + 1;
 
@@ -197,112 +271,8 @@
                 togglePlayPause();
             });
 
-            // more actions
-            const more_actions_btn = document.getElementById('more-actions-btn');
-            const more_actions_div = document.getElementById('more-actions');
-            more_actions_btn.addEventListener('click', function() {
-                if ( more_actions_div.classList.contains('more-actions-div') ) {
-                    more_actions_div.classList.remove('more-actions-div');
-                    more_actions_div.classList.remove('hide-more-actions');
-                    more_actions_div.classList.add('show-more-actions');
-                    more_actions_btn.style.transform = "rotate(180deg)";
-                    more_actions_btn.style.top = "0px";
-                    more_actions_btn.title = "hide more actions";
-                } else {
-                    more_actions_div.classList.remove('show-more-actions');
-                    more_actions_div.classList.add('more-actions-div');
-                    more_actions_div.classList.add('hide-more-actions');
-                    more_actions_btn.style.transform = "rotate(360deg)";
-                    more_actions_btn.style.top = "13px";
-                    more_actions_btn.title = "more actions";
-                }
-            });
-
-            // control volume
-            show_volume.addEventListener('mouseover', function(){
-                volume_controller.style.display = "block";
-
-                volume_controller.addEventListener('change', function(e){
-                    audio.volume = e.currentTarget.value / 100;
-
-                    if ( audio.volume == 0 ) {
-                        show_volume.textContent = "❌";
-                    } else {
-                        show_volume.textContent = "🔊";
-                    }
-                });
-
-                if ( songs_div.style.height <= '400px' ) {
-                    volume_controller.style.transform = "rotate(360deg)";
-                    volume_controller.style.top = "50px";
-                    volume_controller.style.left = "290px";
-                }
-            });
-
-            // mute with click
-            function mute(e) {
-                if ( audio.volume != 0 ) {
-                    audio.volume = 0;
-                    show_volume.innerHTML = "&#128263;";
-                    show_volume.title = "muted";
-                } else {
-                    audio.volume = 1;
-                    show_volume.textContent = "🔊";
-                    show_volume.title = "volume";
-                }
-            }
-
-            volume_controller.addEventListener('mouseleave', function() {
-                volume_controller.style.display = "none";
-            });
-
-
-            // backward / forward
-            let interval;
-            $('#forwards').mousedown(function(event) {
-                audio.pause();
-                interval = setInterval(() => {
-                    audio.currentTime += 10;   // increases current time
-                }, 50);
-                togglePlayPause();
-                // audio.play();
-                // console.log(audio.currentTime);
-            }).mouseup(function() {
-                clearInterval(interval);
-                audio.play();
-            });
-
-            $('#backwards').mousedown( function() {
-                audio.pause();
-                interval = setInterval(() => {
-                    audio.currentTime -= 10; // decreases current time
-                }, 50);
-            }).mouseup( function() {
-                clearInterval(interval);
-                togglePlayPause();
-                // audio.play();
-            });
-
-            // slider
-            let slider_position;
-            const slider = document.getElementById('slider');
-
-            function change_currentTime() {
-                slider_position = audio.duration * ( slider.value / 100 );
-                audio.currentTime = slider_position;
-            }
-
-            function range_slider() {
-                let position = 0;
-
-                if ( !isNaN( audio.duration ) ) {
-                    position = audio.currentTime * ( 100 / audio.duration );
-                    slider.value = position;
-                }
-            }
-
-
             // random song
+            $("#randomSong").click(randomSong);
             function randomSong(e) {
                 song = songs_array[Math.floor(Math.random() * songs_array.length)];     // randomly chooses a song
                 current_song_index = songs_array.indexOf(song);     // the random song becomes the playing one
@@ -310,10 +280,9 @@
                 togglePlayPause();  // the song plays automatically
             }
 
-
             // shuffle
             const shuffle_btn = document.getElementById('shuffle');
-            function shuffle() {
+            $("#shuffle").click( () => {
                 if (shuffle_btn.classList.contains('shuffle-off')) {
                     shuffle_btn.classList.remove('shuffle-off');
                     shuffle_btn.classList.add('shuffle-on');
@@ -326,41 +295,8 @@
                     updatePlayer();
                     return;
                 }
-            }
+            });
 
-            // repeat song
-            let will_repeat = false;
-            const repeat_btn = document.getElementById('repeat');
-            function repeat() {
-                if ( !will_repeat ) {
-                    audio.addEventListener('ended', function() {
-                        current_song_index += 1;
-                        updatePlayer();
-                        togglePlayPause();
-                    });
-                } else {
-                    audio.addEventListener('ended', function () {
-                        current_song_index -= 1;
-                        updatePlayer();
-                        togglePlayPause();
-                    });    
-                }
-            }
-            function repeatSong() {
-                if ( will_repeat == false ) {
-                    repeat_btn.classList.remove('repeat-off');
-                    repeat_btn.classList.add('repeat-on');
-                    repeat_btn.title = "repeat on";
-                    will_repeat = true;
-                    repeat();
-                } else {
-                    will_repeat = false;
-                    repeat_btn.classList.remove('repeat-on');
-                    repeat_btn.classList.add('repeat-off');
-                    repeat_btn.title = "repeat is off";
-                    repeat();
-                }
-            }
 
             // playlists
             let playlists = [
@@ -431,6 +367,7 @@
                 updatePlayer();
                 togglePlayPause();
             }
+          
         })
         .catch ( error => {
             console.log( "found error :/" );

@@ -8,6 +8,7 @@ body {
     overflow: hidden;
 }
 
+
 /* HEADER */
 header {
     width: 100%;
@@ -123,7 +124,9 @@ audio {
 .container .song-image {
     width: 150px;
     border-radius: 50px 0;
+    transition: all 0.2s ease;
 }
+
 
 .container .info {
     color: rgb(197, 191, 191);
