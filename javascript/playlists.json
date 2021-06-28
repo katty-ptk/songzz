@@ -132,21 +132,7 @@
                 "song": "Feel so close",
                 "artist": "Calvin Harris",
                 "song_path": "../songs/katty/feel so close.mp3",
-                "image_path": "../images/katty/calmin_harris.jpg",
-                "lyrics": [
-                    "I feel so close to you right now, it's like a force field",
-                    "I wear my heart upon my sleeve, like a big deal",
-                    "Your love pours down on me surround me like a waterfall",
-                    "And there's no stopping us right now, I feel so close to you right now",
-                    " ",
-                    "I feel so close to you right now, it's like a force field",
-                    "I wear my heart upon my sleeve, like a big deal",
-                    "Your love pours down on me surround me like a waterfall",
-                    "And there's no stopping us right now, I feel so close to you right now",
-                    " ",
-                    "And there's no stopping us right now x3",
-                    "I feel so close to you right now."
-                ]   
+                "image_path": "../images/katty/calmin_harris.jpg"
             },
 
             {
@@ -158,7 +144,7 @@
 
             {
                 "song": "Scars to your beautiful",
-                "artist": "Alessia CAra",
+                "artist": "Alessia Cara",
                 "song_path": "../songs/katty/scars to your beautiful.mp3",
                 "image_path": "../images/katty/alessia_cara.jpg"
             },

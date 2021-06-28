@@ -143,8 +143,10 @@ audio {
 .container {
     width: 60%;
     margin-left: 0px;
-    margin-top: 30%;
-    transform: translateY(-25%);
+    margin-top: 0%;
+    transform: translateY(0%);
+    position: relative;
+    /* float: left; */
     /* border-right: 1px solid coral; */
 }
 
@@ -328,7 +330,7 @@ audio {
 }
 
 .lyrics-container .lyrics {
-    /* font-size: 18px; */
+    font-size: 18px;
     margin-top: 20px;
     font-weight: bold;
 }
