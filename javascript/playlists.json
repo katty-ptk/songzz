@@ -2,11 +2,174 @@
     "katty":
         [
             {
-                "song": "A-O-K",
-                "artist": "Tai Verdes",
-                "song_path": "../songs/katty/aok.mp3",
-                "image_path": "../images/katty/tai_verdes.jpg"
+                "song": "Too close",
+                "artist": "Alex Clare",
+                "song_path": "../songs/katty/too_close.mp3",
+                "image_path": "../images/katty/alex_clare.jpg",
+                "lyrics": [
+                    "You know I'm not one to break promises",
+                    "I don't want to hurt you, but I need to breathe",
+                    "At the end of it all, you're still my best friend",
+                    "But there's something inside that I need to release",
+                    "Which way is right, which way is wrong",
+                    "How do I say that I need to move on",
+                    "You know we're headed separated ways",
+                    " ",
+                    "And it feels like I am just to close to love you",
+                    "There's nothing I can really say",
+                    "I can't lie no more, I can't hide no more",
+                    "Got to be true to myself",
+                    "And it feels like I am just to close to love you",
+                    "So I'll be on my way",
+                    " ",
+                    "You gave me more than I can return",
+                    "Yet there's so much that you deserve",
+                    "Nothing to say, nothing to do,",
+                    "I've nothing to give",
+                    "I must leave without you",
+                    " ",
+                    "You know we're headed separated ways",
+                    " ",
+                    "And it feels like I am just to close to love you",
+                    "There's nothing I can really say",
+                    "I can't lie no more, I can't hide no more",
+                    "Got to be true to myself",
+                    "And it feels like I just to close to love you",
+                    "So I'll be on my way"
+                ]
             },
+
+            {
+                "song": "Us",
+                "artist": "James Bay",
+                "song_path": "../songs/katty/us.mp3",
+                "image_path": "../images/katty/james_bay.jpg",
+                "lyrics": [
+                    "Sometimes I'm beaten",
+                    "Sometimes I'm broken",
+                    "'Cause sometimes this is nothing but smoke",
+                    "Is there a secret?",
+                    "Is there a code?",
+                    "Can we make it better?",
+                    "'Cause I'm losing hope",
+                    " ",
+                    "Tell me how to be in this world",
+                    "Tell me how to breathe in and feel no hurt",
+                    "Tell me how could I believe in something",
+                    "I believe in us",
+                    " ",
+                    "After the wreckage",
+                    "After the dust",
+                    "I still hear the howling, I still feel the rush",
+                    "Over the riots, above all the noise",
+                    "Through all the worry, I still hear your voice",
+                    " ",
+                    "So, tell me how to be in this world",
+                    "Tell me how to breathe in and feel no hurt",
+                    "Tell me how 'cause I believe in something",
+                    "I believe in us",
+                    "Tell me when the light goes out",
+                    "That even in the dark we will find a way out",
+                    "Tell me how 'cause I believe in something",
+                    "I believe in us",
+                    " ",
+                    "Used to be kids living just for kicks",
+                    "In cinema seats, learning how to kiss",
+                    "Running through streets that were painted gold",
+                    "We never believed we'd grow up like this",
+                    " ",
+                    "So tell me how to be in this world",
+                    "Tell me how to breathe in and feel no hurt",
+                    "Tell me how 'cause I believe in something",
+                    "I believe in us",
+                    "Tell me when the light goes out",
+                    "That even in the dark we find a way out",
+                    "Tell me now 'cause I believe in something",
+                    "I believe in us",
+                    "I believe in someething",
+                    "And I believe in us."
+                ]
+            },
+
+            {
+                "song": "She used to be mine",
+                "artist": "Sara Bareilles",
+                "song_path": "../songs/katty/she used to be mine.mp3",
+                "image_path": "../images/katty/sara.jpg",
+                "lyrics": [
+                    "It's not simple to say",
+                    "Most days I don't recognize me",
+                    "These shoes and this apron",
+                    "That place and its patrons",
+                    "Have taken more than I gave 'em",
+                    "It's not easy to know",
+                    "I'm not anything like I used to be",
+                    "Although it's true",
+                    "I was never attention sweet center",
+                    "I still remember that girl",
+                    " ",
+                    "She's imperfect, but she tries",
+                    "She is good, but she lies",
+                    "She is hard on herself and won't ask for help",
+                    "She is messy, but she's kind",
+                    "She is lonely most of the time",
+                    "She is all of this mixed up",
+                    "And baked in a beautiful pie",
+                    " ",
+                    "She is gone, but she used to be mine",
+                    " ",
+                    "It's not what I asked for",
+                    "Sometimes life just slips in through a back door",
+                    "And carves out a person",
+                    "And makes you believe it's true",
+                    "And now I've got you",
+                    "And you're not what I asked for",
+                    "If I'm honest, I know I would give it all."
+                ]
+            },
+
+            {
+                "song": "Feel so close",
+                "artist": "Calvin Harris",
+                "song_path": "../songs/katty/feel so close.mp3",
+                "image_path": "../images/katty/calmin_harris.jpg",
+                "lyrics": [
+                    "I feel so close to you right now, it's like a force field",
+                    "I wear my heart upon my sleeve, like a big deal",
+                    "Your love pours down on me surround me like a waterfall",
+                    "And there's no stopping us right now, I feel so close to you right now",
+                    " ",
+                    "I feel so close to you right now, it's like a force field",
+                    "I wear my heart upon my sleeve, like a big deal",
+                    "Your love pours down on me surround me like a waterfall",
+                    "And there's no stopping us right now, I feel so close to you right now",
+                    " ",
+                    "And there's no stopping us right now x3",
+                    "I feel so close to you right now."
+                ]   
+            },
+
+            {
+                "song": "Main girl",
+                "artist": "Charlotte Cardin",
+                "song_path": "../songs/katty/main girl.mp3",
+                "image_path": "../images/katty/charlotte_cardin.jpg"
+            },
+
+            {
+                "song": "Scars to your beautiful",
+                "artist": "Alessia CAra",
+                "song_path": "../songs/katty/scars to your beautiful.mp3",
+                "image_path": "../images/katty/alessia_cara.jpg"
+            },
+
+            {
+                "song": "Anyone who loves me",
+                "artist": "Charlotte Cardin",
+                "song_path": "../songs/katty/anyone who loves me.mp3",
+                "image_path": "../images/katty/charlotte_cardin.jpg"
+            },
+
 
             {
                 "song": "Sweet baby",
@@ -34,6 +197,13 @@
                 "artist": "David Dunn",
                 "song_path": "../songs/katty/ready to be myself.mp3",
                 "image_path": "../images/katty/david_dunn.jpg"
+            },
+
+            {
+                "song": "Paradise Motion",
+                "artist": "Charlotte Cardin",
+                "song_path": "../songs/katty/paradise motion.mp3",
+                "image_path": "../images/katty/charlotte_cardin.jpg"
             },
 
             {

@@ -303,14 +303,15 @@ audio {
 .lyrics-container {
     overflow: auto;
     text-align: center;
-    line-height: 40px;
+    line-height: 30px;
     padding-bottom: 30px;
 
     width: 40%;
-    height: 80%;
+    height: 77%;
     margin-top: 80px;
     border: 1px solid #ccc;
     border-radius: 50px;
+    box-shadow: 5px 5px 10px rgb(68, 67, 67);
     position: relative;
 }
 
@@ -320,13 +321,14 @@ audio {
 }
 
 .lyrics-container::-webkit-scrollbar-thumb {
+    visibility: hidden;
     height: 10%;
     border-radius: 50px;
     background-color: #ccc;
 }
 
 .lyrics-container .lyrics {
-    font-size: 18px;
+    /* font-size: 18px; */
     margin-top: 20px;
     font-weight: bold;
 }
