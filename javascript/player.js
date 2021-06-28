@@ -110,7 +110,50 @@
         }
     });
     
-        
+    
+        // backward / forward
+        let interval;
+        $('#forwards').mousedown(function(event) {
+            audio.pause();
+            interval = setInterval(() => {
+                audio.currentTime += 10;   // increases current time
+            }, 50);
+            togglePlayPause();
+        }).mouseup(function() {
+            clearInterval(interval);
+            audio.play();
+        });
+
+        $('#backwards').mousedown( function() {
+            audio.pause();
+            interval = setInterval(() => {
+                audio.currentTime -= 10; // decreases current time
+            }, 50);
+        }).mouseup( function() {
+            clearInterval(interval);
+            togglePlayPause();
+            // audio.play();
+        });
+
+        // slider
+        let slider_position;
+        const slider = document.getElementById('slider');
+        slider.addEventListener('change', change_currentTime);
+
+        function change_currentTime() {
+            slider_position = audio.duration * ( slider.value / 100 );
+            audio.currentTime = slider_position;
+        }
+
+        function range_slider() {
+            let position = 0;
+
+            if ( !isNaN( audio.duration ) ) {
+                position = audio.currentTime * ( 100 / audio.duration );
+                slider.value = position;
+            }
+        }
+
 
     fetch ( '../javascript/playlists.json' )
         .then ( response => response.json() )
@@ -324,7 +367,6 @@
                 }
             }
 
-
             // playlists
             let playlists = [
                 'Katty',
@@ -410,6 +452,11 @@
             });          
 
             function lyrics() {
+                if ( !katty[current_song_index].lyrics ) {
+                    console.log( `"${katty[current_song_index].song}"  does not have any lyrics`);
+                    document.querySelector(".lyrics").innerHTML = "<p>This song does not have any lyrics to show.";
+                    return;
+                }
                 for ( let p = 0; p < katty[current_song_index].lyrics.length; p++ ) {
                     let lyric_p = document.createElement('p');
                     lyric_p.textContent = katty[current_song_index].lyrics[p];
