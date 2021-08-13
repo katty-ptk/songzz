@@ -180,13 +180,14 @@
     
 
             // show songs
-            const songs_div = document.createElement('div');
+            const songs_div = document.getElementById('songsDiv');
             document.querySelector("main").appendChild(songs_div);
             songs_div.setAttribute('class', 'songs-div');
             let songs_array = [];
             songs_div.style.display = "none";
             const playlists_div = document.getElementById('playlists-div');
             playlists_div.style.display = "none";    // playlists list
+             
 
             const songs_ul = document.createElement('ul');
             songs_ul.setAttribute('class', 'songs-ul');
@@ -210,21 +211,21 @@
 
             show_songs_btn.addEventListener('click', function(){
                     songs_div.style.display = "block";
-                    songs_div.style.borderLeft = "none";
                     songs_div.style.borderRight = "1px solid #6b6a6a";
-
+                    
                     // checking if the lyrics would be on top of the songs div
                     if ( document.querySelector(".lyrics-container").style.display != "none" ) {
                         // checking if the songs div and the playlist div would be on top of each other
                         if ( playlists_div.style.display != "none" ) {  
                             playlists_div.style.display = "none";
                             show_playlists_btn.style.display = "block";
+                            songs_div.style.borderLeft = "none";
                         }
                         songs_div.style.left = "0px";
                     } else {
                         songs_div.style.float = "right";
                     }
-        
+                    
                     songs_div.classList.remove('hide-songs');
                     songs_div.classList.add('show-songs');
                     show_songs_btn.style.display = "none";
@@ -233,7 +234,7 @@
                     hide_songs_btn.textContent = "X";
                     songs_div.appendChild(hide_songs_btn);
                     hide_songs_btn.setAttribute('id', 'hide-songs');  
-
+                    
                     hide_songs_btn.addEventListener('click', function() {
                         // songs_div.style.display = "none";
                         songs_div.classList.remove('show-songs');
