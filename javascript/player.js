@@ -196,45 +196,38 @@
             songs_div.appendChild(songs_ul);
             let el_index = 0;
             let el;
+            let searchResult;
+
+            searchResult = document.createElement('li');
 
             // SEARCHBAR
             const searchbar = document.getElementById('searchbar-input');
             searchbar.addEventListener('keypress', function(e) {
                 if ( e.keyCode == 13 || e.which == 13) {
-                    const searchString = e.target.value.toLowerCase();
-                    // console.log(searchString);
+                    songs_ul.style.display = "none";
+                    const searchString = e.target.value.toLowerCase(); 
+
                     filteredCharacters = songs_array.filter( searched => {
                        return searched.innerHTML.toLowerCase().includes(searchString);
-                    });
+                    }); // returns array of songs that contain the search
                     
-                    if ( filteredCharacters.length == 0 ) {
-                        console.log('no results for this search :/');
-                    } else {
-                        console.log(filteredCharacters[0].firstChild.textContent);
+                    const searchResultUl = document.createElement('ul');
+                    searchResultUl.setAttribute('class', 'songs-ul');
+                    songs_div.appendChild(searchResultUl);
+                    searchResultUl.appendChild(searchResult);
 
-                        // this is where the magic will finally happen
+                    if ( filteredCharacters.length == 0 ) { // if no results
+                        console.log(`No results for: "${searchString.to}" 😥`);
+                        searchResult.innerHTML = `No results for: "${searchString}" 😥`;  // a text is added to announce that there are no results
+                    } else {    // if there is at least one result
+                        searchResult.innerHTML = searchString;  // this adds a message with the inputted characters; needs to be the songs :)
                     }
 
                     searchbar.value = "";
-                    songs_ul.style.display = "none";
                 }     
             });
 
 
-            function showSongs(element) {
-                el = document.createElement('li');
-                el.setAttribute('class', 'song-li')
-                songs_ul.appendChild(el);
-                el.innerHTML = element.song;  // the title of the song
-                songs_array.push(el);
-                
-                el.addEventListener('click', function(){    // when a title of a song from the songs' div is clicked, that song will play
-                    current_song_index = songs_array.indexOf(this);  // "this" represents the clicked element
-                    updatePlayer();
-                    togglePlayPause();
-                    audio.play();
-                });
-            }
             
             songs.forEach( element => showSongs(element));
 
@@ -330,6 +323,22 @@
 
                 lyrics();
             }   
+
+            function showSongs(element) {
+                el = document.createElement('li');
+                el.setAttribute('class', 'song-li')
+                songs_ul.appendChild(el);
+                el.innerHTML = element.song;  // the title of the song
+                songs_array.push(el);
+                
+                el.addEventListener('click', function(){    // when a title of a song from the songs' div is clicked, that song will play
+                    current_song_index = songs_array.indexOf(this);  // "this" represents the clicked element
+                    updatePlayer();
+                    togglePlayPause();
+                    audio.play();
+                });
+            }
+
 
             // go to next song
             audio.addEventListener('ended', nextSong);
