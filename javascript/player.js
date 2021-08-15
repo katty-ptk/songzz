@@ -217,10 +217,18 @@
                     searchResultUl.appendChild(searchResult);
 
                     if ( filteredCharacters.length == 0 ) { // if no results
-                        console.log(`No results for: "${searchString.to}" 😥`);
+                        console.log(`No results for: "${searchString}" 😥`);
                         searchResult.innerHTML = `No results for: "${searchString}" 😥`;  // a text is added to announce that there are no results
                     } else {    // if there is at least one result
-                        searchResult.innerHTML = searchString;  // this adds a message with the inputted characters; needs to be the songs :)
+                        for ( let search_counter = 0; search_counter < filteredCharacters.length; search_counter++ ) {  // it goes through all the filtered songs
+                            if ( searchString == filteredCharacters[0].innerHTML.toLowerCase() ) {  // and if the searched song ( for now it needs to be searched by its full name ) matches the first item of that list, so basically the song name itself
+                                searchResult.innerHTML = filteredCharacters[0].innerHTML;   // then it is added to the screen
+
+                                // needs function to click the result
+                                    // THOUGHTS:
+                                        // it would go through all the song names and the song whose name matches the search would play on click
+                            }
+                        }
                     }
 
                     searchbar.value = "";
