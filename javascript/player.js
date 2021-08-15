@@ -1,8 +1,8 @@
     // grabs info
     const container = document.querySelector(".container");
-    const song_image = document.querySelector(".song-image");
-    const song_title = document.querySelector(".song-title");
-    const song_artist = document.querySelector(".song-artist");
+    let song_image = document.querySelector(".song-image");
+    let song_title = document.querySelector(".song-title");
+    let song_artist = document.querySelector(".song-artist");
 
     // grabs buttons
     const show_playlists_btn = document.getElementById('show-playlists-btn');
@@ -224,9 +224,31 @@
                             if ( searchString == filteredCharacters[0].innerHTML.toLowerCase() ) {  // and if the searched song ( for now it needs to be searched by its full name ) matches the first item of that list, so basically the song name itself
                                 searchResult.innerHTML = filteredCharacters[0].innerHTML;   // then it is added to the screen
 
-                                // needs function to click the result
-                                    // THOUGHTS:
-                                        // it would go through all the song names and the song whose name matches the search would play on click
+                                searchResult.addEventListener('click', function() {
+                                    for ( search_counter = 0; search_counter < songs.length; search_counter++ ) {
+                                        if ( searchString == songs[search_counter].song.toLowerCase() ) {
+                                            // console.log(songs[search_counter].song);
+                                            song_title.innerHTML = songs[search_counter].song;
+                                            song_image.src = songs[search_counter].image_path;
+                                            song_artist.innerText = songs[search_counter].artist;
+                                            audio.src = songs[search_counter].song_path;
+
+                                            togglePlayPause();
+                                            audio.play();
+
+                                            searchResultUl.style.display = "none";
+                                            songs_ul.style.display = "block";
+                                            songs_ul.firstChild.style.color = "rgb(197, 191, 191)";
+
+                                            for ( search_counter = 0; search_counter < songs_ul.children.length; search_counter++ ) {
+                                                if ( song_title.innerHTML == songs_ul.children[search_counter].innerHTML ) {
+                                                    songs_ul.children[search_counter].style.color = "rgb(214, 127, 127)";
+                                                    current_song_index = search_counter;
+                                                }
+                                            }
+                                        }
+                                    }
+                                });
                             }
                         }
                     }
