@@ -22,6 +22,8 @@
     let next_song_index;
     let timer;
 
+    let filteredCharacters;
+
     // functions
     function togglePlayPause() {
         if (audio.paused || audio.ended) {
@@ -187,27 +189,54 @@
             songs_div.style.display = "none";
             const playlists_div = document.getElementById('playlists-div');
             playlists_div.style.display = "none";    // playlists list
-             
-
+            
+            
             const songs_ul = document.createElement('ul');
             songs_ul.setAttribute('class', 'songs-ul');
             songs_div.appendChild(songs_ul);
             let el_index = 0;
             let el;
 
-            songs.forEach(function(element) {
-                el = document.createElement('li');
-                el.innerHTML = element.song;  // the title of the song
-                songs_ul.appendChild(el);
-                songs_array.push(el);
+            // SEARCHBAR
+            const searchbar = document.getElementById('searchbar-input');
+            searchbar.addEventListener('keypress', function(e) {
+                if ( e.keyCode == 13 || e.which == 13) {
+                    const searchString = e.target.value.toLowerCase();
+                    // console.log(searchString);
+                    filteredCharacters = songs_array.filter( searched => {
+                       return searched.innerHTML.toLowerCase().includes(searchString);
+                    });
+                    
+                    if ( filteredCharacters.length == 0 ) {
+                        console.log('no results for this search :/');
+                    } else {
+                        console.log(filteredCharacters[0].firstChild.textContent);
 
+                        // this is where the magic will finally happen
+                    }
+
+                    searchbar.value = "";
+                    songs_ul.style.display = "none";
+                }     
+            });
+
+
+            function showSongs(element) {
+                el = document.createElement('li');
+                el.setAttribute('class', 'song-li')
+                songs_ul.appendChild(el);
+                el.innerHTML = element.song;  // the title of the song
+                songs_array.push(el);
+                
                 el.addEventListener('click', function(){    // when a title of a song from the songs' div is clicked, that song will play
                     current_song_index = songs_array.indexOf(this);  // "this" represents the clicked element
                     updatePlayer();
                     togglePlayPause();
                     audio.play();
                 });
-            });
+            }
+            
+            songs.forEach( element => showSongs(element));
 
             show_songs_btn.addEventListener('click', function(){
                     songs_div.style.display = "block";
@@ -242,6 +271,7 @@
                         show_songs_btn.style.display = "block";
                     });
             });
+
 
             // show playlists
             show_playlists_btn.addEventListener('click', function() {
