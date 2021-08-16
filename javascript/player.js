@@ -248,6 +248,10 @@
                                             }
                                         }
                                     }
+
+                                    lyrics();
+                                    
+                                    $(songs_array).not(songs_array[current_song_index]).css("color", "#d3d3d3");
                                 });
                             }
                         }
@@ -272,10 +276,10 @@
                             playlists_div.style.display = "none";
                             show_playlists_btn.style.display = "block";
                             songs_div.style.borderLeft = "none";
-                        }
+                        } 
                         songs_div.style.left = "0px";
                     } else {
-                        songs_div.style.float = "right";
+                        songs_div.style.right = "0px";
                     }
                     
                     songs_div.classList.remove('hide-songs');

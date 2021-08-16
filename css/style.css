@@ -39,9 +39,9 @@ header #show-songs-btn:hover, header #show-playlists-btn:hover, .lyrics-containe
     color: #c56a6a;
 }
 
-.lyrics-container {
+/* .lyrics-container {
     display: none;
-}
+} */
 
 header #lyrics-btn {
     display: none;
