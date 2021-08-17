@@ -8,7 +8,7 @@
     <!-- link style -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
 
     <!-- link jquery -->
@@ -28,8 +28,6 @@
                 <button id="stop-timer" onclick="resetTimer()" title="reset timer">&#9632;</button>    
             </div>
         </div>
-
-        <button id="lyrics-btn" onclick="showHideSongs()">Lyrics</button>
         
         <button id="show-playlists-btn" title="show playlists">&#8411;</button>
         <span></span> <!-- the pink line-->
@@ -75,6 +73,12 @@
                         <button id="show-volume" title="volume" onclick="mute()">🔊</button>
                         <input type="range" id="volume-controller">  
                         <button class="action-btn" id="randomSong" title="random song">&#127922;</button>
+
+                        <div class="showLyrics" onclick="showHideSongs()">
+                            <!-- <h2 class="lyrics-btn" onclick="showHideSongs()">Lyrics</h2> -->
+                            Lyrics
+                        </div>
+                
                     </div>  
                 </div>
             </div>
