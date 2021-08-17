@@ -35,8 +35,14 @@
     let searchResult;
     
     const lyrics_container = document.querySelector('.lyrics-container');
+
+    if ( window.innerWidth < 728 ) {
+        lyrics_container.style.display = "none";
+        // show_lyrics_btn.style.display = "block";
+    }
+
     const hide_lyrics_btn = document.querySelector("#hide-lyrics");
-    const show_lyrics_btn = document.querySelector("#lyrics-btn");
+    const show_lyrics_btn = document.querySelector(".lyrics-btn");
 
     function showHideLyrics() {
         if ( lyrics_container.style.display != "none" ) {
@@ -175,7 +181,6 @@
         // slider
         let slider_position;
         const slider = document.getElementById('slider');
-        slider.addEventListener('change', change_currentTime);
 
         function change_currentTime() {
             slider_position = audio.duration * ( slider.value / 100 );
@@ -360,6 +365,7 @@
                 document.querySelector("#randomSong").addEventListener('click', randomSong);
                 document.querySelector("#shuffle").addEventListener('click', shuffle);
 
+                // slider.addEventListener('change', change_currentTime);
                 lyrics();
             }   
 
@@ -532,14 +538,29 @@
             // LYRICS PART
 
             hide_lyrics_btn.addEventListener('click', () => {
-                document.querySelector("#lyrics-btn").style.display = "block";
-                document.querySelector(".lyrics-container").style.display = "none";
+                document.querySelector(".showLyrics").style.display = "block";
+                $(lyrics_container).slideUp('slow');
+                
+                if ( window.innerWidth < 728 ) {
+                    container.style.display = "block";
+                    // lyrics_container.style.display = "none";
+                }
             });
 
-            show_lyrics_btn.addEventListener('click', () => {
-                    document.querySelector("#lyrics-btn").style.display = "none";
-                    document.querySelector(".lyrics-container").style.display = "block";
+            document.querySelector('.showLyrics').addEventListener('click', () => {
+                    // alert('clicked')
+                    document.querySelector(".showLyrics").style.display = "none";
+                    $(lyrics_container).slideDown('slow');
+                    document.querySelector('.lyrics-container h2').innerHTML = 'Lyrics - ' + song_title.innerHTML;
+
+                    if ( window.innerWidth < 728 ) {
+                        container.style.display = "none";
+                        songs_div.style.display = "none";
+                        playlists_div.style.display = "none";
+                        lyrics_container.classList.add('full-lyrics');
+                    }
             });          
+
 
             function lyrics() {
                 if ( !katty[current_song_index].lyrics ) {

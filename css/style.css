@@ -17,7 +17,7 @@ header {
     padding-right: 30px; */
 }
 
-header #show-songs-btn, header #show-playlists-btn, header #lyrics-btn {
+header #show-songs-btn, header #show-playlists-btn, header .lyrics-btn {
     color: #964343;
     font-family: cursive;
     font-size: 30px;
@@ -43,7 +43,7 @@ header #show-songs-btn:hover, header #show-playlists-btn:hover, .lyrics-containe
     display: none;
 } */
 
-header #lyrics-btn {
+header .lyrics-btn {
     display: none;
     margin-right: 100px;
     font-size: 1.3em;
@@ -233,6 +233,19 @@ audio {
     display: none;
 }
 
+.showLyrics {
+    border: 2px solid rgb(88, 5, 5);
+    border-radius: 20px;
+    padding-top: 5px;
+    width: 100px;
+    height: 25px;
+    margin-top: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
 .container .actions .show-more-actions {
     display: block;
     position: relative;
@@ -337,6 +350,10 @@ audio {
     font-size: 18px;
     margin-top: 20px;
     font-weight: bold;
+}
+
+.lyrics-container .lyrics:last-child {
+    margin-bottom: 80px;
 }
 
 .lyrics-container h2 {
@@ -481,6 +498,14 @@ audio {
     left: 0px;
 }
 
+/*  */
+.full-lyrics {
+    position: absolute;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 /* keyframes */
 @keyframes showSongs {
     0% { max-height: 0vh; }
@@ -523,6 +548,25 @@ audio {
     .songs-div, .playlists {
         height: 300px;
         width: 80px;
+    }
+
+    .study-timer {
+        display: none;
+    }
+
+    .searchbar input {
+        margin-left: 0px;
+        width: 100%;
+        padding-left: 3px;
+        padding-right: 0px;
+    }
+    .searchbar input::placeholder {
+        font-size: 10px;
+    }
+
+    .container {
+        top: 35%;
+        transform: translateY(-20%);
     }
 }
 
