@@ -2,327 +2,164 @@
     "katty":
         [
             {
-                "song": "Too close",
-                "artist": "Alex Clare",
-                "song_path": "../songs/katty/too_close.mp3",
-                "image_path": "../images/katty/alex_clare.jpg",
-                "lyrics": [
-                    "You know I'm not one to break promises",
-                    "I don't want to hurt you, but I need to breathe",
-                    "At the end of it all, you're still my best friend",
-                    "But there's something inside that I need to release",
-                    "Which way is right, which way is wrong",
-                    "How do I say that I need to move on",
-                    "You know we're headed separated ways",
-                    " ",
-                    "And it feels like I am just to close to love you",
-                    "There's nothing I can really say",
-                    "I can't lie no more, I can't hide no more",
-                    "Got to be true to myself",
-                    "And it feels like I am just to close to love you",
-                    "So I'll be on my way",
-                    " ",
-                    "You gave me more than I can return",
-                    "Yet there's so much that you deserve",
-                    "Nothing to say, nothing to do,",
-                    "I've nothing to give",
-                    "I must leave without you",
-                    " ",
-                    "You know we're headed separated ways",
-                    " ",
-                    "And it feels like I am just to close to love you",
-                    "There's nothing I can really say",
-                    "I can't lie no more, I can't hide no more",
-                    "Got to be true to myself",
-                    "And it feels like I just to close to love you",
-                    "So I'll be on my way"
-                ]
+                "song": "It's Alright",
+                "artist": "Mother Mother",
+                "song_path": "../songs/katty/its alright.mp3",
+                "image_path": "../images/katty/moter_mother.jpg" 
             },
 
             {
-                "song": "Us",
-                "artist": "James Bay",
-                "song_path": "../songs/katty/us.mp3",
-                "image_path": "../images/katty/james_bay.jpg",
-                "lyrics": [
-                    "Sometimes I'm beaten",
-                    "Sometimes I'm broken",
-                    "'Cause sometimes this is nothing but smoke",
-                    "Is there a secret?",
-                    "Is there a code?",
-                    "Can we make it better?",
-                    "'Cause I'm losing hope",
-                    " ",
-                    "Tell me how to be in this world",
-                    "Tell me how to breathe in and feel no hurt",
-                    "Tell me how could I believe in something",
-                    "I believe in us",
-                    " ",
-                    "After the wreckage",
-                    "After the dust",
-                    "I still hear the howling, I still feel the rush",
-                    "Over the riots, above all the noise",
-                    "Through all the worry, I still hear your voice",
-                    " ",
-                    "So, tell me how to be in this world",
-                    "Tell me how to breathe in and feel no hurt",
-                    "Tell me how 'cause I believe in something",
-                    "I believe in us",
-                    "Tell me when the light goes out",
-                    "That even in the dark we will find a way out",
-                    "Tell me how 'cause I believe in something",
-                    "I believe in us",
-                    " ",
-                    "Used to be kids living just for kicks",
-                    "In cinema seats, learning how to kiss",
-                    "Running through streets that were painted gold",
-                    "We never believed we'd grow up like this",
-                    " ",
-                    "So tell me how to be in this world",
-                    "Tell me how to breathe in and feel no hurt",
-                    "Tell me how 'cause I believe in something",
-                    "I believe in us",
-                    "Tell me when the light goes out",
-                    "That even in the dark we find a way out",
-                    "Tell me now 'cause I believe in something",
-                    "I believe in us",
-                    "I believe in someething",
-                    "And I believe in us."
-                ]
+                "song": "Alone",
+                "artist": "Rag'n'Bone Man",
+                "song_path": "../songs/katty/alone.mp3",
+                "image_path": "../images/katty/bone_man.png"
             },
 
             {
-                "song": "She used to be mine",
-                "artist": "Sara Bareilles",
-                "song_path": "../songs/katty/she used to be mine.mp3",
-                "image_path": "../images/katty/sara.jpg",
-                "lyrics": [
-                    "It's not simple to say",
-                    "Most days I don't recognize me",
-                    "These shoes and this apron",
-                    "That place and its patrons",
-                    "Have taken more than I gave 'em",
-                    "It's not easy to know",
-                    "I'm not anything like I used to be",
-                    "Although it's true",
-                    "I was never attention sweet center",
-                    "I still remember that girl",
-                    " ",
-                    "She's imperfect, but she tries",
-                    "She is good, but she lies",
-                    "She is hard on herself and won't ask for help",
-                    "She is messy, but she's kind",
-                    "She is lonely most of the time",
-                    "She is all of this mixed up",
-                    "And baked in a beautiful pie",
-                    " ",
-                    "She is gone, but she used to be mine",
-                    " ",
-                    "It's not what I asked for",
-                    "Sometimes life just slips in through a back door",
-                    "And carves out a person",
-                    "And makes you believe it's true",
-                    "And now I've got you",
-                    "And you're not what I asked for",
-                    "If I'm honest, I know I would give it all."
-                ]
+                "song": "Always remember us this way",
+                "artist": "Lady Gaga",
+                "song_path": "../songs/katty/always remember us.mp3",
+                "image_path": "../images/katty/lady_gaga.jpg"
             },
 
             {
-                "song": "Feel so close",
-                "artist": "Calvin Harris",
-                "song_path": "../songs/katty/feel so close.mp3",
-                "image_path": "../images/katty/calmin_harris.jpg"
+                "song": "Cage the Elephant",
+                "artist": "Cigarette Daydreams",
+                "song_path": "../songs/katty/cage the elephant.mp3",
+                "image_path": "../images/logo.jpg.png"
             },
 
             {
-                "song": "Main girl",
-                "artist": "Charlotte Cardin",
-                "song_path": "../songs/katty/main girl.mp3",
-                "image_path": "../images/katty/charlotte_cardin.jpg"
-            },
-
-            {
-                "song": "Scars to your beautiful",
-                "artist": "Alessia Cara",
-                "song_path": "../songs/katty/scars to your beautiful.mp3",
-                "image_path": "../images/katty/alessia_cara.jpg"
-            },
-
-            {
-                "song": "Anyone who loves me",
-                "artist": "Charlotte Cardin",
-                "song_path": "../songs/katty/anyone who loves me.mp3",
-                "image_path": "../images/katty/charlotte_cardin.jpg"
-            },
-
-
-            {
-                "song": "Sweet baby",
-                "artist": "Bothnia",
-                "song_path": "../songs/katty/sweet baby.mp3",
-                "image_path": "../images/katty/bothnia.jpg"
-            },
-
-            {
-                "song": "Today is beautiful",
-                "artist": "David Dunn",
-                "song_path": "../songs/katty/today is beautiful.mp3",
-                "image_path": "../images/katty/david_dunn.jpg"
-            },
-
-            {
-                "song": "It'll be alright",
-                "artist": "Cody Francis",
-                "song_path": "../songs/katty/it'll be alright.mp3",
-                "image_path": "../images/katty/cody_francis.jpg"
-            },
-
-            {
-                "song": "Ready to be myself",
-                "artist": "David Dunn",
-                "song_path": "../songs/katty/ready to be myself.mp3",
-                "image_path": "../images/katty/david_dunn.jpg"
-            },
-
-            {
-                "song": "Paradise Motion",
-                "artist": "Charlotte Cardin",
-                "song_path": "../songs/katty/paradise motion.mp3",
-                "image_path": "../images/katty/charlotte_cardin.jpg"
-            },
-
-            {
-                "song": "Carry the torch",
-                "artist": "Riverdale",
-                "song_path": "../songs/katty/carry the torch.mp3",
-                "image_path": "../images/katty/carry_the_torch.jpg"
-            },
-
-            {
-                "song": "Time of your life",
-                "artist": "Green day",
-                "song_path": "../songs/katty/time of your life.mp3",
-                "image_path": "../images/katty/green_day.jpg"
-            },
-
-            {
-                "song": "Beauty in the mundane",
-                "artist": "Bird of figment",
-                "song_path": "../songs/katty/beauty in the mundane.mp3",
-                "image_path": "../images/katty/bird_of_figment.jpg"
-            },
-
-            {
-                "song": "Will you come around?",
-                "artist": "Houses on the Hill",
-                "song_path": "../songs/katty/will you come around.mp3",
-                "image_path": "../images/katty/will_you_come_around.jpg"
-            },
-
-            {
-                "song": "Windows",
-                "artist": "Lewis Watson",
-                "song_path": "../songs/katty/windows.mp3",
-                "image_path": "../images/katty/lewis_watson.jpg"
-            },
-
-            {
-                "song": "Mad World",
-                "artist": "cover by Imagine Dragons",
-                "song_path": "../songs/katty/mad world.mp3",
-                "image_path": "../images/katty/imagine_dragons.jpg"
-            },
-
-            {
-                "song": "Jar of Hearts",
-                "artist": "cover by Dave Winkler",
-                "song_path": "../songs/katty/jar of hearts.mp3",
-                "image_path": "../images/katty/dave_winkler.jpg"
-            },
-
-            {
-                "song": "Teardrops on my guitar",
-                "artist": "Taylor Swift",
-                "song_path": "../songs/katty/teardrops on my guitar.mp3",
-                "image_path": "../images/katty/taylor_swift.jpg"
-            },
-
-            {
-                "song": "Never be me",
-                "artist": "Miley Cyrus",
-                "song_path": "../songs/katty/never be me.mp3",
-                "image_path": "../images/katty/miley_cyrus.jpg"
-            },
-
-            {
-                "song": "Born without a heart",
-                "artist": "Faozia",
-                "song_path": "../songs/katty/born without a heart.mp3",
-                "image_path": "../images/katty/faozia.jpg"
-            },
-
-            {
-                "song": "Try",
-                "artist": "P!nk",
-                "song_path": "../songs/katty/try.mp3",
+                "song": "Cover me in sunshine",
+                "artist": "P!nk & Sage",
+                "song_path": "../songs/katty/cover me in sunshine.mp3",
                 "image_path": "../images/katty/pink.jpg"
             },
 
             {
-                "song": "Dance in the dark",
-                "artist": "Au/Ra",
-                "song_path": "../songs/katty/dance in the dark.mp3",
-                "image_path": "../images/katty/aura.jpg"
+                "song": "Everytime I cry",
+                "artist": "Ava Max",
+                "song_path": "../songs/katty/everytime i cry.mp3",
+                "image_path": "../images/katty/ava_max.jpg"
             },
 
             {
-                "song": "Reasons to stay",
-                "artist": "Kate Vogel",
-                "song_path": "../songs/katty/reasons to stay.mp3",
-                "image_path": "../images/katty/kate_vogel.jpg"
+                "song": "Get back up again",
+                "artist": "from Trolls",
+                "song_path": "../songs/katty/get back up again.mp3",
+                "image_path": "../images/katty/trolls_girl.jpg"
             },
 
             {
-                "song": "Torn",
-                "artist": "cover by Dave Winkler",
-                "song_path": "../songs/katty/torn.mp3",
-                "image_path": "../images/katty/dave_winkler.jpg"
+                "song": "Good 4 U",
+                "artist": "Olivia Rodrigo",
+                "song_path": "../songs/katty/good 4 u.mp3",
+                "image_path": "../images/katty/olivia_rodrigo.jpg"
             },
 
             {
-                "song": "When we're high",
-                "artist": "LP",
-                "song_path": "../songs/katty/when we're high.mp3",
-                "image_path": "../images/katty/lp.jpg"
+                "song": "Head Shoulders Knees and Toes",
+                "artist": "Ogenbach & Quarterhead",
+                "song_path": "../songs/katty/head shoulders knees and toes.mp3",
+                "image_path": "../images/katty/ofenbach_quarterhead.jpg"
             },
 
             {
-                "song": "Ice In My Rosé",
-                "artist": "Aisha Dee",
-                "song_path": "../songs/katty/Ice In My Rosé.mp3",
-                "image_path": "../images/katty/aisha_dee.jpg"
+                "song": "Hell or High Water",
+                "artist": "Passenger",
+                "song_path": "../songs/katty/hell or high water.mp3",
+                "image_path": "../images/katty/passenger.jpg"
             },
 
             {
-                "song": "Falling like the stars",
-                "artist": "James Arthur",
-                "song_path": "../songs/katty/falling like the stars.mp3",
-                "image_path": "../images/katty/james_arthur.jpg"
+                "song": "How far I'll go",
+                "artist": "from Moana",
+                "song_path": "../songs/katty/how far ill go.mp3",
+                "image_path": "../images/katty/moana.jpg"
             },
 
             {
-                "song": "Angels like you",
-                "artist": "Miley Cyrus",
-                "song_path": "../songs/katty/angels like you.mp3",
-                "image_path": "../images/katty/miley_cyrus.jpg"
+                "song": "I already know",
+                "artist": "Stacey Ryan",
+                "song_path": "../songs/katty/i already know.mp3",
+                "image_path": "../images/katty/stacey_ryann.jpg"
             },
 
             {
-                "song": "The fixer",
-                "artist": "Brent Morgan",
-                "song_path": "../songs/katty/the fixer.mp3",
-                "image_path": "../images/katty/brent_morgan.jpg"
+                "song": "Just the way you are",
+                "artist": "Bruno Mars",
+                "song_path": "../songs/katty/just the way you are.mp3",
+                "image_path": "../images/katty/bruno_mars.jpg..jpg"
+            },
+
+            {
+                "song": "One step forward, three steps back",
+                "artist": "Olivia Rodrigo",
+                "song_path": "../songs/katty/one step forward.mp3",
+                "image_path": "../images/katty/olivia_rodrigo.jpg"
+            },
+
+            {
+                "song": "Ready for it all",
+                "artist": "Wayley",
+                "song_path": "../songs/katty/ready for it all.mp3",
+                "image_path": "../images/katty/wayley.jpg"
+            },
+
+            {
+                "song": "Scare away the dark",
+                "artist": "Passenger",
+                "song_path": "../songs/katty/scare away the dark.mp3",
+                "image_path": "../images/katty/passenger.jpg"
+            },
+
+            {
+                "song": "You're welcome",
+                "artist": "from Moana",
+                "song_path": "../songs/katty/youre welcome.mp3",
+                "image_path": "../images/katty/maui.jpg"
+            },
+
+            {
+                "song": "What makes you beautiful",
+                "artist": "One Direction",
+                "song_path": "../songs/katty/what makes you beautiful.mp3",
+                "image_path": "../images/katty/one_direction.jpg"
+            },
+
+            {
+                "song": "Umbrella",
+                "artist": "cover by Nursena Yener",
+                "song_path": "../songs/katty/umbrella.mp3",
+                "image_path": "../images/katty/nursena.jpg"
+            },
+
+            {
+                "song": "True colors",
+                "artist": "from Trolls", 
+                "song_path": "../songs/katty/true colors.mp3",
+                "image_path": "../images/katty/trolls.jpg"
+            },
+
+            {
+                "song": "Sweet but Psycho",
+                "artist": "Ava Max",
+                "song_path": "../songs/katty/sweet but psycho.mp3",
+                "image_path": "../images/katty/ava_max.jpg"
+            },
+
+            {
+                "song": "Sweater Weather",
+                "artist": "The Neighbourhood",
+                "song_path": "../songs/katty/sweater weather.mp3",
+                "image_path": "../images/katty/neighbourhood.jpg"
+            },
+
+            {
+                "song": "Simple Song",
+                "artist": "Passenger",
+                "song_path": "../songs/katty/simple song.mp3",
+                "image_path": "../images/katty/passenger.jpg"
             }
         ],
 
