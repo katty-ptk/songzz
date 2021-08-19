@@ -47,7 +47,7 @@
     function showHideLyrics() {
         if ( lyrics_container.style.display != "none" ) {
             lyrics_container.style.display = "none";
-            show_lyrics_btn.style.display = "block";
+            document.querySelector('.showLyrics').style.display = "block";
         }
     }
 
@@ -208,10 +208,10 @@
                 school[image].image_path = "../images/elevi.jpg";
             }   // sets the same image to all songs from school[]
     
-            songs.push(school[15]);
-            songs.push(school[17]);
-            songs.push(school[19]);
-            songs.push(school[21]);
+            // songs.push(school[15]);
+            // songs.push(school[17]);
+            // songs.push(school[19]);
+            // songs.push(school[21]);
     
     
             for ( let artist_image = 0; artist_image < studying.length; artist_image++ ) {
@@ -376,7 +376,7 @@
                 songs_ul.appendChild(el);
                 el.innerHTML = element.song;  // the title of the song
                 songs_array.push(el);
-                
+
                 el.addEventListener('click', function(){    // when a title of a song from the songs' div is clicked, that song will play
                     current_song_index = songs_array.indexOf(this);  // "this" represents the clicked element
                     updatePlayer();
@@ -384,19 +384,6 @@
                     audio.play();
                 });
             }
-
-            // when showing lyrics, show songs list elsewhere
-            show_songs_btn.addEventListener('click', function() {
-                if ( document.querySelector(".lyrics-container").style.display != "none" ) {
-                    if ( playlists_div.style.display != "none" ) {
-                        playlists_div.style.display = "none";
-                        songs_div.classList.remove('songs-div');
-                        songs_div.classList.add('playlists');
-                        console.log(songs_div.classList)
-                    }
-                }
-            });
-
 
             // go to next song
             audio.addEventListener('ended', nextSong);
