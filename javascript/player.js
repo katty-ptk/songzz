@@ -375,6 +375,8 @@
                 // slider.addEventListener('change', change_currentTime);
                 document.querySelector('.lyrics-container h2').innerHTML = `Lyrics - '${songs[current_song_index].song}'`;
                 lyrics();
+
+                audio.addEventListener('timeupdate', range_slider);
             }   
 
             // show songs list
