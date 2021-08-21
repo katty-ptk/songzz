@@ -14,19 +14,25 @@
     <!-- link jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
-    <link id="logo" rel="shortcut icon" href="images/logo.jpg.png">
+    <link id="logo" rel="shortcut icon" href="images/logo.png">
 </head>
 <body>
     
     <header>
         <button id="show-songs-btn" title="show songs" onclick="showHideLyrics()"><p>&#8801;</p></button>
         
-        <div class="study-timer">
-            <p id="timer"></p> <!-- study timer -->
+        <!-- <div class="study-timer">
+            <p id="timer"></p>  study timer
             <div class="timer-buttons">
                 <button id="start-pause-timer" class="start-pause-timer timer-paused"></button>
                 <button id="stop-timer" onclick="resetTimer()" title="reset timer">&#9632;</button>    
             </div>
+        </div> 
+        -->
+
+        <div class="logo">
+            <img src="images/logo.png" alt="songzz logo">
+            <!-- <h2>songzz</h2> -->
         </div>
         
         <button id="show-playlists-btn" title="show playlists">&#8411;</button>
@@ -85,7 +91,7 @@
     
             <div class="lyrics-container">
                 <button id="hide-lyrics">X</button>
-                <h2>Lyrics</h2>
+                <h2></h2>
     
                 <div class="lyrics"></div>
             </div>
@@ -94,6 +100,6 @@
 
     <script src="./javascript/playlists.json"></script>
     <script src="./javascript/player.js"></script>
-    <script src="./javascript/timer.js"></script>
+    <!-- <script src="./javascript/timer.js"></script> -->
 </body>
 </html>
