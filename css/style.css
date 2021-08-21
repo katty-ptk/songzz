@@ -60,7 +60,21 @@ header span {
     border-radius: 100%;
 }
 
-header .study-timer {
+header .logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15px;
+}
+
+header .logo img {
+    width: 75px;
+}
+
+/* header .study-timer {
     position: absolute;
     width: 50%;
     display: flex;
@@ -118,7 +132,7 @@ header .study-timer .timer-buttons .timer-on::after {
 header .study-timer .timer-buttons #stop-timer {
     margin-bottom: 8px;
     font-size: 1.5em;
-}
+} */
 
 /* MAIN */
 audio {
@@ -234,6 +248,7 @@ audio {
 }
 
 .showLyrics {
+    display: none;
     border: 2px solid rgb(88, 5, 5);
     border-radius: 20px;
     padding-top: 10px;
@@ -244,6 +259,7 @@ audio {
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
+    pointer-events: auto;
 }
 
 .container .actions .show-more-actions {
@@ -330,7 +346,8 @@ audio {
     margin-top: 80px;
     border: 1px solid #ccc;
     border-radius: 50px;
-    box-shadow: 5px 5px 10px rgb(68, 67, 67);
+    /* box-shadow: 5px 5px 10px rgb(68, 67, 67); */
+    box-shadow: 5px 5px 10px rgba(224, 224, 224, 0.3);
     position: relative;
 }
 
@@ -477,14 +494,14 @@ audio {
     left: 0;
     border-left: none;
     border-right: 1px solid #6b6a6a;
-    /* border-top-right-radius: 30px; */
 }
 
 .playlists ul li {
     color: rgb(197, 191, 191);
     list-style-type: none;
     margin-top: 50px;
-    text-align: center;
+    text-align: left;
+    margin-left: 50px;
     font-size: 1.2em;
     cursor: pointer;
     transition: .7s ease-in-out all;
@@ -529,7 +546,7 @@ audio {
 
 /* MEDIA QUERIES */
 @media screen and ( max-width: 280px ) {
-    header .study-timer {
+    /* header .study-timer {
         font-size: 16px;
         width: 60%;
     }
@@ -537,7 +554,7 @@ audio {
     header .study-timer .timer-buttons button {
         width: 30px;
         height: 30px;
-    }
+    } */
 
     .container .song-image {
         width: 100px;
@@ -550,9 +567,9 @@ audio {
         width: 80px;
     }
 
-    .study-timer {
+    /* .study-timer {
         display: none;
-    }
+    } */
 
     .searchbar input {
         margin-left: 0px;
@@ -571,10 +588,10 @@ audio {
 }
 
 @media screen and ( min-width: 600px ) and ( max-width: 768px ) {
-    header .study-timer {
+    /* header .study-timer {
         width: 200px;
         height: 50px;
-    }
+    } */
 
     .songs-div, .playlists {
         width: 165px;
@@ -612,9 +629,9 @@ audio {
 }
 
 @media screen and ( min-width: 1023px ) and ( max-width: 1025px ) {
-    header .study-timer {
+    /* header .study-timer {
         width: 200px;
-    }
+    } */
 
     .container {
         top: 20%;
@@ -649,9 +666,9 @@ audio {
         display: none;
     }
     
-    header .study-timer {
+    /* header .study-timer {
         left: 430px;
-    }
+    } */
 
     .container .info .song-image {
         width: 130px;

@@ -205,7 +205,7 @@
             let studying = all_playlists.studying;
 
             for ( let image = 0; image < school.length; image++ ) {
-                school[image].image_path = "../images/elevi.jpg";
+                school[image].image_path = "../images/logo.png";
             }   // sets the same image to all songs from school[]
     
             // songs.push(school[15]);
@@ -216,7 +216,7 @@
     
             for ( let artist_image = 0; artist_image < studying.length; artist_image++ ) {
                 studying[artist_image].artist = "";
-                studying[artist_image].image_path = "../images/studying/studying.jpg";
+                studying[artist_image].image_path = "../images/logo.png";
             }   // sets same artist and image for all studying files
     
 
@@ -242,7 +242,7 @@
                     searchResultUl.appendChild(searchResult);
 
                     if ( filteredCharacters.length == 0 ) { // if no results
-                        console.log(`No results for: "${searchString}" 😥`);
+                        // console.log(`No results for: "${searchString}" 😥`);
                         searchResult.innerHTML = `No results for: "${searchString}" 😥`;  // a text is added to announce that there are no results
                     } else {    // if there is at least one result
                         for ( let search_counter = 0; search_counter < filteredCharacters.length; search_counter++ ) {  // it goes through all the filtered songs
@@ -273,8 +273,15 @@
                                             }
                                         }
                                     }
-
+                                    
+                                    // console.log(lyrics_container.children[2].firstChild.innerHTML);
+                                    // if ( lyrics_container.children[2].firstChild.innerHTML !=  "This song does not have any lyrics to show.") {
+                                        while ( lyrics_container.children[2].firstChild ) {                                            
+                                            lyrics_container.children[2].removeChild(lyrics_container.children[2].firstChild);
+                                        }
+                                    // }
                                     lyrics();
+                                    console.log(lyrics_container.children[2]);
                                     
                                     $(songs_array).not(songs_array[current_song_index]).css("color", "#d3d3d3");
                                 });
@@ -366,6 +373,7 @@
                 document.querySelector("#shuffle").addEventListener('click', shuffle);
 
                 // slider.addEventListener('change', change_currentTime);
+                document.querySelector('.lyrics-container h2').innerHTML = `Lyrics - '${songs[current_song_index].song}'`;
                 lyrics();
             }   
 
@@ -551,7 +559,7 @@
 
             function lyrics() {
                 if ( !katty[current_song_index].lyrics ) {
-                    console.log( `"${katty[current_song_index].song}"  does not have any lyrics`);
+                    // console.log( `"${katty[current_song_index].song}"  does not have any lyrics`);
                     document.querySelector(".lyrics").innerHTML = "<p>This song does not have any lyrics to show.";
                     return;
                 }
