@@ -277,6 +277,13 @@
             },
 
             {
+                "song": "Lullaby Love",
+                "artist": "Roo Panes",
+                "song_path": "../songs/katty/lullaby love.mp3",
+                "image_path": "../images/katty/roo_panes.jpg"
+            },
+
+            {
                 "song": "Umbrella",
                 "artist": "cover by Nursena Yener",
                 "song_path": "../songs/katty/umbrella.mp3",
@@ -309,6 +316,13 @@
                 "artist": "Passenger",
                 "song_path": "../songs/katty/simple song.mp3",
                 "image_path": "../images/katty/passenger.jpg"
+            },
+
+            {
+                "song": "I've no more fs to give",
+                "artist": "Thomas Benjamin",
+                "song_path": "../songs/katty/ive no more fs.mp3",
+                "image_path": "../images/katty/thomas.jpeg"
             }
         ],
 
