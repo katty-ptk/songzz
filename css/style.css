@@ -226,21 +226,12 @@ audio {
 }
 
 .container .actions .action-btn {
-    margin: 20px;
-    font-size: 1.8em;
+    margin: 20px 15px;
+    height: 1.5em;
+    width: 1.5em;
     color: rgb(197, 191, 191);
     background: transparent;
-    border: none;
     transition: 0.5s ease-in-out all;
-}
-
-.container .actions #more-actions-btn {
-    font-size: 2em;
-    background-color: transparent;
-    border: none;
-    transition: 0.5s ease-in-out all;
-    position: relative;
-    top: 13px;
 }
 
 .container .actions .more-actions-div {
@@ -282,12 +273,12 @@ audio {
     animation-fill-mode: forwards;
 }
 
-.container .actions .show-more-actions button {
-    width: 50px;
+.container .actions .show-more-actions svg {
+    width: 40px;
     background-color: transparent;
     border: none;
     margin: 0px;
-    font-size: 1.2em;
+    font-size: 1em;
     cursor: pointer;
     transition: 0.5s ease-in-out all;
 }
@@ -307,7 +298,7 @@ audio {
     position: absolute;
     /* transform: rotate(270deg); */
     top: 33px;
-    left: 57%;
+    left: 54.5%;
     width: 100px;
     height: 5px;
     border-radius: 50px;
