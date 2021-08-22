@@ -175,7 +175,7 @@ audio {
 
 .container .song-image {
     width: 150px;
-    border-radius: 50px 0;
+    border-radius: 100%;
     transition: all 0.2s ease;
 }
 
