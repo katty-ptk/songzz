@@ -403,7 +403,8 @@
 
                 song_artist.innerText = song.artist;
                 audio.src = song.song_path;
-                document.title = `playing: ${song.song}`;
+                document.title = `songzz playing: ${song.song}`;
+                // document.title = "songzz";
 
                 songs_array[current_song_index].style.color = "rgb(214, 127, 127)";
                 $(songs_array).not(songs_array[current_song_index]).css("color", "#d3d3d3");
@@ -580,6 +581,7 @@
                 
                 if ( window.innerWidth < 728 ) {
                     container.style.display = "block";
+                    show_playlists_btn.style.display = "block";
                 }
             });
 
@@ -598,6 +600,11 @@
 
 
             function lyrics() {
+
+                if ( window.innerWidth < 728 ) {
+                    document.querySelector('.showLyrics').style.display = "block";
+                }
+
                 if ( !songs[current_song_index].lyrics ) {
                     document.querySelector(".lyrics").innerHTML = "<p>This song does not have any lyrics to show.";
                     return;
@@ -619,9 +626,11 @@
                 }
 
                 function changeLyrics() {
-                    for ( let remove = katty[current_song_index].lyrics.length; remove >= 0; remove-- ) {
-                        document.querySelector(".lyrics").innerHTML = "";
-                        lyrics();
+                    if ( songs[current_song_index].lyrics ) {
+                        for ( let remove = songs[current_song_index].lyrics.length; remove >= 0; remove-- ) {
+                            document.querySelector(".lyrics").innerHTML = "";
+                            lyrics();
+                        }
                     }
                 }
             }
