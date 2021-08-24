@@ -240,9 +240,9 @@ audio {
 
 .showLyrics {
     display: none;
-    border: 2px solid rgb(88, 5, 5);
+    border: 1.5px solid rgb(88, 5, 5);
     border-radius: 20px;
-    padding-top: 10px;
+    padding-top: 8px;
     width: 100px;
     height: 25px;
     margin-top: 15px;
@@ -251,6 +251,12 @@ audio {
     transform: translateX(-50%);
     cursor: pointer;
     pointer-events: auto;
+    transition: all 500ms ease-in-out;
+}
+
+.showLyrics:hover {
+    background: rgb(88, 5, 5);
+    border-color: #ddd;
 }
 
 .container .actions .show-more-actions {
@@ -289,7 +295,7 @@ audio {
 
 .container .actions .action-btn:hover {
     cursor: pointer;
-    color:rgb(88, 5, 5);
+    /* color:rgb(88, 5, 5); */
 }
 
 .container .actions .show-more-actions input[type="range"] {
@@ -435,7 +441,7 @@ audio {
     transition: .7s ease-in-out all;
 }
 
-.songs-div .songs-ul:last-child {
+.songs-div .songs-ul li:last-child {
     margin-bottom: 30px;
 }
 .songs-div #hide-songs, .playlists #hide-playlists {
