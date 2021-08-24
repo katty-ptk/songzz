@@ -558,10 +558,15 @@ audio {
     }
 }
 
-@media screen and (min-width: 280px ) and ( max-width: 400px ) {
+@media screen and (min-width: 280px ) and ( max-width: 450px ) {
     .songs-div, .playlists {
-        height: 300px;
+        height: 250px;
         width: 80px;
+    }
+
+    .playlists ul li {
+        text-align: center;
+        margin-left: 0px;
     }
 
     /* .study-timer {
