@@ -206,6 +206,7 @@ audio {
     margin-top: 13px;
     background:#5f2c2c;
     outline: none;
+    cursor: pointer;
 }
 
 .container input[role="slider"]::-webkit-slider-thumb {
