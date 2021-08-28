@@ -240,27 +240,8 @@
     fetch ( '../javascript/playlists.json' )
         .then ( response => response.json() )
         .then( all_playlists => {
-            let katty = all_playlists.katty;
-            let songs = katty;
-            let school = all_playlists.school;
-            let studying = all_playlists.studying;
-
-            for ( let image = 0; image < school.length; image++ ) {
-                school[image].image_path = "../images/logo.png";
-            }   // sets the same image to all songs from school[]
-    
-            // songs.push(school[15]);
-            // songs.push(school[17]);
-            // songs.push(school[19]);
-            // songs.push(school[21]);
-    
-    
-            for ( let artist_image = 0; artist_image < studying.length; artist_image++ ) {
-                studying[artist_image].artist = "";
-                studying[artist_image].image_path = "../images/logo.png";
-            }   // sets same artist and image for all studying files
-    
-
+            let all_songs = all_playlists.songs;
+            let songs = all_songs;
             // show songs
             let songs_array = [];
 
@@ -506,10 +487,33 @@
             }
 
             // playlists
+            let kids = [];
+            for ( let counter = 0; counter < all_songs.length; counter++ ) {
+                if ( all_songs[counter].category == "kids" ) {
+                    kids.push(all_songs[counter]);
+                }
+            }
+            console.log(kids);
+
+            let olivia = [];
+            for ( let counter = 0; counter < all_songs.length; counter++ ) {
+                if ( all_songs[counter].artist == "Olivia Rodrigo") {
+                    olivia.push(all_songs[counter]);
+                }
+            }
+
+            let passenger = [];
+            for ( let counter = 0; counter < all_songs.length; counter++ ) {
+                if ( all_songs[counter].artist == "Passenger") {
+                    passenger.push(all_songs[counter]);
+                }
+            }
+
             let playlists = [
-                'Katty',
-                'IX A',
-                'Studying music'
+                'All songs',
+                'Kids',
+                'Olivia Rodrigo',
+                'Passenger'
             ];  // array of playlists
 
             playlists.forEach( function( element ) {
@@ -522,16 +526,24 @@
                     $('#playlists-ul li').not(this).css('color', '#d3d3d3');    // the other playlists will have whiteish color
 
                     switch ( playlists.indexOf(element) ) {
-                        case 1:     // 'IX A' playlist
-                            songs = school;
+                        case 1:     // 'Kids' playlist
+                            songs = kids;
                             current_song_index = 0;
                             changePlaylist();
                             updatePlayer();
                             togglePlayPause();
                             break;
 
-                        case 2:     // 'Studying music' playlist
-                            songs = studying;
+                        case 2:     // 'Olivia Rodrigo' playlist
+                            songs = olivia;
+                            current_song_index = 0;
+                            changePlaylist();
+                            updatePlayer();
+                            togglePlayPause();
+                            break;
+                        
+                        case 3: // 'Passenger' playlist
+                            songs = passenger;
                             current_song_index = 0;
                             changePlaylist();
                             updatePlayer();
@@ -539,7 +551,7 @@
                             break;
 
                         default:    // 'Katty' playlist
-                            songs = katty;
+                            songs = all_songs;
                             document.querySelector('#playlists-ul li').style.color = "rgb(214, 127, 127";
                             current_song_index = 0;
                             changePlaylist();
@@ -601,6 +613,14 @@
 
 
             function lyrics() {
+                if ( !songs[current_song_index].lyrics ) {
+                    document.querySelector(".lyrics").innerHTML = "<p>This song does not have any lyrics to show.";
+                    return;
+                }
+                for ( let p = 0; p < songs[current_song_index].lyrics.length; p++ ) {
+                    let lyric_p = document.createElement('p');
+                    lyric_p.textContent = songs[current_song_index].lyrics[p];
+                    document.querySelector(".lyrics").appendChild(lyric_p);
 
                 if ( window.innerWidth < 728 ) {
                     document.querySelector('.showLyrics').style.display = "block";
@@ -627,6 +647,9 @@
                 }
 
                 function changeLyrics() {
+                    for ( let remove = songs[current_song_index].lyrics.length; remove >= 0; remove-- ) {
+                        document.querySelector(".lyrics").innerHTML = "";
+                        lyrics();
                     if ( songs[current_song_index].lyrics ) {
                         for ( let remove = songs[current_song_index].lyrics.length; remove >= 0; remove-- ) {
                             document.querySelector(".lyrics").innerHTML = "";

@@ -1,5 +1,5 @@
 {
-    "katty":
+    "songs":
         [
             {
                 "song": "It's Alright",
@@ -145,7 +145,8 @@
                 "song": "Get back up again",
                 "artist": "from Trolls",
                 "song_path": "../songs/katty/get back up again.mp3",
-                "image_path": "../images/katty/trolls_girl.jpg"
+                "image_path": "../images/katty/trolls_girl.jpg",
+                "category": "kids"
             },
 
             {
@@ -173,7 +174,8 @@
                 "song": "How far I'll go",
                 "artist": "from Moana",
                 "song_path": "../songs/katty/how far ill go.mp3",
-                "image_path": "../images/katty/moana.jpg"
+                "image_path": "../images/katty/moana.jpg",
+                "category": "kids"
             },
 
             {
@@ -208,7 +210,8 @@
                 "song": "You're welcome",
                 "artist": "from Moana",
                 "song_path": "../songs/katty/youre welcome.mp3",
-                "image_path": "../images/katty/maui.jpg"
+                "image_path": "../images/katty/maui.jpg",
+                "category": "kids"
             },
 
             {
@@ -294,7 +297,8 @@
                 "song": "True colors",
                 "artist": "from Trolls", 
                 "song_path": "../songs/katty/true colors.mp3",
-                "image_path": "../images/katty/trolls.jpg"
+                "image_path": "../images/katty/trolls.jpg",
+                "category": "kids"
             },
 
             {
@@ -326,186 +330,7 @@
             }
         ],
 
-    "school":
-        [
-            {
-                "song": "Colegiul 'Mihai Viteazul'",
-                "artist": "Imnul CMV",
-                "song_path": "../songs/scoala/cmv.mp3"
-            }, 
-
-            {
-                "song": "Call me maybe",
-                "artist": "Carly Rae Jepsen",
-                "song_path": "../songs/scoala/call me maybe.mp3"
-            }, 
-
-            {
-                "song": "Can't hold us",
-                "artist": "Macklemore & Ryan Lewis",
-                "song_path": "../songs/scoala/cant hold us.mp3"
-            },
-
-            {
-                "song": "Dance monkey",
-                "artist": "Tones & I",
-                "song_path": "../songs/scoala/dance monkey.mp3"
-            },
-
-            {
-                "song": "Danza kuduro",
-                "artist": "Don Omar",
-                "song_path": "../songs/danza juduro.mp3"
-            }, 
-
-            {
-                "song": "Despacito",
-                "artist": "Luis Fonsi",
-                "song_path": "../songs/scoala/despacito.mp3"
-            }, 
-
-            {
-                "song": "Echame la pulpa",
-                "artist": "Demi Lovato & Luis Fonsi",
-                "song_path": "../songs/scoala/echme la pulpa.mp3"
-            },  
-
-            {
-                "song": "Hips don't lie",
-                "artist": "Shakira",
-                "song_path": "../songs/scoala/hips don't lie"
-            }, 
-
-            {
-                "song": "Iarna pe val",
-                "artist": "Cabron, What's up & Jon Baiat Bun",
-                "song_path": "../songs/scoala/iarna pe val.mp3"
-            }, 
-
-            {
-                "song": "It's my life",
-                "artist": "Bon Jovi",
-                "song_path": "../songs/scoala/its my life.mp3"
-            }, 
-
-            {
-                "song": "Makeba",
-                "artist": "Jain",
-                "song_path": "../songs/scoala/makeba.mp3"
-            },
-
-            {
-                "song": "One more night",
-                "artist": "Maroon 5",
-                "song_path": "../songs/scoala/one more night.mp3"
-            },  
-
-            {
-                "song": "Oops.. I did it again",
-                "artist": "Britney Spears",
-                "song_path": "../songs/scoala/oops i did it again.mp3"
-            }, 
-
-            {
-                "song": "Perfect fara tine",
-                "artist": "Vama Veche",
-                "song_path": "../songs/scoala/perfect fara tine.mp3"
-            },  
-
-            {
-                "song": "Rockabye",
-                "artist": "Clean Bandit",
-                "song_path": "../songs/scoala/rockabye.mp3"
-            }, 
-
-            {
-                "song": "Rolling in the deep",
-                "artist": "Adela",
-                "song_path": "../songs/scoala/rolling in the deep.mp3"
-            },  
-
-            {
-                "song": "Sa nu-mi iei niciodata dragostea",
-                "artist": "Holograf",
-                "song_path": "../songs/scoala/sa nu'mi iei dragostea.mp3"
-            },  
-
-            {
-                "song": "Shallow",
-                "artist": "Lady Gaga & Bradley Cooper",
-                "song_path": "../songs/scoala/shallow.mp3"
-            },  
-
-            {
-                "song": "Smells like teen spirit",
-                "artist": "Nirvana",
-                "song_path": "../songs/scoala/smells like teen spirit.mp3"
-            }, 
-
-            {
-                "song": "Thumbs",
-                "artist": "Sabrina Carpenter",
-                "song_path": "../songs/scoala/thumbs.mp3"
-            },
-
-            {
-                "song": "Waka waka",
-                "artist": "Shakira",
-                "song_path": "../songs/scoala/waka waka.mp3"
-            },
-
-            {
-                "song": "Wake me up",
-                "artist": "Avicii",
-                "song_path": "../songs/scoala/wake me up.mp3"
-            }
-        ],
-
-    "studying":
-        [
-            {
-                "song": "Always you",
-                "song_path": "../songs/studying/always you.mp3"
-            },
-
-            {
-                "song": "Angel baby",
-                "song_path": "../songs/studying/angel baby.mp3"
-            },
-
-            {
-                "song": "Demons x Jar of Hearts",
-                "song_path": "../songs/studying/demons x jar of hearts.mp3"
-            },
-
-            {
-                "song": "Doing fine",
-                "song_path": "../songs/studying/doing fine.mp3"
-            },
-
-            {
-                "song": "Holding Hands",
-                "song_path": "../songs/studying/holding hands.mp3"
-            },
-
-            {
-                "song": "Human",
-                "song_path": "../songs/studying/human.mp3"
-            },
-
-            {
-                "song": "I don't know anything about love",
-                "song_path": "../songs/studying/i don't know anything about love.mp3"
-            },
-
-            {
-                "song": "When you're near",
-                "song_path": "../songs/studying/when you're near.mp3"
-            },
-
-            {
-                "song": "Won't leave you behind",
-                "song_path": "../songs/studying/won't leave you behind"
-            }
-        ]
+    "Kids": [],
+    "Olivia Rodrigo": [],
+    "Passenger": []
 }
