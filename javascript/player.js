@@ -419,6 +419,7 @@
                 lyrics();
 
                 audio.addEventListener('timeupdate', range_slider);
+                slider.addEventListener('change', change_currentTime);
             }   
 
             // show songs list
