@@ -68,6 +68,76 @@
             },
 
             {
+                "song": "A-O-K",
+                "artist": "Tai Verdes",
+                "song_path": "../songs/katty/aok.mp3",
+                "image_path": "../images/katty/tai_verdes.jpg"
+            },
+
+            {
+                "song": "Bad Habits",
+                "artist": "Ed Sheeran",
+                "song_path": "../songs/katty/bad habits.mp3",
+                "image_path": "../images/katty/ed_sheeran.jpg"
+            },
+
+            {
+                "song": "Chasing Cars",
+                "artist": "Snow Patrol",
+                "song_path": "../songs/katty/chasing cars.mp3",
+                "image_path": "../images/katty/snow_patrol.jpg"
+            },
+
+            {
+                "song": "Everything is sound",
+                "artist": "Jason Mraz",
+                "song_path": "../songs/katty/everything is sound.mp3",
+                "image_path": "../images/katty/everything_is_sound.jpg"
+            },
+
+            {
+                "song": "Leaning on myself",
+                "artist": "Anna of the North",
+                "song_path": "../songs/katty/leaning on myself.mp3",
+                "image_path": "../images/logo.png"
+            },
+
+            {
+                "song": "Ready to be myself",
+                "artist": "David Duun",
+                "song_path": "../songs/katty/ready to be myself.mp3",
+                "image_path": "../images/katty/daivd_dunn.jpg"
+            },
+            
+            {
+                "song": "Shape of you",
+                "artist": "Ed Sheeran",
+                "song_path": "../songs/katty/shape of you.mp3",
+                "image_path": "../images/katty/ed_sheeran.jpg"
+            },
+
+            {
+                "song": "Sword from the Stone",
+                "artist": "Passenger",
+                "song_path": "../songs/katty/sword from the stone.mp3",
+                "image_path": "../images/katty/passenger.jpg"
+            },
+
+            {
+                "song": "Living in the moment",
+                "artist": "Jason Mraz",
+                "song_path": "../songs/katty/living in the moment.mp3",
+                "image_path": "../images/katty/living_in_the_moment.jpg"
+            },
+
+            {
+                "song": "Perfect",
+                "artist": "Ed Sheeran",
+                "song_path": "../songs/katty/perfect.mp3",
+                "image_path": "../images/katty/ed_sheeran.jpg"
+            },
+
+            {
                 "song": "Always remember us this way",
                 "artist": "Lady Gaga",
                 "song_path": "../songs/katty/always remember us.mp3",

@@ -498,8 +498,8 @@ audio {
     color: rgb(197, 191, 191);
     list-style-type: none;
     margin-top: 50px;
-    text-align: left;
-    margin-left: 50px;
+    text-align: center;
+    /* margin-left: 50px; */
     font-size: 1.2em;
     cursor: pointer;
     transition: .7s ease-in-out all;
