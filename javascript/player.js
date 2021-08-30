@@ -493,7 +493,7 @@
                     kids.push(all_songs[counter]);
                 }
             }
-            console.log(kids);
+            // console.log(kids);
 
             let olivia = [];
             for ( let counter = 0; counter < all_songs.length; counter++ ) {
@@ -509,11 +509,27 @@
                 }
             }
 
+            let ed_sheeran = [];
+            for ( let counter = 0; counter < all_songs.length; counter++ ) {
+                if ( all_songs[counter].artist == "Ed Sheeran" ) {
+                    ed_sheeran.push(all_songs[counter]);
+                }
+            }
+
+            let jason_mraz = [];
+            for ( let counter = 0; counter < all_songs.length; counter++ ) {
+                if ( all_songs[counter].artist == "Jason Mraz" ) {
+                    jason_mraz.push(all_songs[counter]);
+                }
+            }
+
             let playlists = [
                 'All songs',
                 'Kids',
                 'Olivia Rodrigo',
-                'Passenger'
+                'Passenger',
+                'Ed Sheeran',
+                'Jason Mraz'
             ];  // array of playlists
 
             playlists.forEach( function( element ) {
@@ -530,24 +546,30 @@
                             songs = kids;
                             current_song_index = 0;
                             changePlaylist();
-                            updatePlayer();
-                            togglePlayPause();
                             break;
 
                         case 2:     // 'Olivia Rodrigo' playlist
                             songs = olivia;
                             current_song_index = 0;
                             changePlaylist();
-                            updatePlayer();
-                            togglePlayPause();
                             break;
                         
                         case 3: // 'Passenger' playlist
                             songs = passenger;
                             current_song_index = 0;
                             changePlaylist();
-                            updatePlayer();
-                            togglePlayPause();
+                            break;
+
+                        case 4: // 'Ed Sheeran' playlist
+                            songs = ed_sheeran;
+                            current_song_index = 0;
+                            changePlaylist();
+                            break;
+                        
+                        case 5: // 'Jason Mraz' playlist
+                            songs = jason_mraz;
+                            current_song_index = 0;
+                            changePlaylist();
                             break;
 
                         default:    // 'Katty' playlist
@@ -555,8 +577,6 @@
                             document.querySelector('#playlists-ul li').style.color = "rgb(214, 127, 127";
                             current_song_index = 0;
                             changePlaylist();
-                            updatePlayer();
-                            togglePlayPause();
                             break;
                     }
                 });
