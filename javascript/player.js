@@ -264,7 +264,6 @@
                     searchResultUl.appendChild(searchResult);
 
                     if ( filteredCharacters.length == 0 ) { // if no results
-                        // console.log(`No results for: "${searchString}" 😥`);
                         searchResult.innerHTML = `No results for: "${searchString}" 😥`;  // a text is added to announce that there are no results
                     } else {    // if there is at least one result
                         for ( let search_counter = 0; search_counter < filteredCharacters.length; search_counter++ ) {  // it goes through all the filtered songs
@@ -296,14 +295,12 @@
                                         }
                                     }
                                     
-                                    // console.log(lyrics_container.children[2].firstChild.innerHTML);
                                     // if ( lyrics_container.children[2].firstChild.innerHTML !=  "This song does not have any lyrics to show.") {
                                         while ( lyrics_container.children[2].firstChild ) {                                            
                                             lyrics_container.children[2].removeChild(lyrics_container.children[2].firstChild);
-                                        }
-                                    // }
+                                        // }
+                                    }
                                     lyrics();
-                                    console.log(lyrics_container.children[2]);
                                     
                                     $(songs_array).not(songs_array[current_song_index]).css("color", "#d3d3d3");
                                 });
@@ -492,35 +489,24 @@
                     kids.push(all_songs[counter]);
                 }
             }
-            // console.log(kids);
 
-            let olivia = [];
-            for ( let counter = 0; counter < all_songs.length; counter++ ) {
-                if ( all_songs[counter].artist == "Olivia Rodrigo") {
-                    olivia.push(all_songs[counter]);
+            function createPlaylist( playlist_array, artist ) {
+                for ( let counter = 0; counter < all_songs.length; counter++) {
+                    if ( all_songs[counter].artist == artist ) {
+                        playlist_array.push(all_songs[counter]);
+                    }
                 }
             }
 
-            let passenger = [];
-            for ( let counter = 0; counter < all_songs.length; counter++ ) {
-                if ( all_songs[counter].artist == "Passenger") {
-                    passenger.push(all_songs[counter]);
-                }
-            }
+            let olivia = [], 
+                passenger = [],
+                ed_sheeran = [],
+                jason_mraz = [];
 
-            let ed_sheeran = [];
-            for ( let counter = 0; counter < all_songs.length; counter++ ) {
-                if ( all_songs[counter].artist == "Ed Sheeran" ) {
-                    ed_sheeran.push(all_songs[counter]);
-                }
-            }
-
-            let jason_mraz = [];
-            for ( let counter = 0; counter < all_songs.length; counter++ ) {
-                if ( all_songs[counter].artist == "Jason Mraz" ) {
-                    jason_mraz.push(all_songs[counter]);
-                }
-            }
+            createPlaylist(olivia, "Olivia Rodrigo");
+            createPlaylist(passenger, "Passenger");
+            createPlaylist(ed_sheeran, "Ed Sheeran");
+            createPlaylist(jason_mraz, "Jason Mraz");
 
             let playlists = [
                 'All songs',
@@ -573,7 +559,7 @@
 
                         default:    // 'Katty' playlist
                             songs = all_songs;
-                            document.querySelector('#playlists-ul li').style.color = "rgb(214, 127, 127";
+                            // document.querySelector('#playlists-ul li').style.color = "rgb(214, 127, 127";
                             current_song_index = 0;
                             changePlaylist();
                             break;
@@ -604,6 +590,11 @@
 
                 updatePlayer();
                 togglePlayPause();
+                if ( lyrics_container.children[2].firstChild.innerHTML == "This song does not have any lyrics to show." && document.querySelector('.lyrics').children.length > 1 ) {
+                    if ( document.querySelector('.lyrics').firstChild.innerHTML == "This song does not have any lyrics to show." ) {
+                        document.querySelector('.lyrics').removeChild(document.querySelector('.lyrics').firstChild);
+                    }
+                }
             }
 
             // LYRICS PART
