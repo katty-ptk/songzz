@@ -89,6 +89,20 @@
             },
 
             {
+                "song": "Follow your fire",
+                "artist": "Kodaline",
+                "song_path": "../songs/katty/follow your fire.mp3",
+                "image_path": "../images/katty/kodaline.jpg"
+            },
+
+            {
+                "song": "Got it in you",
+                "artist": "Banners",
+                "song_path": "../songs/katty/got it in you.mp3",
+                "image_path": "../images/katty/banners.jpg"
+            },
+
+            {
                 "song": "Everything is sound",
                 "artist": "Jason Mraz",
                 "song_path": "../songs/katty/everything is sound.mp3",
@@ -107,6 +121,13 @@
                 "artist": "David Duun",
                 "song_path": "../songs/katty/ready to be myself.mp3",
                 "image_path": "../images/katty/daivd_dunn.jpg"
+            },
+
+            {
+                "song": "High hopes",
+                "artist": "Kodaline",
+                "song_path": "../songs/katty/high hopes.mp3",
+                "image_path": "../images/katty/kodaline.jpg"
             },
             
             {
@@ -142,6 +163,13 @@
                 "artist": "Lady Gaga",
                 "song_path": "../songs/katty/always remember us.mp3",
                 "image_path": "../images/katty/lady_gaga.jpg"
+            },
+
+            {
+                "song": "Temple Bar",
+                "artist": "Kodaline",
+                "song_path": "../songs/katty/temple bar.mp3",
+                "image_path": "../images/katty/kodaline.jpg"
             },
 
             {

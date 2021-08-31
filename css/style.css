@@ -513,6 +513,7 @@ audio {
 
 .playlists ul li:first-child {
     color: rgb(214, 127, 127);
+    font-style: italic;
 }
 
 .playlists #hide-playlists {
