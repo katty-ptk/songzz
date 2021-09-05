@@ -248,6 +248,20 @@
             },
 
             {
+                "song": "A milion dreams",
+                "artist": "from The Greatest Showman",
+                "song_path": "../songs/katty/a milion dreams.mp3",
+                "image_path": "../images/katty/showman.jpg"
+            },
+
+            {
+                "song": "Half the world away",
+                "artist": "AURORA",
+                "song_path": "../songs/katty/half the world away.mp3",
+                "image_path": "../images/katty/aurora.jpeg"
+            },
+
+            {
                 "song": "Good 4 U",
                 "artist": "Olivia Rodrigo",
                 "song_path": "../songs/katty/good 4 u.mp3",

@@ -339,15 +339,10 @@
 
 
             // show playlists
-            show_playlists_btn.addEventListener('click', function() {
+            show_playlists_btn.addEventListener('click', showPlaylists);
+
+            function showPlaylists() {
                 playlists_div.style.display = "block";
-
-                // checking if the songs div and the playlist div would be on top of each other
-                if ( songs_div.style.display != "none" && songs_div.style.left == "0px" ) {
-                    songs_div.style.display = "none";
-                    show_songs_btn.style.display = "block";
-                }
-
                 playlists_div.classList.remove('hide-playlists');
                 playlists_div.classList.add('show-playlists');
                 show_playlists_btn.style.display = "none";
@@ -363,7 +358,7 @@
                     playlists_div.classList.add('hide-playlists');
                     show_playlists_btn.style.display = "block";
                 });
-            });
+            }
 
             initPlay();
 
@@ -415,6 +410,8 @@
                     togglePlayPause();
                     audio.play();
                 });
+
+                
             }
 
             // go to next song
@@ -616,6 +613,8 @@
                 
                 if ( window.innerWidth < 728 ) {
                     container.style.display = "block";
+                    show_songs_btn.style.display = "block";
+                    show_playlists_btn.style.display = "block";
                     // lyrics_container.style.display = "none";
                 }
             });
@@ -629,7 +628,9 @@
                     if ( window.innerWidth < 728 ) {
                         container.style.display = "none";
                         songs_div.style.display = "none";
+                        show_songs_btn.style.display = "none";
                         playlists_div.style.display = "none";
+                        show_playlists_btn.style.display = "none";
                         lyrics_container.classList.add('full-lyrics');
                     }
             });          

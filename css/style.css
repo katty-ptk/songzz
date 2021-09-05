@@ -17,38 +17,34 @@ header {
     padding-right: 30px; */
 }
 
-header #show-songs-btn, header #show-playlists-btn, header .lyrics-btn {
+header #show-songs-btn, header #show-playlists-btn {
     color: #964343;
     font-family: cursive;
-    font-size: 30px;
-    float: right;
     margin-top: 30px;
     background: none;
     border: none;
-    transition: 0.3s ease-in-out all;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 header #show-playlists-btn {
     font-size: 50px;
     float: left;
+    /* margin-left: 35px; */
+    cursor: pointer;
+    z-index: 9;
+}
+
+header #show-songs-btn {
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 header #show-songs-btn:hover, header #show-playlists-btn:hover, .lyrics-container #hide-lyrics:hover {
-    cursor: pointer;
     color: #c56a6a;
 }
 
-/* .lyrics-container {
-    display: none;
-} */
-
-header .lyrics-btn {
-    display: none;
-    margin-right: 100px;
-    font-size: 1.3em;
-    margin-top: 40px;
-}
 
 header span {
     position: absolute;
@@ -148,7 +144,6 @@ audio {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    /* border: 3px solid #ddd; */
     width: 90%;
     height: 100%;
     margin-top: 4%;
@@ -159,13 +154,11 @@ audio {
 }
 
 .container {
-    width: 60%;
-    margin-left: 0px;
-    margin-top: 0%;
-    transform: translateY(0%);
     position: relative;
-    /* float: left; */
-    /* border-right: 1px solid coral; */
+    width: 50%;
+    height: 50%;
+    /* margin-left: 100px; */
+    margin-top: 0%;
 }
 
 .container .info, .container .actions {
@@ -251,7 +244,6 @@ audio {
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
-    pointer-events: auto;
     transition: all 300ms ease-in-out;
 }
 
@@ -261,7 +253,6 @@ audio {
 }
 
 .container .actions .show-more-actions {
-    display: block;
     position: relative;
     width: 500px;
     animation-name: showMoreActions;
@@ -334,19 +325,17 @@ audio {
 
 /* LYRICS */
 .lyrics-container {
+    position: relative;
     overflow: auto;
     text-align: center;
     line-height: 30px;
     padding-bottom: 30px;
-
     width: 40%;
     height: 77%;
     margin-top: 80px;
     border: 1px solid #ccc;
     border-radius: 50px;
-    /* box-shadow: 5px 5px 10px rgb(68, 67, 67); */
     box-shadow: 5px 5px 10px rgba(224, 224, 224, 0.3);
-    position: relative;
 }
 
 .lyrics-container::-webkit-scrollbar {
@@ -393,43 +382,16 @@ audio {
 
 /* songs div */
 .songs-div, .playlists {
-    height: 400px;
-    width: 100px;
-    overflow: auto;
-    border-left: 1px solid #6b6a6a;
     border-radius: 20px;
     position: absolute;
     top: 110px;
-    right: 0;
+    overflow: auto;
     overflow-x: hidden;
 }
 
-.show-songs, .show-playlists {
-    animation-name: showSongs;
-    animation-duration: 0.7s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-.hide-songs, .hide-playlists { 
-    animation-name: hideSongs;
-    animation-duration: 0.7s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-.songs-div::-webkit-scrollbar, .playlists::-webkit-scrollbar {
-    width: 5px;
-    background: transparent;
-}
-
-.songs-div::-webkit-scrollbar-thumb, .playlists::-webkit-scrollbar-thumb {
-    background-color: rgb(36, 36, 36);
-    border-radius: 18px;
-}
-
-.songs-div::-webkit-scrollbar-thumb:hover, .playlists::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(95, 95, 95);
+.songs-div {
+    right: 0;
+    border-left: 1px solid #6b6a6a;
 }
 
 .songs-div .songs-ul li {
@@ -492,15 +454,25 @@ audio {
     left: 0;
     border-left: none;
     border-right: 1px solid #6b6a6a;
+    border: 3px solid white;
 }
 
-.playlists ul li {
+.playlists ul, .playlists ul li{
+    margin: 0;
+    padding: 0;
+}
+
+.playlists ul li{
     color: rgb(197, 191, 191);
-    list-style-type: none;
+    list-style: none;
+    /* border: 3px solid white; */
+    /* list-style-type: none; */
     margin-top: 50px;
     text-align: center;
-    /* margin-left: 50px; */
+    /* margin-left: 50%; */
+    /* transform: translateX(-25%); */
     font-size: 1.2em;
+    width: 100%;
     cursor: pointer;
     transition: .7s ease-in-out all;
 }
@@ -510,9 +482,43 @@ audio {
     font-style: italic;
 }
 
+.playlists ul li:last-child {
+    margin-bottom: 20px;
+}
+
 .playlists #hide-playlists {
     left: 0px;
 }
+
+.show-songs, .show-playlists {
+    animation-name: showSongs;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.hide-songs, .hide-playlists { 
+    animation-name: hideSongs;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.songs-div::-webkit-scrollbar, .playlists::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+
+.songs-div::-webkit-scrollbar-thumb, .playlists::-webkit-scrollbar-thumb {
+    background-color: rgb(36, 36, 36);
+    border-radius: 18px;
+}
+
+.songs-div::-webkit-scrollbar-thumb:hover, .playlists::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(95, 95, 95);
+}
+
+
 
 /*  */
 .full-lyrics {
@@ -544,19 +550,29 @@ audio {
 }
 
 /* MEDIA QUERIES */
-@media screen and ( max-width: 280px ) {
-    /* header .study-timer {
-        font-size: 16px;
-        width: 60%;
+@media screen and ( max-width: 728px ) {
+    header #show-playlists-btn {
+        margin-left: 10px;
+        text-align: left;
+        z-index: 9;
     }
 
-    header .study-timer .timer-buttons button {
-        width: 30px;
-        height: 30px;
-    } */
+    .container {
+        text-align: center;
+        width: 100%;
+    }
 
-    .container .song-image {
-        width: 100px;
+    .showLyrics {
+        display: block;
+    }
+
+    .container .actions .show-more-actions input[type="range"] {
+        display: block;
+        left: 47%;
+    }
+
+    #forwards, #backwards {
+        display: none;
     }
 }
 
@@ -565,10 +581,6 @@ audio {
         height: 300px;
         width: 80px;
     }
-
-    /* .study-timer {
-        display: none;
-    } */
 
     .searchbar input {
         margin-left: 0px;
@@ -584,6 +596,17 @@ audio {
         top: 35%;
         transform: translateY(-20%);
     }
+}
+
+@media screen and ( min-width: 400px ) and ( max-width: 600px ) {
+    .songs-div, .playlists {
+        height: 330px;
+    }
+    
+    .container {
+        top: 15%;
+    }
+
 }
 
 @media screen and ( min-width: 600px ) and ( max-width: 768px ) {
@@ -659,10 +682,6 @@ audio {
 @media screen and ( max-height: 600px ) {
     body {
         overflow: auto;
-    }
-
-    header span {
-        display: none;
     }
     
     /* header .study-timer {
