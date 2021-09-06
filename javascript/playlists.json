@@ -4,8 +4,8 @@
             {
                 "song": "It's Alright",
                 "artist": "Mother Mother",
-                "song_path": "../songs/katty/its alright.mp3",
-                "image_path": "../images/katty/moter_mother.jpg",
+                "song_path": "../songs/its alright.mp3",
+                "image_path": "../images/moter_mother.jpg",
                 "lyrics": [
                     "Oh hey, I had a night I had a day",
                     "I did one milion stupid things",
@@ -63,141 +63,141 @@
             {
                 "song": "Alone",
                 "artist": "Rag'n'Bone Man",
-                "song_path": "../songs/katty/alone.mp3",
-                "image_path": "../images/katty/bone_man.png"
+                "song_path": "../songs/alone.mp3",
+                "image_path": "../images/bone_man.png"
             },
 
             {
                 "song": "A-O-K",
                 "artist": "Tai Verdes",
-                "song_path": "../songs/katty/aok.mp3",
-                "image_path": "../images/katty/tai_verdes.jpg"
+                "song_path": "../songs/aok.mp3",
+                "image_path": "../images/tai_verdes.jpg"
             },
 
             {
                 "song": "Bad Habits",
                 "artist": "Ed Sheeran",
-                "song_path": "../songs/katty/bad habits.mp3",
-                "image_path": "../images/katty/ed_sheeran.jpg"
+                "song_path": "../songs/bad habits.mp3",
+                "image_path": "../images/ed_sheeran.jpg"
             },
 
             {
                 "song": "Chasing Cars",
                 "artist": "Snow Patrol",
-                "song_path": "../songs/katty/chasing cars.mp3",
-                "image_path": "../images/katty/snow_patrol.jpg"
+                "song_path": "../songs/chasing cars.mp3",
+                "image_path": "../images/snow_patrol.jpg"
             },
 
             {
                 "song": "Follow your fire",
                 "artist": "Kodaline",
-                "song_path": "../songs/katty/follow your fire.mp3",
-                "image_path": "../images/katty/kodaline.jpg"
+                "song_path": "../songs/follow your fire.mp3",
+                "image_path": "../images/kodaline.jpg"
             },
 
             {
                 "song": "Got it in you",
                 "artist": "Banners",
-                "song_path": "../songs/katty/got it in you.mp3",
-                "image_path": "../images/katty/banners.jpg"
+                "song_path": "../songs/got it in you.mp3",
+                "image_path": "../images/banners.jpg"
             },
 
             {
                 "song": "Everything is sound",
                 "artist": "Jason Mraz",
-                "song_path": "../songs/katty/everything is sound.mp3",
-                "image_path": "../images/katty/everything_is_sound.jpg"
+                "song_path": "../songs/everything is sound.mp3",
+                "image_path": "../images/everything_is_sound.jpg"
             },
 
             {
                 "song": "Leaning on myself",
                 "artist": "Anna of the North",
-                "song_path": "../songs/katty/leaning on myself.mp3",
+                "song_path": "../songs/leaning on myself.mp3",
                 "image_path": "../images/logo.png"
             },
 
             {
                 "song": "Ready to be myself",
                 "artist": "David Duun",
-                "song_path": "../songs/katty/ready to be myself.mp3",
-                "image_path": "../images/katty/daivd_dunn.jpg"
+                "song_path": "../songs/ready to be myself.mp3",
+                "image_path": "../images/daivd_dunn.jpg"
             },
 
             {
                 "song": "High hopes",
                 "artist": "Kodaline",
-                "song_path": "../songs/katty/high hopes.mp3",
-                "image_path": "../images/katty/kodaline.jpg"
+                "song_path": "../songs/high hopes.mp3",
+                "image_path": "../images/kodaline.jpg"
             },
             
             {
                 "song": "Shape of you",
                 "artist": "Ed Sheeran",
-                "song_path": "../songs/katty/shape of you.mp3",
-                "image_path": "../images/katty/ed_sheeran.jpg"
+                "song_path": "../songs/shape of you.mp3",
+                "image_path": "../images/ed_sheeran.jpg"
             },
 
             {
                 "song": "Sword from the Stone",
                 "artist": "Passenger",
-                "song_path": "../songs/katty/sword from the stone.mp3",
-                "image_path": "../images/katty/passenger.jpg"
+                "song_path": "../songs/sword from the stone.mp3",
+                "image_path": "../images/passenger.jpg"
             },
 
             {
                 "song": "Living in the moment",
                 "artist": "Jason Mraz",
-                "song_path": "../songs/katty/living in the moment.mp3",
-                "image_path": "../images/katty/living_in_the_moment.jpg"
+                "song_path": "../songs/living in the moment.mp3",
+                "image_path": "../images/living_in_the_moment.jpg"
             },
 
             {
                 "song": "Perfect",
                 "artist": "Ed Sheeran",
-                "song_path": "../songs/katty/perfect.mp3",
-                "image_path": "../images/katty/ed_sheeran.jpg"
+                "song_path": "../songs/perfect.mp3",
+                "image_path": "../images/ed_sheeran.jpg"
             },
 
             {
                 "song": "Always remember us this way",
                 "artist": "Lady Gaga",
-                "song_path": "../songs/katty/always remember us.mp3",
-                "image_path": "../images/katty/lady_gaga.jpg"
+                "song_path": "../songs/always remember us.mp3",
+                "image_path": "../images/lady_gaga.jpg"
             },
 
             {
                 "song": "Temple Bar",
                 "artist": "Kodaline",
-                "song_path": "../songs/katty/temple bar.mp3",
-                "image_path": "../images/katty/kodaline.jpg"
+                "song_path": "../songs/temple bar.mp3",
+                "image_path": "../images/kodaline.jpg"
             },
 
             {
                 "song": "Cage the Elephant",
                 "artist": "Cigarette Daydreams",
-                "song_path": "../songs/katty/cage the elephant.mp3",
+                "song_path": "../songs/cage the elephant.mp3",
                 "image_path": "../images/logo.png"
             },
 
             {
                 "song": "Cover me in sunshine",
                 "artist": "P!nk & Sage",
-                "song_path": "../songs/katty/cover me in sunshine.mp3",
-                "image_path": "../images/katty/pink.jpg"
+                "song_path": "../songs/cover me in sunshine.mp3",
+                "image_path": "../images/pink.jpg"
             },
 
             {
                 "song": "Everytime I cry",
                 "artist": "Ava Max",
-                "song_path": "../songs/katty/everytime i cry.mp3",
-                "image_path": "../images/katty/ava_max.jpg"
+                "song_path": "../songs/everytime i cry.mp3",
+                "image_path": "../images/ava_max.jpg"
             },
 
             {
                 "song": "Scare away the dark",
                 "artist": "Passenger",
-                "song_path": "../songs/katty/scare away the dark.mp3",
-                "image_path": "../images/katty/passenger.jpg",
+                "song_path": "../songs/scare away the dark.mp3",
+                "image_path": "../images/passenger.jpg",
                 "lyrics": [
                     "Well sing, sing at the top of your voice",
                     "Love without fear in your heart",
@@ -242,109 +242,109 @@
             {
                 "song": "Who says",
                 "artist": "Selena Gomez",
-                "song_path": "../songs/katty/who says.mp3",
-                "image_path": "../images/katty/who_says.jpg"
+                "song_path": "../songs/who says.mp3",
+                "image_path": "../images/who_says.jpg"
             },
 
             {
                 "song": "Get back up again",
                 "artist": "from Trolls",
-                "song_path": "../songs/katty/get back up again.mp3",
-                "image_path": "../images/katty/trolls_girl.jpg",
+                "song_path": "../songs/get back up again.mp3",
+                "image_path": "../images//trolls_girl.jpg",
                 "category": "kids"
             },
 
             {
                 "song": "A milion dreams",
                 "artist": "from The Greatest Showman",
-                "song_path": "../songs/katty/a milion dreams.mp3",
-                "image_path": "../images/katty/showman.jpg"
+                "song_path": "../songs/a milion dreams.mp3",
+                "image_path": "../images/showman.jpg"
             },
 
             {
                 "song": "Half the world away",
                 "artist": "AURORA",
-                "song_path": "../songs/katty/half the world away.mp3",
-                "image_path": "../images/katty/aurora.jpeg"
+                "song_path": "../songs/half the world away.mp3",
+                "image_path": "../images/aurora.jpeg"
             },
 
             {
                 "song": "Good 4 U",
                 "artist": "Olivia Rodrigo",
-                "song_path": "../songs/katty/good 4 u.mp3",
-                "image_path": "../images/katty/olivia_rodrigo.jpg"
+                "song_path": "../songs/good 4 u.mp3",
+                "image_path": "../images/olivia_rodrigo.jpg"
             },
 
             {
                 "song": "Head Shoulders Knees and Toes",
                 "artist": "Ogenbach & Quarterhead",
-                "song_path": "../songs/katty/head shoulders knees and toes.mp3",
-                "image_path": "../images/katty/ofenbach_quarterhead.jpg"
+                "song_path": "../songs/head shoulders knees and toes.mp3",
+                "image_path": "../images/ofenbach_quarterhead.jpg"
             },
 
             {
                 "song": "Hell or High Water",
                 "artist": "Passenger",
-                "song_path": "../songs/katty/hell or high water.mp3",
-                "image_path": "../images/katty/passenger.jpg"
+                "song_path": "../songs/hell or high water.mp3",
+                "image_path": "../images/passenger.jpg"
             },
 
             {
                 "song": "How far I'll go",
                 "artist": "from Moana",
-                "song_path": "../songs/katty/how far ill go.mp3",
-                "image_path": "../images/katty/moana.jpg",
+                "song_path": "../songs/how far ill go.mp3",
+                "image_path": "../images/moana.jpg",
                 "category": "kids"
             },
 
             {
                 "song": "I already know",
                 "artist": "Stacey Ryan",
-                "song_path": "../songs/katty/i already know.mp3",
-                "image_path": "../images/katty/stacey_ryann.jpg"
+                "song_path": "../songs/i already know.mp3",
+                "image_path": "../images/stacey_ryann.jpg"
             },
 
             {
                 "song": "Just the way you are",
                 "artist": "Bruno Mars",
-                "song_path": "../songs/katty/just the way you are.mp3",
-                "image_path": "../images/katty/bruno_mars.jpg..jpg"
+                "song_path": "../songs/just the way you are.mp3",
+                "image_path": "../images/bruno_mars.jpg..jpg"
             },
 
             {
                 "song": "One step forward, three steps back",
                 "artist": "Olivia Rodrigo",
-                "song_path": "../songs/katty/one step forward.mp3",
-                "image_path": "../images/katty/olivia_rodrigo.jpg"
+                "song_path": "../songs/one step forward.mp3",
+                "image_path": "../images/olivia_rodrigo.jpg"
             },
 
             {
                 "song": "Ready for it all",
                 "artist": "Wayley",
-                "song_path": "../songs/katty/ready for it all.mp3",
-                "image_path": "../images/katty/wayley.jpg"
+                "song_path": "../songs/ready for it all.mp3",
+                "image_path": "../images/wayley.jpg"
             },
 
             {
                 "song": "You're welcome",
                 "artist": "from Moana",
-                "song_path": "../songs/katty/youre welcome.mp3",
-                "image_path": "../images/katty/maui.jpg",
+                "song_path": "../songs/youre welcome.mp3",
+                "image_path": "../images/maui.jpg",
                 "category": "kids"
             },
 
             {
                 "song": "What makes you beautiful",
                 "artist": "One Direction",
-                "song_path": "../songs/katty/what makes you beautiful.mp3",
-                "image_path": "../images/katty/one_direction.jpg"
+                "song_path": "../songs/what makes you beautiful.mp3",
+                "image_path": "../images/one_direction.jpg"
             },
 
             {
                 "song": "Have it all",
                 "artist": "Jason Mraz",
-                "song_path": "../songs/katty/have it all.mp3",
-                "image_path": "../images/katty/have_it_all.jpg",
+                "song_path": "../songs/have it all.mp3",
+                "image_path": "../images/have_it_all.jpg",
                 "lyrics": [
                     "May you have auspiciousness and causes of success",
                     "May you have the confidence to always do your best",
@@ -401,51 +401,51 @@
             {
                 "song": "Lullaby Love",
                 "artist": "Roo Panes",
-                "song_path": "../songs/katty/lullaby love.mp3",
-                "image_path": "../images/katty/roo_panes.jpg"
+                "song_path": "../songs/lullaby love.mp3",
+                "image_path": "../images/roo_panes.jpg"
             },
 
             {
                 "song": "Umbrella",
                 "artist": "cover by Nursena Yener",
-                "song_path": "../songs/katty/umbrella.mp3",
+                "song_path": "../songs/umbrella.mp3",
                 "image_path": "../images/logo.png"
             },
 
             {
                 "song": "True colors",
                 "artist": "from Trolls", 
-                "song_path": "../songs/katty/true colors.mp3",
-                "image_path": "../images/katty/trolls.jpg",
+                "song_path": "../songs/true colors.mp3",
+                "image_path": "../images/trolls.jpg",
                 "category": "kids"
             },
 
             {
                 "song": "Sweet but Psycho",
                 "artist": "Ava Max",
-                "song_path": "../songs/katty/sweet but psycho.mp3",
-                "image_path": "../images/katty/ava_max.jpg"
+                "song_path": "../songs/sweet but psycho.mp3",
+                "image_path": "../images/ava_max.jpg"
             },
 
             {
                 "song": "Sweater Weather",
                 "artist": "The Neighbourhood",
-                "song_path": "../songs/katty/sweater weather.mp3",
-                "image_path": "../images/katty/neighbourhood.jpg"
+                "song_path": "../songs/sweater weather.mp3",
+                "image_path": "../images/neighbourhood.jpg"
             },
 
             {
                 "song": "Simple Song",
                 "artist": "Passenger",
-                "song_path": "../songs/katty/simple song.mp3",
-                "image_path": "../images/katty/passenger.jpg"
+                "song_path": "../songs/simple song.mp3",
+                "image_path": "../images/passenger.jpg"
             },
 
             {
                 "song": "I've no more fs to give",
                 "artist": "Thomas Benjamin",
-                "song_path": "../songs/katty/ive no more fs.mp3",
-                "image_path": "../images/katty/thomas.jpeg"
+                "song_path": "../songs/ive no more fs.mp3",
+                "image_path": "../images/thomas.jpeg"
             }
         ],
 
