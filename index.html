@@ -34,9 +34,6 @@
         <div class="logo">
             <img src="images/logo.png" alt="songzz logo">
         </div>
-        
-        <button id="show-playlists-btn" title="show playlists">&#8411;</button>
-        <!-- <button id="show-playlists-btn" title="show playlists"><p>&#8801;</p></button> -->
 
         <span></span> <!-- the pink line-->
     </header>
@@ -129,10 +126,12 @@
                             <path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm4-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
                         </svg>
 
-                        <div class="showLyrics" onclick="showHideSongs()">
+                        <div id="show-lyrics-btn" class="showLyrics" onclick="showHideSongs()">
                             <!-- <h2 class="lyrics-btn" onclick="showHideSongs()">Lyrics</h2> -->
                             Lyrics
                         </div>
+
+                        <div id="show-playlists-btn" class="showLyrics">Playlists</div>
                 
                     </div>  
                 </div>
