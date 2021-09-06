@@ -240,6 +240,13 @@
             },
 
             {
+                "song": "Who says",
+                "artist": "Selena Gomez",
+                "song_path": "../songs/katty/who says.mp3",
+                "image_path": "../images/katty/who_says.jpg"
+            },
+
+            {
                 "song": "Get back up again",
                 "artist": "from Trolls",
                 "song_path": "../songs/katty/get back up again.mp3",

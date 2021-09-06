@@ -17,31 +17,36 @@ header {
     padding-right: 30px; */
 }
 
-header #show-songs-btn, header #show-playlists-btn {
+header #show-songs-btn {
     color: #964343;
     font-family: cursive;
+    font-size: 30px;
+    font-weight: bold;
     margin-top: 30px;
+    float: right;
     background: none;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
-header #show-playlists-btn {
-    font-size: 50px;
-    float: left;
-    /* margin-left: 35px; */
-    cursor: pointer;
-    z-index: 9;
-}
-
-header #show-songs-btn {
+#hide-songs {
+    display: none;
+    position: absolute;
+    margin-top: 70px;
     float: right;
-    font-size: 30px;
+    right: 5px;
+    color: #964343;
+    font-family: cursive;
     font-weight: bold;
+    font-size: 1.3em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
-header #show-songs-btn:hover, header #show-playlists-btn:hover, .lyrics-container #hide-lyrics:hover {
+header #show-songs-btn:hover, .lyrics-container #hide-lyrics:hover {
     color: #c56a6a;
 }
 
@@ -191,7 +196,7 @@ audio {
 .container input[role="slider"] {
     -webkit-appearance: none;
     position: absolute;
-    width: 180px;
+    width: 140px;
     left: 50%;
     transform: translateX(-50%);
     height: 5px;
@@ -230,6 +235,10 @@ audio {
 
 .container .actions .more-actions-div {
     display: none;
+}
+
+#show-playlists-btn {
+    display: block;
 }
 
 .showLyrics {
@@ -413,7 +422,8 @@ audio {
 .songs-div .songs-ul li:last-child {
     margin-bottom: 30px;
 }
-.songs-div #hide-songs, .playlists #hide-playlists {
+
+.playlists #hide-playlists {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -430,7 +440,7 @@ audio {
 .searchbar {
     position: relative;
     /* margin-bottom: 30px; */
-    margin-top: 35px;
+    margin-top: 10px;
 }
 
 .searchbar input {
@@ -460,7 +470,7 @@ audio {
     left: 0;
     border-left: none;
     border-right: 1px solid #6b6a6a;
-    border: 3px solid white;
+    /* border: 3px solid white; */
 }
 
 .playlists ul, .playlists ul li{
@@ -557,10 +567,15 @@ audio {
 
 /* MEDIA QUERIES */
 @media screen and ( max-width: 728px ) {
-    header #show-playlists-btn {
+    /* header #show-playlists-btn {
         margin-left: 10px;
         text-align: left;
         z-index: 9;
+    } */
+
+    .songs-div, .playlists {
+        height: 300px;
+        width: 100px;
     }
 
     .container {
@@ -642,9 +657,9 @@ audio {
         font-size: 40px;
     }
 
-    header #show-playlists-btn {
+    /* header #show-playlists-btn {
         font-size: 60px;
-    }
+    } */
 
     .songs-div, .playlists {
         width: 220px;
