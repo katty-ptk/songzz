@@ -389,7 +389,8 @@
 
                 song_artist.innerText = song.artist;
                 audio.src = song.song_path;
-                document.title = `playing: ${song.song}`;
+                document.title = `songzz playing: ${song.song}`;
+                // document.title = "songzz";
 
                 songs_array[current_song_index].style.color = "rgb(214, 127, 127)";
                 $(songs_array).not(songs_array[current_song_index]).css("color", "#d3d3d3");
@@ -617,7 +618,6 @@
             }
 
             // LYRICS PART
-
             hide_lyrics_btn.addEventListener('click', () => {
                 document.querySelector(".showLyrics").style.display = "block";
                 $(lyrics_container).slideUp('slow');
@@ -632,6 +632,8 @@
 
             document.querySelector('#show-lyrics-btn').addEventListener('click', () => {
                     // alert('clicked')
+
+            document.querySelector('.showLyrics').addEventListener('click', () => {
                     document.querySelector(".showLyrics").style.display = "none";
                     $(lyrics_container).slideDown('slow');
                     document.querySelector('.lyrics-container h2').innerHTML = 'Lyrics - ' + song_title.innerHTML;
@@ -656,21 +658,40 @@
                     let lyric_p = document.createElement('p');
                     lyric_p.textContent = songs[current_song_index].lyrics[p];
                     document.querySelector(".lyrics").appendChild(lyric_p);
-    
-                    if ( lyric_p.textContent == " " ) {
-                        document.querySelector(".lyrics").appendChild(document.createElement('br'));
-                    }
 
-                    document.querySelector("audio").addEventListener('ended', changeLyrics);
-                    document.querySelector("#previous-song").addEventListener('click', changeLyrics);
-                    document.querySelector("#next-song").addEventListener('click', changeLyrics);
-                    songs_ul.addEventListener('click', changeLyrics);
+                if ( window.innerWidth < 728 ) {
+                    document.querySelector('.showLyrics').style.display = "block";
+                }
+
+                if ( !songs[current_song_index].lyrics ) {
+                    document.querySelector(".lyrics").innerHTML = "<p>This song does not have any lyrics to show.";
+                    return;
+                } else {
+                    for ( let p = 0; p < songs[current_song_index].lyrics.length; p++ ) {
+                        let lyric_p = document.createElement('p');
+                        lyric_p.textContent = katty[current_song_index].lyrics[p];
+                        document.querySelector(".lyrics").appendChild(lyric_p);
+        
+                        if ( lyric_p.textContent == " " ) {
+                            document.querySelector(".lyrics").appendChild(document.createElement('br'));
+                        }
+    
+                        document.querySelector("audio").addEventListener('ended', changeLyrics);
+                        document.querySelector("#previous-song").addEventListener('click', changeLyrics);
+                        document.querySelector("#next-song").addEventListener('click', changeLyrics);
+                        songs_ul.addEventListener('click', changeLyrics);
+                    }
                 }
 
                 function changeLyrics() {
                     for ( let remove = songs[current_song_index].lyrics.length; remove >= 0; remove-- ) {
                         document.querySelector(".lyrics").innerHTML = "";
                         lyrics();
+                    if ( songs[current_song_index].lyrics ) {
+                        for ( let remove = songs[current_song_index].lyrics.length; remove >= 0; remove-- ) {
+                            document.querySelector(".lyrics").innerHTML = "";
+                            lyrics();
+                        }
                     }
                 }
             }
