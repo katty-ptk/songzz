@@ -627,10 +627,11 @@ audio {
 @media screen and ( min-width: 400px ) and ( max-width: 600px ) {
     .songs-div, .playlists {
         height: 330px;
+        width: 100px;
     }
     
     .container {
-        top: 15%;
+        top: 30%;
     }
 
 }
