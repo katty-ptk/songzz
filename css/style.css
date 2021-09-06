@@ -30,7 +30,7 @@ header #show-songs-btn {
     transition: all 0.3s ease-in-out;
 }
 
-#hide-songs {
+#hide-songs, #hide-playlists {
     display: none;
     position: absolute;
     margin-top: 70px;
@@ -44,6 +44,11 @@ header #show-songs-btn {
     border: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+}
+
+#hide-playlists {
+    float: left;
+    left: 5px;
 }
 
 header #show-songs-btn:hover, .lyrics-container #hide-lyrics:hover {
@@ -423,7 +428,7 @@ audio {
     margin-bottom: 30px;
 }
 
-.playlists #hide-playlists {
+/* .playlists #hide-playlists {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -434,7 +439,7 @@ audio {
     border: none;
     color: rgb(165, 71, 71);
     cursor: pointer;
-}
+} */
 
 /* SEARCH BAR */
 .searchbar {
