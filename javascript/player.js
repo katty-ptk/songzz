@@ -44,7 +44,7 @@
     }
 
     const hide_lyrics_btn = document.querySelector("#hide-lyrics");
-    const show_lyrics_btn = document.querySelector(".lyrics-btn");
+    const show_lyrics_btn = document.querySelector("#show-lyrics-btn");
 
     function showHideLyrics() {
         if ( lyrics_container.style.display != "none" ) {
@@ -649,8 +649,15 @@
 
             function lyrics() {
                 if ( !songs[current_song_index].lyrics ) {
+                    show_lyrics_btn.style.display = "none";
+                    document.querySelector('#lyrics-add').style.display = "none";
                     document.querySelector(".lyrics").innerHTML = "<p>This song does not have any lyrics to show.";
                     return;
+                } else {
+                    document.querySelector('#lyrics-add').style.display = "block";
+                    if ( lyrics_container.style.display == "none" ) {
+                        show_lyrics_btn.style.display = "block";
+                    }
                 }
                 for ( let p = 0; p < songs[current_song_index].lyrics.length; p++ ) {
                     let lyric_p = document.createElement('p');

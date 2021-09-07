@@ -182,6 +182,15 @@ audio {
     transition: all 0.2s ease;
 }
 
+.container #lyrics-add {
+    position: absolute;
+    left: 165px;
+    top: 15px;
+    transform: rotateZ(45deg);
+    font-size: 0.7em;
+    text-shadow: 0.5px 0.5px 5px #964343;
+    
+}
 
 .container .info {
     color: rgb(197, 191, 191);
