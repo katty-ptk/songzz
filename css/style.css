@@ -184,12 +184,25 @@ audio {
 
 .container #lyrics-add {
     position: absolute;
-    left: 165px;
-    top: 15px;
-    transform: rotateZ(45deg);
+    margin-top: 15px;
+    margin-left: 56%;
+    color: #ddd;
     font-size: 0.7em;
-    text-shadow: 0.5px 0.5px 5px #964343;
-    
+    font-weight: bold;
+    transform: rotateZ(45deg);
+    text-shadow: 0 2px 5px #964343;
+    cursor: default;
+}
+
+.container #lyrics-add::after {
+    content: 'X';
+    width: 20px;
+    height: 20px;
+    font-size: 0.5em;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    cursor: pointer;
 }
 
 .container .info {
@@ -588,7 +601,7 @@ audio {
     } */
 
     .songs-div, .playlists {
-        height: 300px;
+        height: 70%;
         width: 100px;
     }
 
@@ -601,6 +614,11 @@ audio {
         display: block;
     }
 
+    .container #lyrics-add {
+        margin-left: 62%; 
+        width: 50%;
+    }
+
     .container .actions .show-more-actions input[type="range"] {
         display: block;
         left: 47%;
@@ -611,9 +629,15 @@ audio {
     }
 }
 
+@media screen and (min-width: 280px ) and ( max-width: 400px ) {
+    .container #lyrics-add {
+        width: 60%;
+    }
+}
+
 @media screen and (min-width: 280px ) and ( max-width: 450px ) {
     .songs-div, .playlists {
-        height: 250px;
+        /* height: 250px; */
         width: 80px;
     }
 
@@ -635,14 +659,13 @@ audio {
 
 @media screen and ( min-width: 400px ) and ( max-width: 600px ) {
     .songs-div, .playlists {
-        height: 330px;
+        /* height: 330px; */
         width: 100px;
     }
     
     .container {
         top: 30%;
     }
-
 }
 
 @media screen and ( min-width: 600px ) and ( max-width: 768px ) {
@@ -653,7 +676,7 @@ audio {
 
     .songs-div, .playlists {
         width: 165px;
-        height: 85vh;
+        /* height: 85vh; */
     }
 
     .container {
@@ -678,7 +701,7 @@ audio {
 
     .songs-div, .playlists {
         width: 220px;
-        height: 87vh;
+        /* height: 87vh; */
     }
 
     .container .song-image {
@@ -723,6 +746,10 @@ audio {
     /* header .study-timer {
         left: 430px;
     } */
+
+    .container #lyrics-add {
+        width: 70%;
+    }
 
     .container .info .song-image {
         width: 130px;

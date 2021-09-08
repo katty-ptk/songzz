@@ -245,6 +245,13 @@
                 "song_path": "../songs/who says.mp3",
                 "image_path": "../images/who_says.jpg"
             },
+            
+            {
+                "song": "Wrecked",
+                "artist": "Imagine Dragons",
+                "song_path": "../songs/wrecked.mp3",
+                "image_path": "../images/imagine_dragons.jpg"
+            },
 
             {
                 "song": "Get back up again",
