@@ -655,6 +655,9 @@
                     return;
                 } else {
                     document.querySelector('#lyrics-add').style.display = "block";
+                    document.querySelector('#lyrics-add').addEventListener('click', function(){
+                        document.querySelector('#lyrics-add').style.display = "none";
+                    });
                     if ( lyrics_container.style.display == "none" ) {
                         show_lyrics_btn.style.display = "block";
                     }
