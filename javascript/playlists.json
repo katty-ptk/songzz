@@ -110,6 +110,13 @@
             },
 
             {
+                "song": "Here comes the sun",
+                "artist": "The Beatles",
+                "song_path": "../songs/here comes the sun.mp3",
+                "image_path": "../images/the_beatles.jpg"
+            },
+
+            {
                 "song": "Leaning on myself",
                 "artist": "Anna of the North",
                 "song_path": "../songs/leaning on myself.mp3",
@@ -145,6 +152,13 @@
             },
 
             {
+                "song": "Let it be",
+                "artist": "The Beatles",
+                "song_path": "../songs/let it be.mp3",
+                "image_path": "../images/the_beatles.jpg"
+            },
+
+            {
                 "song": "Living in the moment",
                 "artist": "Jason Mraz",
                 "song_path": "../songs/living in the moment.mp3",
@@ -173,6 +187,13 @@
             },
 
             {
+                "song": "A day in the life",
+                "artist": "The Beatles",
+                "song_path": "../songs/a day in the life.mp3",
+                "image_path": "../images/the_beatles.jpg"
+            },
+            
+            {
                 "song": "Cage the Elephant",
                 "artist": "Cigarette Daydreams",
                 "song_path": "../songs/cage the elephant.mp3",
@@ -181,7 +202,7 @@
 
             {
                 "song": "Cover me in sunshine",
-                "artist": "P!nk & Sage",
+                "artist": "P!nk",
                 "song_path": "../songs/cover me in sunshine.mp3",
                 "image_path": "../images/pink.jpg"
             },
@@ -191,6 +212,13 @@
                 "artist": "Ava Max",
                 "song_path": "../songs/everytime i cry.mp3",
                 "image_path": "../images/ava_max.jpg"
+            },
+
+            {
+                "song": "Hello, Goodbye",
+                "artist": "The Beatles",
+                "song_path": "../songs/hello goodbye.mp3",
+                "image_path": "../images/the_beatles.jpg"
             },
 
             {
@@ -406,6 +434,13 @@
             },
 
             {
+                "song": "Scars to your beautiful",
+                "artist": "Alessia Cara",
+                "song_path": "../songs/scars to your beautiful.mp3",
+                "image_path": "../images/alessia_cara.png"
+            },
+
+            {
                 "song": "Lullaby Love",
                 "artist": "Roo Panes",
                 "song_path": "../songs/lullaby love.mp3",
@@ -424,6 +459,13 @@
                 "artist": "cover by Nursena Yener",
                 "song_path": "../songs/umbrella.mp3",
                 "image_path": "../images/logo.png"
+            },
+
+            {
+                "song": "Walk me home",
+                "artist": "P!nk",
+                "song_path": "../songs/walk me home.mp3",
+                "image_path": "../images/pink.jpg"
             },
 
             {
@@ -449,6 +491,13 @@
             },
 
             {
+                "song": "Hurts 2b human",
+                "artist": "P!nk",
+                "song_path": "../songs/hurts 2b human.mp3",
+                "image_path": "../images/pink.jpg"
+            },
+
+            {
                 "song": "Monday",
                 "artist": "Imagine Dragons",
                 "song_path": "../songs/monday.mp3",
@@ -469,8 +518,41 @@
                 "image_path": "../images/thomas.jpeg"
             }
         ],
+    
+    "christian": [
+        {
+            "song": "Battle Belongs",
+            "artist": "Phill Wickham",
+            "song_path": "../songs/christian/battle belongs.mp3",
+            "image_path": "../images/phil_wickham.jpg"
+        },
 
-    "Kids": [],
-    "Olivia Rodrigo": [],
-    "Passenger": []
+        {
+            "song": "Look up child",
+            "artist": "Lauren Daigle",
+            "song_path": "../songs/christian/look up child.mp3",
+            "image_path": "../images/lauren_daigle.jpg"
+        },
+
+        {
+            "song": "My Jesus",
+            "artist": "Anne Wilson",
+            "song_path": "../songs/christian/my jesus.mp3",
+            "image_path": "../images/anne_wilson.jpg"
+        },
+
+        {
+            "song": "Tremble",
+            "artist": "Lauren Daigle",
+            "song_path": "../songs/christian/tremble.mp3",
+            "image_path": "../images/lauren_daigle.jpg"
+        },
+
+        {
+            "song": "Another in the fire",
+            "artist": "Hillsong UNITED",
+            "song_path": "../songs/christian/another in the fire.mp3",
+            "image_path": "../images/logo.png"
+        }
+    ]
 }
