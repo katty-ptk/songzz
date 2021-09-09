@@ -154,7 +154,7 @@ audio {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 90%;
+    width: 950px;
     height: 100%;
     margin-top: 4%;
 }
@@ -184,8 +184,8 @@ audio {
 
 .container #lyrics-add {
     position: absolute;
-    margin-top: 15px;
-    margin-left: 56%;
+    margin-top: 10px;
+    margin-left: 60%;
     color: #ddd;
     font-size: 0.7em;
     font-weight: bold;
@@ -372,9 +372,10 @@ audio {
     text-align: center;
     line-height: 30px;
     padding-bottom: 30px;
-    width: 40%;
+    width: 50%;
     height: 77%;
     margin-top: 80px;
+    margin-right: -300px;
     border: 1px solid #ccc;
     border-radius: 50px;
     box-shadow: 5px 5px 10px rgba(224, 224, 224, 0.3);
@@ -600,6 +601,10 @@ audio {
         z-index: 9;
     } */
 
+    .main {
+        width: 250px;
+    }
+
     .songs-div, .playlists {
         height: 70%;
         width: 100px;
@@ -610,12 +615,16 @@ audio {
         width: 100%;
     }
 
+    .container .info {
+        width: 100%;
+    }
+
     .showLyrics {
         display: block;
     }
 
     .container #lyrics-add {
-        margin-left: 62%; 
+        margin-left: 53%; 
         width: 50%;
     }
 
@@ -631,7 +640,7 @@ audio {
 
 @media screen and (min-width: 280px ) and ( max-width: 400px ) {
     .container #lyrics-add {
-        width: 60%;
+        width: 50%;
     }
 }
 
