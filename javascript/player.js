@@ -513,7 +513,10 @@
                 ed_sheeran = [],
                 jason_mraz = [],
                 kodaline = [],
-                imagine_dragons = [];
+                imagine_dragons = [],
+                pink = [],
+                the_beatles = [],
+                christian = [];
 
             createPlaylist(olivia, "Olivia Rodrigo");
             createPlaylist(passenger, "Passenger");
@@ -521,6 +524,8 @@
             createPlaylist(jason_mraz, "Jason Mraz");
             createPlaylist(kodaline, "Kodaline");
             createPlaylist(imagine_dragons, "Imagine Dragons");
+            createPlaylist(pink, "P!nk");
+            createPlaylist(the_beatles, "The Beatles");
 
             let playlists = [
                 'All songs',
@@ -530,8 +535,13 @@
                 'Ed Sheeran',
                 'Jason Mraz',
                 'Kodaline',
-                'Imagine Dragons'
+                'Imagine Dragons',
+                'P!nk',
+                'The Beatles',
+                'Christian'
             ];  // array of playlists
+
+            christian = all_playlists.christian;
 
             playlists.forEach( function( element ) {
                 playlist = document.createElement('li');
@@ -575,6 +585,21 @@
 
                         case 7: // 'Imagine Dragons'
                             songs = imagine_dragons;
+                            changePlaylist();
+                            break;
+
+                        case 8: // 'P!nk'
+                            songs = pink;
+                            changePlaylist();
+                            break;
+
+                        case 9: // 'The Beatles'
+                            songs = the_beatles;
+                            changePlaylist();
+                            break;
+
+                        case 10: // 'Christian'
+                            songs = christian;
                             changePlaylist();
                             break;
 
