@@ -310,7 +310,7 @@
                                     
                                     $(songs_array).not(songs_array[current_song_index]).css("color", "#d3d3d3");
 
-                                    document.title = `playing: ${songs[current_song_index].song}`;
+                                    document.title = `songzz: ${songs[current_song_index].song}`;
                                     lyrics();
                                 });
                             }
@@ -389,7 +389,7 @@
 
                 song_artist.innerText = song.artist;
                 audio.src = song.song_path;
-                document.title = `playing: ${song.song}`;
+                document.title = `songzz: ${song.song}`;
 
                 songs_array[current_song_index].style.color = "rgb(214, 127, 127)";
                 $(songs_array).not(songs_array[current_song_index]).css("color", "#d3d3d3");
@@ -512,13 +512,15 @@
                 passenger = [],
                 ed_sheeran = [],
                 jason_mraz = [],
-                kodaline = [];
+                kodaline = [],
+                imagine_dragons = [];
 
             createPlaylist(olivia, "Olivia Rodrigo");
             createPlaylist(passenger, "Passenger");
             createPlaylist(ed_sheeran, "Ed Sheeran");
             createPlaylist(jason_mraz, "Jason Mraz");
             createPlaylist(kodaline, "Kodaline");
+            createPlaylist(imagine_dragons, "Imagine Dragons");
 
             let playlists = [
                 'All songs',
@@ -527,7 +529,8 @@
                 'Passenger',
                 'Ed Sheeran',
                 'Jason Mraz',
-                'Kodaline'
+                'Kodaline',
+                'Imagine Dragons'
             ];  // array of playlists
 
             playlists.forEach( function( element ) {
@@ -542,44 +545,41 @@
                     switch ( playlists.indexOf(element) ) {
                         case 1:     // 'Kids' playlist
                             songs = kids;
-                            current_song_index = 0;
                             changePlaylist();
                             break;
 
                         case 2:     // 'Olivia Rodrigo'
                             songs = olivia;
-                            current_song_index = 0;
                             changePlaylist();
                             break;
                         
                         case 3: // 'Passenger' 
                             songs = passenger;
-                            current_song_index = 0;
                             changePlaylist();
                             break;
 
                         case 4: // 'Ed Sheeran'
                             songs = ed_sheeran;
-                            current_song_index = 0;
                             changePlaylist();
                             break;
                         
                         case 5: // 'Jason Mraz'
                             songs = jason_mraz;
-                            current_song_index = 0;
                             changePlaylist();
                             break;
 
                         case 6: // 'Kodaline'
                             songs = kodaline;
-                            current_song_index = 0;
+                            changePlaylist();
+                            break;
+
+                        case 7: // 'Imagine Dragons'
+                            songs = imagine_dragons;
                             changePlaylist();
                             break;
 
                         default:    // All songs
                             songs = all_songs;
-                            // document.querySelector('#playlists-ul li').style.color = "rgb(214, 127, 127";
-                            current_song_index = 0;
                             changePlaylist();
                             break;
                     }
@@ -587,6 +587,7 @@
             });
 
             function changePlaylist(e) {
+                current_song_index = 0;
                 songs_array.splice(0, songs_array.length);
 
                 while ( songs_ul.firstChild ) {

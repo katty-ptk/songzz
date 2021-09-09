@@ -413,6 +413,13 @@
             },
 
             {
+                "song": "Whatever it takes",
+                "artist": "Imagine Dragons",
+                "song_path": "../songs/whatever it takes.mp3",
+                "image_path": "../images/imagine_dragons.jpg"
+            },
+
+            {
                 "song": "Umbrella",
                 "artist": "cover by Nursena Yener",
                 "song_path": "../songs/umbrella.mp3",
@@ -439,6 +446,13 @@
                 "artist": "The Neighbourhood",
                 "song_path": "../songs/sweater weather.mp3",
                 "image_path": "../images/neighbourhood.jpg"
+            },
+
+            {
+                "song": "Monday",
+                "artist": "Imagine Dragons",
+                "song_path": "../songs/monday.mp3",
+                "image_path": "../images/imagine_dragons.jpg"
             },
 
             {
