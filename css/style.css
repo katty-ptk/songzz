@@ -296,7 +296,7 @@ audio {
 
 .container .actions .show-more-actions {
     position: relative;
-    width: 500px;
+    width: 300px;
     animation-name: showMoreActions;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
@@ -323,9 +323,6 @@ audio {
     transition: 0.5s ease-in-out all;
 }
 
-.container .actions .show-more-actions button:hover {
-    font-size: 1.5em;
-}
 
 .container .actions .action-btn:hover {
     cursor: pointer;
@@ -567,9 +564,10 @@ audio {
 /*  */
 .full-lyrics {
     position: absolute;
-    width: 100%;
+    width: 130%;
     margin-top: 100px;
     margin-bottom: 100px;
+    margin-left: -300px;
 }
 
 /* keyframes */
@@ -585,7 +583,7 @@ audio {
 
 @keyframes showMoreActions {
     0% { left: -2000px; }
-    100% { left: -103px; }
+    100% { left: 0px }
 }
 
 @keyframes hideMoreActions {
@@ -628,13 +626,22 @@ audio {
         width: 50%;
     }
 
+    .container .actions .show-more-actions {
+        width: 190px;
+    }
+
     .container .actions .show-more-actions input[type="range"] {
         display: block;
-        left: 47%;
+        left: 40%;
     }
 
     #forwards, #backwards {
         display: none;
+    }
+
+    @keyframes showMoreActions {
+          0% { left: -2000px; }
+        100% { left: 45px; }
     }
 }
 
