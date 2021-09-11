@@ -75,6 +75,13 @@
             },
 
             {
+                "song": "Stolen Dance",
+                "artist": "Milky Chance",
+                "song_path": "../songs/stolen dance.mp3",
+                "image_path": "../images/milky_chance.jpg"
+            },
+
+            {
                 "song": "Bad Habits",
                 "artist": "Ed Sheeran",
                 "song_path": "../songs/bad habits.mp3",
@@ -107,6 +114,13 @@
                 "artist": "Jason Mraz",
                 "song_path": "../songs/everything is sound.mp3",
                 "image_path": "../images/everything_is_sound.jpg"
+            },
+
+            {
+                "song": "Down by the river",
+                "artist": "Milky Chance",
+                "song_path": "../songs/down by the river.mp3",
+                "image_path": "../images/milky_chance.jpg"
             },
 
             {
@@ -149,6 +163,13 @@
                 "artist": "Passenger",
                 "song_path": "../songs/sword from the stone.mp3",
                 "image_path": "../images/passenger.jpg"
+            },
+
+            {
+                "song": "Flashed Junk Mind",
+                "artist": "Milky Chance",
+                "song_path": "../songs/flashed junk mind.mp3",
+                "image_path": "../images/milky_chance.jpg"
             },
 
             {
