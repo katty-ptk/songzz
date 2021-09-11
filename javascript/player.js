@@ -515,6 +515,7 @@
                 imagine_dragons = [],
                 pink = [],
                 the_beatles = [],
+                milky_chance = [],
                 christian = [];
 
             createPlaylist(olivia, "Olivia Rodrigo");
@@ -525,6 +526,7 @@
             createPlaylist(imagine_dragons, "Imagine Dragons");
             createPlaylist(pink, "P!nk");
             createPlaylist(the_beatles, "The Beatles");
+            createPlaylist(milky_chance, "Milky Chance");
 
             let playlists = [
                 'All songs',
@@ -537,6 +539,7 @@
                 'Imagine Dragons',
                 'P!nk',
                 'The Beatles',
+                'Milky Chance',
                 'Christian'
             ];  // array of playlists
 
@@ -597,7 +600,12 @@
                             changePlaylist();
                             break;
 
-                        case 10: // 'Christian'
+                        case 10: // 'Milky Chance'
+                            songs = milky_chance;
+                            changePlaylist();
+                            break;
+
+                        case 11: // 'Christian'
                             songs = christian;
                             changePlaylist();
                             break;
