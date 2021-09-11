@@ -512,6 +512,13 @@
             },
 
             {
+                "song": "Pictures",
+                "artist": "Alex Schulz",
+                "song_path": "../songs/pictures.mp3",
+                "image_path": "../images/logo.png"
+            },
+
+            {
                 "song": "I've no more fs to give",
                 "artist": "Thomas Benjamin",
                 "song_path": "../songs/ive no more fs.mp3",
