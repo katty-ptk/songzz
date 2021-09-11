@@ -6,8 +6,6 @@
 
     // grabs buttons
     const show_playlists_btn = document.getElementById('show-playlists-btn');
-    let hide_songs_btn,
-        hide_playlists_btn;
 
     // grabs actions
     const previous_btn = document.getElementById('previous-song');
@@ -57,7 +55,6 @@
         if ( songs_div.style.display != "none" ) {
             songs_div.style.display = "none";
             show_songs_btn.style.display = "block";
-            hide_songs_btn.style.display = "none";
         }
      }
 
@@ -330,10 +327,11 @@
                     songs_div.classList.remove('hide-songs');
                     songs_div.classList.add('show-songs');
                     show_songs_btn.style.display = "none";
-                    hide_songs_btn = document.createElement('button');
+                    const hide_songs_btn = document.createElement('button');
                     hide_songs_btn.title = "hide songs";
                     hide_songs_btn.textContent = "X";
-                    document.querySelector('header').appendChild(hide_songs_btn);
+                    // songs_div.appendChild(hide_songs_btn);
+                    songs_div.insertBefore(hide_songs_btn, songs_div.firstChild);
                     hide_songs_btn.setAttribute('id', 'hide-songs');  
                     hide_songs_btn.style.display = "block";
                     
@@ -356,10 +354,11 @@
                 playlists_div.classList.add('show-playlists');
                 show_playlists_btn.style.display = "none";
 
-                hide_playlists_btn = document.createElement('button');
+                const hide_playlists_btn = document.createElement('button');
                 hide_playlists_btn.title = "hide playlists";
                 hide_playlists_btn.textContent = "X";
-                document.querySelector('header').appendChild(hide_playlists_btn);
+                // document.querySelector('header').appendChild(hide_playlists_btn);
+                playlists_div.insertBefore(hide_playlists_btn, playlists_div.firstChild);
                 hide_playlists_btn.setAttribute('id', 'hide-playlists');
                 hide_playlists_btn.style.display = "block";
 

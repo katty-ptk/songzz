@@ -31,15 +31,15 @@ header #show-songs-btn {
 }
 
 #hide-songs, #hide-playlists {
-    display: none;
+    /* display: none; */
     position: absolute;
-    margin-top: 70px;
+    margin-top: 10px;
     float: right;
-    right: 5px;
+    right: 10px;
     color: #964343;
     font-family: cursive;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1em;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -48,7 +48,7 @@ header #show-songs-btn {
 
 #hide-playlists {
     float: left;
-    left: 5px;
+    margin-left: 10px;
 }
 
 header #show-songs-btn:hover, .lyrics-container #hide-lyrics:hover {
@@ -465,7 +465,7 @@ audio {
 .searchbar {
     position: relative;
     /* margin-bottom: 30px; */
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 .searchbar input {
