@@ -492,13 +492,20 @@
             }
 
             // playlists
-            let kids = [];
-            for ( let counter = 0; counter < all_songs.length; counter++ ) {
-                if ( all_songs[counter].category == "kids" ) {
-                    kids.push(all_songs[counter]);
-                }
-            }
+            let kids = [],
+                sad = [];
 
+            createCategory(kids, "kids");
+            createCategory(sad, "sad");
+
+            function createCategory( category_array, category ) {
+                for ( let counter = 0; counter < all_songs.length; counter++ ) {
+                    if ( all_songs[counter].category == category ) {
+                        category_array.push(all_songs[counter]);
+                    }
+                }    
+            }
+        
             function createPlaylist( playlist_array, artist ) {
                 for ( let counter = 0; counter < all_songs.length; counter++) {
                     if ( all_songs[counter].artist == artist ) {
@@ -540,6 +547,7 @@
                 'P!nk',
                 'The Beatles',
                 'Milky Chance',
+                'Sad',
                 'Christian'
             ];  // array of playlists
 
@@ -605,7 +613,12 @@
                             changePlaylist();
                             break;
 
-                        case 11: // 'Christian'
+                        case 11: // 'Sad'
+                            songs = sad;
+                            changePlaylist();
+                            break;
+
+                        case 12: // 'Christian'
                             songs = christian;
                             changePlaylist();
                             break;
