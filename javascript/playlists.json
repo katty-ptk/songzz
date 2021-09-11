@@ -82,6 +82,60 @@
             },
 
             {
+                "song": "Boy in the bubble",
+                "artist": "Alec Benjamin",
+                "song_path": "../songs/boy in the bubble.mp3",
+                "image_path": "../images/alec_benjamin.jpeg"
+            },
+
+            {
+                "song": "Little do you know",
+                "artist": "Alex & Sierra",
+                "song_path": "../songs/little do you know.mp3",
+                "image_path": "../images/logo.png",
+                "category": "sad"
+            },
+
+            {
+                "song": "Normal",
+                "artist": "Sasha Sloan",
+                "song_path": "../songs/normal.mp3",
+                "image_path": "../images/sasha_sloan.jpg",
+                "category": "sad"
+            },
+
+            {
+                "song": "Lose you to love me",
+                "artist": "Selena Gomez",
+                "song_path": "../songs/lose you to love me.mp3",
+                "image_path": "../images/selena_gomez.jpg"
+            },
+
+            {
+                "song": "Love someone",
+                "artist": "Lukas Graham",
+                "song_path": "../songs/love someone.mp3",
+                "image_path": "../images/lukas_graham.jpg",
+                "category": "sad"
+            },
+
+            {
+                "song": "Say you won't let go",
+                "artist": "James Arthur",
+                "song_path": "../songs/say you wont let go.mp3",
+                "image_path": "../images/james_arthur.jpg",
+                "category": "sad"
+            },
+
+            {
+                "song": "You broke me first",
+                "artist": "Tate McRae",
+                "song_path": "../songs/you broke me first.mp3",
+                "image_path": "../images/tate.jpg",
+                "category": "sad"
+            },
+
+            {
                 "song": "Bad Habits",
                 "artist": "Ed Sheeran",
                 "song_path": "../songs/bad habits.mp3",
@@ -124,6 +178,14 @@
             },
 
             {
+                "song": "Older",
+                "artist": "Sasha Sloan",
+                "song_path": "../songs/older.mp3",
+                "image_path": "../images/sasha_sloan.jpg",
+                "category": "sad"
+            },
+
+            {
                 "song": "Here comes the sun",
                 "artist": "The Beatles",
                 "song_path": "../songs/here comes the sun.mp3",
@@ -149,6 +211,14 @@
                 "artist": "Kodaline",
                 "song_path": "../songs/high hopes.mp3",
                 "image_path": "../images/kodaline.jpg"
+            },
+
+            {
+                "song": "Runaway",
+                "artist": "Sasha Sloan",
+                "song_path": "../songs/runaway.mp3",
+                "image_path": "../images/sasha_sloan.jpg",
+                "category": "sad"
             },
             
             {
@@ -343,6 +413,14 @@
                 "artist": "Passenger",
                 "song_path": "../songs/hell or high water.mp3",
                 "image_path": "../images/passenger.jpg"
+            },
+
+            {
+                "song": "Water Fountain",
+                "artist": "Alec Benjamin",
+                "song_path": "../songs/water fountain.mp3",
+                "image_path": "../images/alec_benjamin.jpeg",
+                "category": "sad"
             },
 
             {
