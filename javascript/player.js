@@ -492,11 +492,17 @@
             }
 
             // playlists
+            const playlists_ul = document.getElementById('playlists-ul');
+
             let kids = [],
-                sad = [];
+                sad = [],
+                lovers = [],
+                uplifting = [];
 
             createCategory(kids, "kids");
             createCategory(sad, "sad");
+            createCategory(lovers, "lovers");
+            createCategory(uplifting, "uplifting");
 
             function createCategory( category_array, category ) {
                 for ( let counter = 0; counter < all_songs.length; counter++ ) {
@@ -548,6 +554,8 @@
                 'The Beatles',
                 'Milky Chance',
                 'Sad',
+                'Lovers',
+                'Uplifting',
                 'Christian'
             ];  // array of playlists
 
@@ -556,7 +564,7 @@
             playlists.forEach( function( element ) {
                 playlist = document.createElement('li');
                 playlist.innerHTML = element;   // playlist's name
-                document.getElementById('playlists-ul').appendChild(playlist);    // adds li to ul of playlist
+                playlists_ul.appendChild(playlist);    // adds li to ul of playlist
 
                 playlist.addEventListener('click', function() {
                     $(this).css('color', 'rgb(214, 127, 127)');  // current playlist will have pinkish color
@@ -618,7 +626,17 @@
                             changePlaylist();
                             break;
 
-                        case 12: // 'Christian'
+                        case 12: // 'Lovers'
+                            songs = lovers;
+                            changePlaylist();
+                            break;
+                        
+                        case 13: // 'Uplifting'
+                            songs = uplifting;
+                            changePlaylist();
+                            break;
+
+                        case 14: // 'Christian'
                             songs = christian;
                             changePlaylist();
                             break;
@@ -629,7 +647,17 @@
                             break;
                     }
                 });
+
             });
+            const by_artists = document.createElement('p');
+            by_artists.innerHTML = "Playlists by artists:";
+            by_artists.setAttribute('class', 'playlists-ads');
+            playlists_ul.insertBefore(by_artists, playlists_ul.children[1]);
+
+            const by_category = document.createElement('p');
+            by_category.innerHTML = "Playlists by category:";
+            by_category.setAttribute('class', 'playlists-ads');
+            playlists_ul.insertBefore(by_category, playlists_ul.children[12]);
 
             function changePlaylist(e) {
                 current_song_index = 0;

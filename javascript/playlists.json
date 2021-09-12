@@ -57,7 +57,8 @@
                     "It's alright, it's okay, it's alright, it's okay",
                     "I believe, yes I believe that you'll see a better day",
                     "It's alright, oh, it's okay, oh, it's alright, oh"
-                ] 
+                ], 
+                "category": "uplifting"
             },
 
             {
@@ -71,7 +72,8 @@
                 "song": "A-O-K",
                 "artist": "Tai Verdes",
                 "song_path": "../songs/aok.mp3",
-                "image_path": "../images/tai_verdes.jpg"
+                "image_path": "../images/tai_verdes.jpg",
+                "category": "uplifting"
             },
 
             {
@@ -85,7 +87,8 @@
                 "song": "Boy in the bubble",
                 "artist": "Alec Benjamin",
                 "song_path": "../songs/boy in the bubble.mp3",
-                "image_path": "../images/alec_benjamin.jpeg"
+                "image_path": "../images/alec_benjamin.jpeg",
+                "category": "sad"
             },
 
             {
@@ -167,7 +170,8 @@
                 "song": "Everything is sound",
                 "artist": "Jason Mraz",
                 "song_path": "../songs/everything is sound.mp3",
-                "image_path": "../images/everything_is_sound.jpg"
+                "image_path": "../images/everything_is_sound.jpg",
+                "category": "uplifting"
             },
 
             {
@@ -203,14 +207,16 @@
                 "song": "Ready to be myself",
                 "artist": "David Duun",
                 "song_path": "../songs/ready to be myself.mp3",
-                "image_path": "../images/daivd_dunn.jpg"
+                "image_path": "../images/daivd_dunn.jpg",
+                "category": "uplifting"
             },
 
             {
                 "song": "High hopes",
                 "artist": "Kodaline",
                 "song_path": "../songs/high hopes.mp3",
-                "image_path": "../images/kodaline.jpg"
+                "image_path": "../images/kodaline.jpg",
+                "category": "sad"
             },
 
             {
@@ -225,7 +231,8 @@
                 "song": "Shape of you",
                 "artist": "Ed Sheeran",
                 "song_path": "../songs/shape of you.mp3",
-                "image_path": "../images/ed_sheeran.jpg"
+                "image_path": "../images/ed_sheeran.jpg",
+                "category": "uplifting"
             },
 
             {
@@ -253,21 +260,24 @@
                 "song": "Living in the moment",
                 "artist": "Jason Mraz",
                 "song_path": "../songs/living in the moment.mp3",
-                "image_path": "../images/living_in_the_moment.jpg"
+                "image_path": "../images/living_in_the_moment.jpg",
+                "category": "uplifting"
             },
 
             {
                 "song": "Perfect",
                 "artist": "Ed Sheeran",
                 "song_path": "../songs/perfect.mp3",
-                "image_path": "../images/ed_sheeran.jpg"
+                "image_path": "../images/ed_sheeran.jpg",
+                "category": "lovers"
             },
 
             {
                 "song": "Always remember us this way",
                 "artist": "Lady Gaga",
                 "song_path": "../songs/always remember us.mp3",
-                "image_path": "../images/lady_gaga.jpg"
+                "image_path": "../images/lady_gaga.jpg",
+                "category": "lovers"
             },
 
             {
@@ -302,14 +312,16 @@
                 "song": "Everytime I cry",
                 "artist": "Ava Max",
                 "song_path": "../songs/everytime i cry.mp3",
-                "image_path": "../images/ava_max.jpg"
+                "image_path": "../images/ava_max.jpg",
+                "category": "uplifting"
             },
 
             {
                 "song": "Hello, Goodbye",
                 "artist": "The Beatles",
                 "song_path": "../songs/hello goodbye.mp3",
-                "image_path": "../images/the_beatles.jpg"
+                "image_path": "../images/the_beatles.jpg",
+                "category": "uplifting"
             },
 
             {
@@ -355,14 +367,16 @@
                     "Oh, love without fear in your heart",
                     "Can you feel, feel like you still have a choice",
                     "If we all light up, we can scare away the dark"
-                ]
+                ],
+                "category": "uplifting"
             },
 
             {
                 "song": "Who says",
                 "artist": "Selena Gomez",
                 "song_path": "../songs/who says.mp3",
-                "image_path": "../images/who_says.jpg"
+                "image_path": "../images/who_says.jpg",
+                "category": "uplifting"
             },
             
             {
@@ -391,7 +405,8 @@
                 "song": "Half the world away",
                 "artist": "AURORA",
                 "song_path": "../songs/half the world away.mp3",
-                "image_path": "../images/aurora.jpeg"
+                "image_path": "../images/aurora.jpeg",
+                "category": "sad"
             },
 
             {
@@ -405,7 +420,8 @@
                 "song": "Head Shoulders Knees and Toes",
                 "artist": "Ogenbach & Quarterhead",
                 "song_path": "../songs/head shoulders knees and toes.mp3",
-                "image_path": "../images/ofenbach_quarterhead.jpg"
+                "image_path": "../images/ofenbach_quarterhead.jpg",
+                "category": "uplifting"
             },
 
             {
@@ -420,7 +436,7 @@
                 "artist": "Alec Benjamin",
                 "song_path": "../songs/water fountain.mp3",
                 "image_path": "../images/alec_benjamin.jpeg",
-                "category": "sad"
+                "category": "lovers"
             },
 
             {
@@ -435,28 +451,32 @@
                 "song": "I already know",
                 "artist": "Stacey Ryan",
                 "song_path": "../songs/i already know.mp3",
-                "image_path": "../images/stacey_ryann.jpg"
+                "image_path": "../images/stacey_ryann.jpg",
+                "category": "lovers"
             },
 
             {
                 "song": "Just the way you are",
                 "artist": "Bruno Mars",
                 "song_path": "../songs/just the way you are.mp3",
-                "image_path": "../images/bruno_mars.jpg..jpg"
+                "image_path": "../images/bruno_mars.jpg..jpg",
+                "category": "lovers"
             },
 
             {
                 "song": "One step forward, three steps back",
                 "artist": "Olivia Rodrigo",
                 "song_path": "../songs/one step forward.mp3",
-                "image_path": "../images/olivia_rodrigo.jpg"
+                "image_path": "../images/olivia_rodrigo.jpg",
+                "category": "sad"
             },
 
             {
                 "song": "Ready for it all",
                 "artist": "Wayley",
                 "song_path": "../songs/ready for it all.mp3",
-                "image_path": "../images/wayley.jpg"
+                "image_path": "../images/wayley.jpg",
+                "category": "uplifting"
             },
 
             {
@@ -471,7 +491,8 @@
                 "song": "What makes you beautiful",
                 "artist": "One Direction",
                 "song_path": "../songs/what makes you beautiful.mp3",
-                "image_path": "../images/one_direction.jpg"
+                "image_path": "../images/one_direction.jpg",
+                "category": "uplifting"
             },
 
             {
@@ -529,7 +550,8 @@
                     "Oh, I want you to have it all",
                     "I want you to have it",
                     "I want you to have it all"
-                ]
+                ],
+                "category": "uplifting"
             },
 
             {
@@ -543,7 +565,8 @@
                 "song": "Lullaby Love",
                 "artist": "Roo Panes",
                 "song_path": "../songs/lullaby love.mp3",
-                "image_path": "../images/roo_panes.jpg"
+                "image_path": "../images/roo_panes.jpg",
+                "category": "lovers"
             },
 
             {
@@ -557,7 +580,8 @@
                 "song": "Umbrella",
                 "artist": "cover by Nursena Yener",
                 "song_path": "../songs/umbrella.mp3",
-                "image_path": "../images/logo.png"
+                "image_path": "../images/logo.png",
+                "category": "lovers"
             },
 
             {
@@ -593,14 +617,16 @@
                 "song": "Hurts 2b human",
                 "artist": "P!nk",
                 "song_path": "../songs/hurts 2b human.mp3",
-                "image_path": "../images/pink.jpg"
+                "image_path": "../images/pink.jpg",
+                "category": "sad"
             },
 
             {
                 "song": "Monday",
                 "artist": "Imagine Dragons",
                 "song_path": "../songs/monday.mp3",
-                "image_path": "../images/imagine_dragons.jpg"
+                "image_path": "../images/imagine_dragons.jpg",
+                "category": "lovers"
             },
 
             {
@@ -614,7 +640,8 @@
                 "song": "Pictures",
                 "artist": "Alex Schulz",
                 "song_path": "../songs/pictures.mp3",
-                "image_path": "../images/logo.png"
+                "image_path": "../images/logo.png",
+                "category": "lovers"
             },
 
             {
