@@ -508,7 +508,7 @@ audio {
     list-style: none;
     /* border: 3px solid white; */
     /* list-style-type: none; */
-    margin-top: 50px;
+    margin-top: 35px;
     text-align: center;
     /* margin-left: 50%; */
     /* transform: translateX(-25%); */
@@ -516,6 +516,14 @@ audio {
     width: 100%;
     cursor: pointer;
     transition: .7s ease-in-out all;
+}
+
+.playlists ul p {
+    margin-top: 30px;
+    margin-left: 7px;
+    font-weight: bold;
+    font-style: italic;
+    opacity: 0.5;
 }
 
 .playlists ul li:first-child {
@@ -606,6 +614,11 @@ audio {
     .songs-div, .playlists {
         height: 70%;
         width: 100px;
+    }
+
+    .playlists-ads {
+        margin-left: 0px;
+        font-size: 10px;
     }
 
     .container {
