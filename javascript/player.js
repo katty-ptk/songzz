@@ -529,6 +529,8 @@
                 pink = [],
                 the_beatles = [],
                 milky_chance = [],
+                dave_winkler = [],
+                alec_benjamin = [],
                 christian = [];
 
             createPlaylist(olivia, "Olivia Rodrigo");
@@ -540,6 +542,8 @@
             createPlaylist(pink, "P!nk");
             createPlaylist(the_beatles, "The Beatles");
             createPlaylist(milky_chance, "Milky Chance");
+            createPlaylist(dave_winkler, "cover by Dave Winkler");
+            createPlaylist(alec_benjamin, "Alec Benjamin");
 
             let playlists = [
                 'All songs',
@@ -553,6 +557,8 @@
                 'P!nk',
                 'The Beatles',
                 'Milky Chance',
+                'Dave Winkler',
+                'Alec Benjamin',
                 'Sad',
                 'Lovers',
                 'Uplifting',
@@ -621,22 +627,32 @@
                             changePlaylist();
                             break;
 
-                        case 11: // 'Sad'
+                        case 11: // 'Dave Winkler'
+                            songs = dave_winkler;
+                            changePlaylist();
+                            break;
+
+                        case 12: // 'Alec Benjamin'
+                            songs = alec_benjamin;
+                            changePlaylist();
+                            break;
+                            
+                        case 13: // 'Sad'
                             songs = sad;
                             changePlaylist();
                             break;
 
-                        case 12: // 'Lovers'
+                        case 14: // 'Lovers'
                             songs = lovers;
                             changePlaylist();
                             break;
                         
-                        case 13: // 'Uplifting'
+                        case 15: // 'Uplifting'
                             songs = uplifting;
                             changePlaylist();
                             break;
 
-                        case 14: // 'Christian'
+                        case 16: // 'Christian'
                             songs = christian;
                             changePlaylist();
                             break;
@@ -657,7 +673,7 @@
             const by_category = document.createElement('p');
             by_category.innerHTML = "Playlists by category:";
             by_category.setAttribute('class', 'playlists-ads');
-            playlists_ul.insertBefore(by_category, playlists_ul.children[12]);
+            playlists_ul.insertBefore(by_category, playlists_ul.children[14]);
 
             function changePlaylist(e) {
                 current_song_index = 0;
