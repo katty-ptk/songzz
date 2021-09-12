@@ -131,6 +131,14 @@
             },
 
             {
+                "song": "Gotta be a reason",
+                "artist": "Alec Benjamin",
+                "song_path": "../songs/gotta be a reason.mp3",
+                "image_path": "../images/alec_benjamin.jpeg",
+                "category": "lovers"
+            },
+
+            {
                 "song": "You broke me first",
                 "artist": "Tate McRae",
                 "song_path": "../songs/you broke me first.mp3",
@@ -179,6 +187,13 @@
                 "artist": "Milky Chance",
                 "song_path": "../songs/down by the river.mp3",
                 "image_path": "../images/milky_chance.jpg"
+            },
+
+            {
+                "song": "Outrunning Karma",
+                "artist": "Alec Benjamin",
+                "song_path": "../songs/outrunning karma.mp3",
+                "image_path": "../images/alec_benjamin.jpeg"
             },
 
             {
@@ -464,6 +479,14 @@
             },
 
             {
+                "song": "Listen to your heart",
+                "artist": "cover by Dave Winkler",
+                "song_path": "../songs/listen to your heart.mp3",
+                "image_path": "../images/dave_winkler.jpg",
+                "category": "lovers"
+            },
+
+            {
                 "song": "One step forward, three steps back",
                 "artist": "Olivia Rodrigo",
                 "song_path": "../songs/one step forward.mp3",
@@ -493,6 +516,14 @@
                 "song_path": "../songs/what makes you beautiful.mp3",
                 "image_path": "../images/one_direction.jpg",
                 "category": "uplifting"
+            },
+
+            {
+                "song": "Jar of hearts",
+                "artist": "cover by Dave Winkler",
+                "song_path": "../songs/jar of hearts/mp3",
+                "image_path": "../images/dave_winkler.jpg",
+                "category": "sad"
             },
 
             {
@@ -585,6 +616,86 @@
             },
 
             {
+                "song": "Brown Eyes, Brown Hair",
+                "artist": "Caleb Hearn",
+                "song_path": "../songs/brown eyes brown hair.mp3",
+                "image_path": "../images/logo.png",
+                "category": "lovers"
+            },
+
+            {
+                "song": "Changes",
+                "artist": "Hayd",
+                "song_path": "../songs/changes.mp3",
+                "image_path": "../images/hayd.jpg",
+                "category": "sad"
+            },
+
+            {
+                "song": "Falling like the stars",
+                "artist": "James Arthur",
+                "song_path": "../songs/falling like the stars.mp3",
+                "image_path": "../images/james_arthur.jpg",
+                "category": "lovers"
+            },
+
+            {
+                "song": "Hard Sometimes",
+                "artist": "Ruel",
+                "song_path": "../songs/hard sometimes.mp3",
+                "image_path": "../images/ruel.jpg",
+                "category": "sad"
+            },
+
+            {
+                "song": "Here without you",
+                "artist": "cover by Dave Winkler",
+                "song_path": "../songs/here without you.mp3",
+                "image_path": "../images/dave_winkler.jpg",
+                "category": "lovers"
+            },
+
+            {
+                "song": "I'll be alright",
+                "artist": "Christopher Bensinger",
+                "song_path": "../songs/ill be alright.mp3",
+                "image_path": "../images/logo.png",
+                "category": "sad"
+            },
+
+            {
+                "song": "Lets fall in love for the night",
+                "artist": "FINNEAS",
+                "song_path": "../songs/lets fall in love.mp3",
+                "image_path": "../images/logo.png",
+                "category": "lovers"
+            },
+
+            {
+                "song": "Remember that night?",
+                "artist": "Sara Kays",
+                "song_path": "../songs/remember that night.mp3",
+                "image_path": "../images/logo.png",
+                "category": "lovers"
+            },
+
+            {
+                "song": "The A Team",
+                "artist": "Ed Sheeran",
+                "song_path": "../songs/the a team.mp3",
+                "image_path": "../images/ed_sheeran.jpg",
+                "category": "lovers"
+            },
+
+            {
+                "song": "The night we met",
+                "artist": "Lord Huron",
+                "song_path": "../songs/the night we met.mp3",
+                "image_path": "../images/lord_huron.jpg",
+                "category": "lovers"
+            },
+
+            {
                 "song": "Walk me home",
                 "artist": "P!nk",
                 "song_path": "../songs/walk me home.mp3",
@@ -627,6 +738,14 @@
                 "song_path": "../songs/monday.mp3",
                 "image_path": "../images/imagine_dragons.jpg",
                 "category": "lovers"
+            },
+
+            {
+                "song": "How to save a life",
+                "artist": "cover by Dave Winkler",
+                "song_path": "../songs/how to save a life.mp3",
+                "image_path": "../images/dave_winkler.jpg",
+                "category": "sad"
             },
 
             {

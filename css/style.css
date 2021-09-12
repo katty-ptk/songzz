@@ -33,7 +33,7 @@ header #show-songs-btn {
 #hide-songs, #hide-playlists {
     /* display: none; */
     position: fixed;
-    margin-top: 10px;
+    margin-top: 0px;
     float: right;
     right: 10px;
     color: #964343;
