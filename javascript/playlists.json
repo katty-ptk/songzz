@@ -432,14 +432,6 @@
             },
 
             {
-                "song": "Head Shoulders Knees and Toes",
-                "artist": "Ogenbach & Quarterhead",
-                "song_path": "../songs/head shoulders knees and toes.mp3",
-                "image_path": "../images/ofenbach_quarterhead.jpg",
-                "category": "uplifting"
-            },
-
-            {
                 "song": "Hell or High Water",
                 "artist": "Passenger",
                 "song_path": "../songs/hell or high water.mp3",
