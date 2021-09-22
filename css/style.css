@@ -201,7 +201,7 @@ audio {
     font-size: 0.5em;
     position: absolute;
     top: 0;
-    right: -15px;
+    /* right: -15px; */
     cursor: pointer;
 }
 
@@ -524,6 +524,7 @@ audio {
     font-weight: bold;
     font-style: italic;
     opacity: 0.5;
+    cursor: default;
 }
 
 .playlists ul li:first-child {
@@ -619,6 +620,10 @@ audio {
     .playlists-ads {
         margin-left: 0px;
         font-size: 13px;
+      
+    .playlists ul p {
+        margin-left: 5px;
+        font-size: 10px;
     }
 
     .container {
@@ -630,11 +635,32 @@ audio {
         width: 100%;
     }
 
+    .container .info .song-image {
+        width: 130px;
+    }
+
+    .container .info h2 {
+        font-size: 1.1em;
+    }
+
+    .container .info p {
+        font-size: 0.9em;
+    }
+
+    .container .actions .action-btn {
+        width: 1.3em;
+    }
+
+    .container .actions .show-more-actions svg {
+        font-size: 0.8em;
+    }
+
     .showLyrics {
         display: block;
     }
 
     .container #lyrics-add {
+        font-size: 0.5em;
         margin-left: 53%; 
         width: 50%;
     }
@@ -645,7 +671,9 @@ audio {
 
     .container .actions .show-more-actions input[type="range"] {
         display: block;
-        left: 40%;
+        top: 25px;
+        left: 43%;
+        width: 90px;
     }
 
     #forwards, #backwards {
