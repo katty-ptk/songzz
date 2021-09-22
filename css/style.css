@@ -617,6 +617,10 @@ audio {
         width: 100px;
     }
 
+    .playlists-ads {
+        margin-left: 0px;
+        font-size: 13px;
+      
     .playlists ul p {
         margin-left: 5px;
         font-size: 10px;
