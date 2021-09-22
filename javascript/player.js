@@ -497,12 +497,17 @@
             let kids = [],
                 sad = [],
                 lovers = [],
-                uplifting = [];
+                uplifting = [], 
+                rock = [],
+                lo_fi = [],
+                trap = [],
+                christian = [];
 
             createCategory(kids, "kids");
             createCategory(sad, "sad");
             createCategory(lovers, "lovers");
             createCategory(uplifting, "uplifting");
+            createCategory(rock, "rock");
 
             function createCategory( category_array, category ) {
                 for ( let counter = 0; counter < all_songs.length; counter++ ) {
@@ -530,8 +535,7 @@
                 the_beatles = [],
                 milky_chance = [],
                 dave_winkler = [],
-                alec_benjamin = [],
-                christian = [];
+                alec_benjamin = [];
 
             createPlaylist(olivia, "Olivia Rodrigo");
             createPlaylist(passenger, "Passenger");
@@ -562,10 +566,23 @@
                 'Sad',
                 'Lovers',
                 'Uplifting',
+                'Rock',
+                'Lo-Fi',
+                'Trap',
                 'Christian'
             ];  // array of playlists
 
+            lo_fi = all_playlists.lofi;
+            trap = all_playlists.trap;
             christian = all_playlists.christian;
+
+            lo_fi.forEach(lofi => {
+                lofi.image_path = "../images/logo.png";
+            });
+
+            trap.forEach(trap_song => {
+                trap_song.artist = "";
+            });
 
             playlists.forEach( function( element ) {
                 playlist = document.createElement('li');
@@ -651,8 +668,23 @@
                             songs = uplifting;
                             changePlaylist();
                             break;
+                        
+                        case 16: // 'Rock'
+                            songs = rock;
+                            changePlaylist();
+                            break;
 
-                        case 16: // 'Christian'
+                        case 17: // 'Lo-Fi'
+                            songs = lo_fi;
+                            changePlaylist();
+                            break;
+
+                        case 18: // 'Trap'
+                            songs = trap;
+                            changePlaylist();
+                            break;
+
+                        case 19: // 'Christian'
                             songs = christian;
                             changePlaylist();
                             break;
@@ -666,12 +698,12 @@
 
             });
             const by_artists = document.createElement('p');
-            by_artists.innerHTML = "Playlists by artists:";
+            by_artists.innerHTML = "Artists:";
             by_artists.setAttribute('class', 'playlists-ads');
             playlists_ul.insertBefore(by_artists, playlists_ul.children[1]);
 
             const by_category = document.createElement('p');
-            by_category.innerHTML = "Playlists by category:";
+            by_category.innerHTML = "Categories:";
             by_category.setAttribute('class', 'playlists-ads');
             playlists_ul.insertBefore(by_category, playlists_ul.children[14]);
 

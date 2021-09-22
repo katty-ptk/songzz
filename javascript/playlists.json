@@ -2,6 +2,14 @@
     "songs":
         [
             {
+                "song": "I'm still standing",
+                "artist": "Elton John",
+                "song_path": "../songs/still standing.mp3",
+                "image_path": "../images/elton.jpg",
+                "category": "uplifting"
+            },
+
+            {
                 "song": "It's Alright",
                 "artist": "Mother Mother",
                 "song_path": "../songs/its alright.mp3",
@@ -69,6 +77,22 @@
             },
 
             {
+                "song": "Animal I have become",
+                "artist": "Five Finger Death Punch",
+                "song_path": "../songs/animal i have become.mp3",
+                "image_path": "../images/five_finger.jpg",
+                "category": "rock"
+            },
+
+            {
+                "song": "F**kin' Perfect",
+                "artist": "P!nk",
+                "song_path": "../songs/fucking perfect.mp3",
+                "image_path": "../images/pink.jpg",
+                "category": "lovers"
+            },
+
+            {
                 "song": "A-O-K",
                 "artist": "Tai Verdes",
                 "song_path": "../songs/aok.mp3",
@@ -84,11 +108,27 @@
             },
 
             {
+                "song": "I apologize",
+                "artist": "Five Finger Death Punch",
+                "song_path": "../songs/i apologize.mp3",
+                "image_path": "../images/five_finger.jpg",
+                "category": "rock"
+            },
+
+            {
                 "song": "Boy in the bubble",
                 "artist": "Alec Benjamin",
                 "song_path": "../songs/boy in the bubble.mp3",
                 "image_path": "../images/alec_benjamin.jpeg",
                 "category": "sad"
+            },
+
+            {
+                "song": "So what?",
+                "artist": "P!nk",
+                "song_path": "../songs/so what.mp3",
+                "image_path": "../images/pink.jpg",
+                "category": "rock"
             },
 
             {
@@ -105,6 +145,14 @@
                 "song_path": "../songs/normal.mp3",
                 "image_path": "../images/sasha_sloan.jpg",
                 "category": "sad"
+            },
+
+            {
+                "song": "I refuse",
+                "artist": "Five Finger Death Punch",
+                "song_path": "../songs/i refuse.mp3",
+                "image_path": "../images/five_finger.jpg",
+                "category": "rock"
             },
 
             {
@@ -131,6 +179,14 @@
             },
 
             {
+                "song": "Perfect",
+                "artist": "Simple Plan",
+                "song_path": "../songs/perfect simple plan.mp3",
+                "image_path": "../images/simple_plan.png",
+                "category": "rock"
+            },
+
+            {
                 "song": "Gotta be a reason",
                 "artist": "Alec Benjamin",
                 "song_path": "../songs/gotta be a reason.mp3",
@@ -144,6 +200,14 @@
                 "song_path": "../songs/you broke me first.mp3",
                 "image_path": "../images/tate.jpg",
                 "category": "sad"
+            },
+
+            {
+                "song": "The tragic truth",
+                "artist": "Five Finger Death Punch",
+                "song_path": "../songs/the tragic truth.mp3",
+                "image_path": "../images/five_finger.jpg",
+                "category": "rock"
             },
 
             {
@@ -168,6 +232,14 @@
             },
 
             {
+                "song": "This is my war",
+                "artist": "Five Finger Death Punch",
+                "song_path": "../images/this is my war.mp3",
+                "image_path": "../images/five_finger.jpg",
+                "category": "rock"
+            },
+
+            {
                 "song": "Got it in you",
                 "artist": "Banners",
                 "song_path": "../songs/got it in you.mp3",
@@ -180,6 +252,22 @@
                 "song_path": "../songs/everything is sound.mp3",
                 "image_path": "../images/everything_is_sound.jpg",
                 "category": "uplifting"
+            },
+
+            {
+                "song": "You're somebody else",
+                "artist": "Flora Cash",
+                "song_path": "../songs/youre somebody else.mp3",
+                "image_path": "../images/flora_cash.jpg",
+                "category": "lovers"
+            },
+
+            {
+                "song": "Wash it all away",
+                "artist": "Five Finger Death Punch",
+                "song_path": "../songs/wash it all away.mp3",
+                "image_path": "../images/five_finger.jpg",
+                "category": "rock"
             },
 
             {
@@ -202,6 +290,14 @@
                 "song_path": "../songs/older.mp3",
                 "image_path": "../images/sasha_sloan.jpg",
                 "category": "sad"
+            },
+
+            {
+                "song": "When the seasons change",
+                "artist": "Five Finger Death Punch",
+                "song_path": "../songs/when the seasons change.mp3",
+                "image_path": "../images/five_finger.jpg",
+                "category": "rock"
             },
 
             {
@@ -232,6 +328,14 @@
                 "song_path": "../songs/high hopes.mp3",
                 "image_path": "../images/kodaline.jpg",
                 "category": "sad"
+            },
+
+            {
+                "song": "Wrong side of heaven",
+                "artist": "Five Finger Death Punch",
+                "song_path": "../songs/wrong side of heaven.mp3",
+                "image_path": "../images/five_finger.jpg",
+                "category": "rock"
             },
 
             {
@@ -521,7 +625,7 @@
             {
                 "song": "Jar of hearts",
                 "artist": "cover by Dave Winkler",
-                "song_path": "../songs/jar of hearts/mp3",
+                "song_path": "../songs/jar of hearts.mp3",
                 "image_path": "../images/dave_winkler.jpg",
                 "category": "sad"
             },
@@ -770,6 +874,120 @@
                 "image_path": "../images/thomas.jpeg"
             }
         ],
+
+    "lofi": [
+        {
+            "song": "Blue Jeans",
+            "song_path": "../songs/lo-fi/blue jeans.mp3"
+        },
+
+        {
+            "song": "Coffee Cup",
+            "song_path": "../songs/lo-fi/coffee cup.mp3"
+        },
+
+        {
+            "song": "Get you the moon",
+            "song_path": "../songs/lo-fi/get you the moon.mp3"
+        },
+
+        {
+            "song": "Build me up buttercup",
+            "song_path": "../songs/lo-fi/build me up buttercup.mp3"
+        },
+
+        {
+            "song": "Hope",
+            "song_path": "../songs/lo-fi/hope.mp3"
+        },
+
+        {
+            "song": "Midnight",
+            "song_path": "../songs/lo-fi/midnight.mp3"
+        },
+
+        {
+            "song": "Only we know",
+            "song_path": "../songs/lo-fi/only we know.mp3"
+        },
+
+        {
+            "song": "Summertime Sadness",
+            "song_path": "../songs/lo-fi/summertime sadness.mp3"
+        },
+
+        {
+            "song": "The girl I haven't met",
+            "song_path": "../songs/lo-fi/the girl i havent met.mp3"
+        },
+
+        {
+            "song": "Tomorrow never came",
+            "song_path": "../songs/lo-fi/tomorrow never came.mp3"
+        }
+    ],
+
+    "trap": [
+        {
+            "song": "Act a fool",
+            "song_path": "../songs/trap/act a fool.mp3",
+            "image_path": "../images/logo.png"
+        },
+
+        {
+            "song": "Babel",
+            "song_path": "../songs/trap/bebel.mp3",
+            "image_path": "../images/logo.png"
+        },
+        
+        {
+            "song": "Can't stop dancing",
+            "song_path": "../songs/trap/cant stop dancing.mp3",
+            "image_path": "../images/logo.png"
+        },
+
+        {
+            "song": "Dior",
+            "song_path": "../songs/trap/dior.mp3",
+            "image_path": "../images/logo.png"
+        },
+
+        {
+            "song": "Get into it",
+            "song_path": "../songs/trap/get into it.mp3",
+            "image_path": "../images/logo.png"
+        },
+
+        {
+            "song": "Goosebumps",
+            "song_path": "../songs/trap/goosebumps.mp3",
+            "image_path": "../images/logo.png"
+        },
+
+        {
+            "song": "In the end",
+            "song_path": "../songs/trap/in the ned.mp3",
+            "image_path": "../images/logo.png"
+        },
+
+        {
+            "song": "Panda",
+            "song_path": "../songs/trap/panda.mp3",
+            "image_path": "../images/logo.png"
+        },
+
+        {
+            "song": "Popstar",
+            "song_path": "../songs/trap/popstar.mp3",
+            "image_path": "../images/logo.mp3"
+        },
+
+        {
+            "song": "Woman",
+            "song_path": "../songs/trap/woman.mp3",
+            "image_path": "../images/logo.png"
+        }
+    ],
     
     "christian": [
         {
